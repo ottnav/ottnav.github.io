@@ -1,3 +1,7 @@
+---
+title: OTT Navigator :: FAQ
+---
+
 # Installation
 
 ## How to install on non-Play Market device
@@ -15,6 +19,8 @@ Please note, that hardware acceleration might not be available when using emulat
 The app only works on Android, so if your TV is running Android TV / Google TV then it will run perfectly.
 We have investigated the tech and even did some proof-of-concept, but WebOS/Tizen are simply not powerful enough to make a really good app. It's suitable for simple web pages that pretend to be apps, but lack real power to do complex under-the-hood tasks.
 So if you choose an LG/Samsung TV (the only 2 major vendors that do not use Android these days) - then it's highly recommended to purchase an Android / AndroidTV / GoogleTV / Chromecast(2021+ model) / FireTV / etc box or stick to be attached, to make it really smart (not smart by name).
+
+----
 
 # Provider (playlist) configuration
 

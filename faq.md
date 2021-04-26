@@ -1,9 +1,6 @@
----
-title: OTT Navigator FAQ
----
-
+# OTT Navigator FAQ
+{:.no_toc}
 {:toc}
-
 
 # Installation
 

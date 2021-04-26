@@ -263,7 +263,7 @@ Supported attributes:
 - `max-conn="1"` : if your provider allows user opening more connections at the same time (like watching picture-in-picture) set number of connections here
 - `billed-till="timestamp"` : unix time when user account will expire (will be displayed for user)
 - `billed-msg="some text"` : custom message regarding user account (might be balance or any other info to be shown)
-- `refresh="N"` : period of time when the playlist should be reloaded (`v1.6.6.1`), in hours (if below 24), in minutes (if < 300), or in seconds if a large value, for example: refresh=”3” means refreshing each 3 hours)
+- `refresh="N"` : period of time when the playlist should be reloaded (`v1.6.6.1+`), in hours (if below 24), in minutes (if < 300), or in seconds if a large value, for example: refresh=”3” means refreshing each 3 hours)
 
 `#EXTINF:0  ...,Channel name`
 Channel declaration. Supported attributes:
@@ -296,9 +296,9 @@ Allows setting some custom parameters for the current channel. Supported `parame
   - clearkey (ClearKey)
   - playready (PlayReady)
 - `inputstream.adaptive.license_key` (License key or URL depending on the DRM type; URLs should start from `http://` or `https://`, otherwise it’s a non-url key) and is considered being static
-- `inputstream.adaptive.stream_headers` (extra headers, if required. For example `param1=value1&param2=value2&param3=value3`) (`v1.6.4.1`)
+- `inputstream.adaptive.stream_headers` (extra headers, if required. For example `param1=value1&param2=value2&param3=value3`) (`v1.6.4.1+`)
 
-The app also accepts extra stream headers configured after `|` character in license_key (`v1.6.4.1`)
+The app also accepts extra stream headers configured after `|` character in license_key (`v1.6.4.1+`)
 
 ## Media library file (json)
 App supports multiple formats for media library, but preferred format is json:

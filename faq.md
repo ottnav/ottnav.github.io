@@ -1,5 +1,4 @@
 # OTT Navigator FAQ
-{:.no_toc}
 {:toc}
 
 # Installation
@@ -18,7 +17,7 @@ Please note, that hardware acceleration might not be available when using emulat
 ## Will the app work on my TV? Why not WebOS/Tizen?
 The app only works on Android, so if your TV is running Android TV / Google TV then it will run perfectly.
 We have investigated the tech and even did some proof-of-concept, but WebOS/Tizen are simply not powerful enough to make a really good app. It's suitable for simple web pages that pretend to be apps, but lack real power to do complex under-the-hood tasks.
-So if you choose an LG/Samsung TV (the only 2 major vendors that do not use Android these days) - then it's highly recommended to purchase an Android / AndroidTV / GoogleTV / Chromecast(2021+ model) / FireTV / etc box or stick to be attached, to make it really smart (not smart by name).
+So if you choose an LG/Samsung TV (the only 2 major vendors that do not use Android these days) - then it's highly recommended to purchase an Android / AndroidTV / GoogleTV / Chromecast(2021+ model) / FireTV / etc box or stick to be attached, to make it really smart (not pretending to be one).
 
 ----
 
@@ -27,8 +26,7 @@ So if you choose an LG/Samsung TV (the only 2 major vendors that do not use Andr
 ## Playlist file setup
 Your options are one of the following (it’s always preferred to use links over files):
 - Use a specialized service like `https://m3u4u.com/` or `https://app.m3u.in/` to upload your playlist and configure a link to it
-- Upload file contents to a `https://pastebin.com/` (always make paste exposure to unlisted) and use RAW link to the playlist
-- Use any cloud storage service you prefer. For example, when using Dropbox:
+- Use any cloud storage service you prefer. For example, if using Dropbox:
   - Copy a playlist file to your personal Dropbox cloud storage
   - In a context menu select `Dropbox -> Copy Link`
   - Open a text editor and paste a link there; replace `dl=0` to `dl=1` in the link (since by default it copies a link to the web page rather than to the file itself)
@@ -37,7 +35,7 @@ Your options are one of the following (it’s always preferred to use links over
   - Also you can setup the player on your phone (not using files, links only!) and then use the backup/restore feature of the app to transfer configuration to your TV/box device!
 
 ## Which provider template should I choose?
-- If your playlist contains something like `.../get.php?username=...&` most probably your choice is Xtream Codes template
+- If your playlist contains something like `.../get.php?username=...&password=...&type=m3u_plus&output=...` most probably your choice is Xtream Codes template
 - If the url contains something like `/stalker_portal/c/` then you should select either MAC or Stalker portal
 - If you have a m3u file downloaded from provider, you should either upload it and setup as a Playlist (recommended), or configure as a Playlist File
 - In other cases configuring as Playlist is generally preferable
@@ -60,8 +58,10 @@ If you configure EPG source in `Settings - EPG - User-provided` then matching by
 
 ## Want easier way to input characters on my Android TV device (from Phone)
 Some of the control apps recommended to serve as a secondary output to your TV/box:
-- (Android) Android TV Remote Control
-- (iOS) Android TV
+- (Android) Android TV Remote Control `https://play.google.com/store/apps/details?id=com.google.android.tv.remote`
+- (iOS) Android TV `https://apps.apple.com/ru/app/android-tv/id1078761166`
+
+----
 
 # General issues
 
@@ -78,7 +78,7 @@ App supports 2 ways of sending a stream to a TV (when both are located in the sa
 - If you are using an old Chromecast device (2020 and older) and have Chromecast devices available in the network there will be a button on HUD to send the stream. This does not apply to newer Chromecast that are actually a Google TV device with Android, so you can just install the app and use it via remote, instead of just casting the stream.
 
 ## Having multiple providers, how to manage channels?
-The app has many options on how to manage channels from multiple providers.
+The app has many options on how to manage channels from multiple providers.  
 One the best that suits most use cases (when you need max channels from all providers and do not want to mess on them is):
 - Remove/Hide categories you are not interested in
 - Group channels (move) them so all channels of the same category (like sports) from all providers are located in the same category
@@ -93,8 +93,8 @@ Also quite popular is the quick provider switch option that adds a button on the
 Other, less popular, but still valuable options are to disable category merging between different providers, so “Sports” from provider A will not be merged with “Sports” from provider B, creating different categories instead. Also you can enable showing provider name in the channel name (either as a prefix or as a suffix of a channel)
 
 ## My list of channels messed up when I added a new provider
-Providers are sorted and applied alphabetically. So if you had a provider named “BBB” in the app and made modifications to the groups, channels, etc, and then added a provider named “AAA” then some of the modifications will apply to the new provider “AAA”, since the provider list (as being sorted alphabetically) is now “AAA”, “BBB”.  
-To preserve your metadata, ensure that new providers are AFTER the current ones. For example, you can add a prefix to the provider name like “1 BBB”, and “2 AAA” so alphabetically they will be “1 BBB”, “2 AAA” and channels/categories from the second provider will not be used for modifications made for the first one.
+Providers are sorted and applied alphabetically. So if you had a provider named `BBB` in the app and made modifications to the groups, channels, etc, and then added a provider named `AAA` then some of the modifications will apply to the new provider `AAA`, since the provider list (as being sorted alphabetically) is now `AAA`, `BBB`.  
+To preserve your metadata, ensure that new providers are AFTER the current ones. For example, you can add a prefix to the provider name like `1 BBB`, and `2 AAA` so alphabetically they will be `1 BBB`, `2 AAA` and channels/categories from the second provider will not be used for modifications made for the first one.
 
 ## Time is shown incorrectly on EPG, how to fix that?
 Almost always when you see incorrect time it’s incorrect device setting (selected incorrect timezone), so go to the device settings and setup the time and time zone that correctly matches your region.  
@@ -107,6 +107,8 @@ If this does not help, here are some options available to you to make a virtual 
 
 After any of these changes you need to do manual EPG reload (`settings - epg - reload`) in order to apply the changes.
 
+----
+
 # Playback
 
 ## Buffering way too much
@@ -115,7 +117,6 @@ There might be multiple reasons for buffering - starting from poor Internet conn
 - Change hardware codecs quality to compatibility (settings - player - codec - hardware quality)
 - Disable AmLogic fix (settings - player - codec - amlogic)
 - Change resolution from 4K to Full HD on your device if not watching 4K usually
-
 
 ## Problems with video/audio playback
 Since the streams of your provider can be different, your hardware used for playback has different capabilities and your device firmware has bugs, there is no best configuration. App comes with hardware decoders, software decoders, and support for external player, defaulting to software codecs in most cases as being less dependent on firmware bugs.  
@@ -139,7 +140,7 @@ App tries to detect the number of connections your provider allows to protect yo
 Go to `Settings - Provider - (select your provider) - Parameters - Number of connections`.
 Bear in mind, that you still can use multiple screens (PiP / Studio) using 1-connection providers, if you have a couple of them, since each provider is counted separately.
 
-## Hostname … not verified / Chain validation failed / SSL error when trying to playback (
+## Hostname … not verified / Chain validation failed / SSL error when trying to playback
 This error means that your provider is using invalid SSL certificates (either self-signed or without a trusted root). Your solution might be:
 - Ask provider to either fix the SSL issues or to provide a link to plain http-only configuration
 - Disable certificate validation within the app:
@@ -189,9 +190,9 @@ PS: Since the activation is manual, it may take up to a few days to proceed.
 ## Purchased a premium but it’s not active
 Sometimes it takes a while for Play Store to sync purchases (due to long caching). Steps to guarantee that sync will happen instantly:
 - Go to `settings - premium - restore purchases`. If the process will report that restoration occurred - it means that all is ok, and reactivation has happened. Usually this is the only step required!
-- Clear cache of Play Store app
+- Clear data and cache of Play Store app
 - Clear cache of OTT Navigator app (usually not required)
-- Reboot your device (might not be needed, but usually triggers cache update for Play Market)
+- Reboot your device (might not be needed, but usually triggers cache update for Play Market), and relogin to Play Store
 - Relaunch OTT Navigator
 - (if does not help) Reinstall the app
   - Backup the configuration (settings - extended - backup - backup)
@@ -208,7 +209,7 @@ Recently Play Market stopped processing purchases when the app was not installed
 Play Market: When the device has several Google accounts, then it might switch between accounts by Google services itself, meaning that in-app purchases / subscriptions might be taken from one or other account with almost no user control. Best way to reactivate all purchases to correct account:
 - Uninstall the app (backup is suggested via settings - extended - backup)
 - Open browser on your desktop PC
-- Open play market page in your browser: OTT Navigator IPTV
+- Open play market page in your browser: `https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator`
 - Log in to the web interface of Google Play with the account you used to purchase
 - Install the app from the browser selecting the device to push the app to
 
@@ -221,7 +222,7 @@ The app protects users from purchasing premium while he has active subscriptions
 ----
 
 # Partnership / Reseller
-## Branded app with customization
+## Branded app with customizations
 If interested in whitelabel package (custom logo, background, providers, etc), then contact us via email `ottnav.partners@gmail.com` or reach us on Telegram (contact `@FlavusV`)
 
 ## Preparing devices for other users and wish to hide provider details
@@ -233,24 +234,24 @@ You can configure the app and then hide provider details.
 
 # Technical staff (playlist edit)
 
-## M3U Playlist file sample (an idea of supported tags)
+## M3U Playlist file sample (brief info on supported tags)
 `#EXTM3U`
 Playlist header, marks playlist start  
 Supported attributes:
-- `url-epg="http://path/to/epg/"` : prefix for getting channel epg for exact channel (not recommended)
-- `url-tvg="http://path/to/epg."` : path to EPG teleguide for the whole playlist (either xml or xml.gz format)
-- `url-logo="http://path/to/"` : root for all channel icons (used if channel has icon specified without scheme://domain part)
-- `catchup=".."`
+- `url-epg="http://path/to/epg/api/"` : prefix for getting channel epg for exact channel (not recommended)
+- `url-tvg="http://path/to/epg.xml.gz"` : path to EPG teleguide for the whole playlist (either xml or xml.gz format)
+- `url-logo="http://path/to/icons/root/"` : root for all channel icons (used if channel has icon specified without scheme://domain part)
+- `catchup=".."` : alias for `catchup-type`
 - `catchup-type=".."` : specifies that there are archives for channels. Supported types:
   - "default" - only replace variables
   - "flussonic", "flussonic-hls" - flussonic (HLS)
   - "flussonic-ts" - flussonic (MPEG-TS)
   - "flussonic-dash" - flussonic (MPEG-DASH)
   - "shift" - `?utc=startUnix&lutc=nowUnix`
-  - "archive" - `?archive=startUnix&archive_end..`
+  - "archive" - `?archive=startUnix&archive_end=toUnix`
   - "xc" - xtream codes
   - "append" - appending value specified in catchup-source attribute to the base channel url
-  - "timeshift" - `timeshift=startUnix&timenow=`
+  - "timeshift" - `timeshift=startUnix&timenow=nowUnix`
 - `catchup-time="10800"` : duration for archives being available (in seconds) (not recommended)
 - `catchup-days="3"` : duration for archives being available (in days)
 - `catchup-source="..."` : allows override path for archive playback (or append to the end of the url if catchup-type="append" is set). Supported variables:
@@ -261,53 +262,53 @@ Supported attributes:
   - `${duration}` - show duration (seconds)
 - `max-conn="1"` : if your provider allows user opening more connections at the same time (like watching picture-in-picture) set number of connections here
 - `billed-till="timestamp"` : unix time when user account will expire (will be displayed for user)
-- `billed-msg=”some text”` : custom message regarding user account (might be balance or any other info to be shown)
-- `refresh=”N”` : period of time when the playlist should be reloaded (v1.6.6.1), in hours (if below 24), in minutes (if < 300), or in seconds if a large value, for example: refresh=”3” means refreshing each 3 hours)
+- `billed-msg="some text"` : custom message regarding user account (might be balance or any other info to be shown)
+- `refresh="N"` : period of time when the playlist should be reloaded (`v1.6.6.1`), in hours (if below 24), in minutes (if < 300), or in seconds if a large value, for example: refresh=”3” means refreshing each 3 hours)
 
 `#EXTINF:0  ...,Channel name`
 Channel declaration. Supported attributes:
-- ch-number="27" : default shortcut for channel when using remote keys switching channel
-- group-title="Movies" : category this channel belongs to
-- parent-code="0000" : if set, marks a channel as restricted that should be hidden by default unless code entered (like adult)
-- ch-id="dscru" : channel id. used only with combination when url-epg or url-logo are set in playlist header (appended to the end of the base url)
-- tvg-id="discoveryHd.ru" : channel id in epg teleguide that was linked in the playlist header (or the one user has configured in the current provider properties)
-- tvg-name="Discovery HD" : original channel name (channel name as declared in epg teleguide), if differs from channel name specified in playlist
-- tvg-logo="http://path/to/logo." : link to channel logo (or file name that should be appended to root url set in url-logo in playlist header)
-- tvg-rec="1" : marker that channel contains archives (0 - off, 1 - on). not needed if catchup* attribute is present (values more than 1 are parsed like aliases for catchup-days=”n”)
-- catchup* : all catchup settings that are explained in header can be overridden here on channel level
-- type="playlist", content-type="playlist" : allows to merge another playlist inside the current one. Url specified for this 'channel' is treated as include
-- type=”movie”, type=”series” : use any of these 2 markers to mark that the channel listed is not a channel, but actually a movie or a series, and should be treated as such, and should be placed to media library
-- adult="1" : marker that channel is adult (however it’s highly recommended to place all channels in single adult category for simpler user manage)
-- tvg-shift="-2" : marker specifying that epg data should be shifted by several hours
-- audio-track=”2” : try to autoselect 2nd audio track
+- `ch-number="27"` : default shortcut for channel when using remote keys switching channel
+- `group-title="Movies"` : category this channel belongs to
+- `parent-code="0000"` : if set, marks a channel as restricted that should be hidden by default unless code entered (like adult)
+- `ch-id=".."` : channel id. used only with combination when url-epg or url-logo are set in playlist header (appended to the end of the base url)
+- `tvg-id="abc.yz"` : channel id in epg teleguide that was linked in the playlist header (or the one user has configured in the current provider properties)
+- `tvg-name="Original"` : original channel name (channel name as declared in epg teleguide), if differs from channel name specified in playlist
+- `tvg-logo="http://path/to/logo.jpg"` : link to channel logo (or file name that should be appended to root url set in url-logo in playlist header)
+- `tvg-rec="1"` : marker that channel contains archives (0 - off, 1 - on). not needed if catchup* attribute is present (values more than 1 are parsed like aliases for catchup-days=”n”)
+- `catchup*` : all catchup settings that are explained in header can be overridden here on channel level
+- `type="playlist"`, `content-type="playlist"` : allows to merge another playlist inside the current one. Url specified for this 'channel' is treated as include
+- `type="movie"`, `type="series"` : use any of these 2 markers to mark that the channel listed is not a channel, but actually a movie or a series, and should be treated as such, and should be placed to media library
+- `adult="1"` : marker that channel is adult (however it’s highly recommended to place all channels in single adult category for simpler user manage)
+- `tvg-shift="-2"` : marker specifying that epg data should be shifted by several hours
+- `audio-track="2"` : try to autoselect 2nd audio track
 
-`#EXTGRP: Sports`
-Alternative way to setup channel category (but group-title=”Sports” is preferrable)
+`#EXTGRP: Sports` - alias for `group-title` tag
 
 `#EXTVLCOPT:parameter="value"`
 Allows setting some custom parameters for the current channel:
-- http-user-agent (User-Agent)
-- http-referrer (HTTP referrer)
+- `http-user-agent` (User-Agent)
+- `http-referrer` (HTTP referrer)
 
 `#KODIPROP:parameter=value`
 Allows setting some custom parameters for the current channel. Supported `parameter` are:
-- inputstream.adaptive.license_
+- inputstream.adaptive.license_type (DRM type, can be one of the following):
   - com.widevine.alpha (Widevine)
   - clearkey (ClearKey)
   - playready (PlayReady)
-- inputstream.adaptive.license_key
-- inputstream.adaptive.stream_type
+- `inputstream.adaptive.license_key` (License key or URL depending on the DRM type; URLs should start from `http://` or `https://`, otherwise it’s a non-url key) and is considered being static
+- `inputstream.adaptive.stream_headers` (extra headers, if required. For example `param1=value1&param2=value2&param3=value3`) (`v1.6.4.1`)
 
-The app also accepts extra stream headers configured after `|` character in license_key (from v1.6.4.1)
+The app also accepts extra stream headers configured after `|` character in license_key (`v1.6.4.1`)
 
 ## Media library file (json)
 App supports multiple formats for media library, but preferred format is json:
 
-Inner structure of the item ("info" field of movie/series/season/episodes)
-    • on no data - can be not added
-    • rating - 0-10, might be decimal like 5.6
-    • added - date when added (unix timestamp)
-    • ttl - available till (unix timestamp) if will be removed at this time
+### Inner structure of the item ("info" field of movie/series/season/episodes)
+- on no data - can be not added
+- rating - 0-10, might be decimal like 5.6
+- added - date when added (unix timestamp)
+- ttl - available till (unix timestamp) if will be removed at this time
+Sample:
 ```
 "info": {
     "poster": "http://poster/image.jpg",
@@ -325,13 +326,15 @@ Inner structure of the item ("info" field of movie/series/season/episodes)
     "ttl": 12354235
 }
 ```
-Outer structure of the json file
-    • if no data, do not add a field; "info" is also not obligated field anywhere
-    • category - not mandatory field (if specified, the item will be placed in the folder).. might be either a "MyCat" or a json like {"name":"MyCat","icon":"http:/
-    • field "video" means it's a movie, "season" means it's series
-    • for episode "duration" in seconds
-    • "name" is episode name (if applicable)
-    • episodes and season numbers are not mandatory if they are listed incrementally (1, 2, 3, ..)
+
+### Outer structure of the json file
+- if no data, do not add a field; "info" is also not obligated field anywhere
+- category - not mandatory field (if specified, the item will be placed in the folder).. might be either a "MyCat" or a json like `{"name":"MyCat","icon":"http:/..jpg"}`
+- field "video" means it's a movie, "season" means it's series
+- for episode "duration" in seconds
+- "name" is episode name (if applicable)
+- episodes and season numbers are not mandatory if they are listed incrementally (1, 2, 3, ..)
+Sample:
 ```
 [
 {
@@ -362,20 +365,20 @@ Outer structure of the json file
 ]
 ```
 
-so resulting file would be something like:
+So resulting file would be something like:
 `[ {item1}, {item2}, {item3}, {item4} ]`
 
 where items are described in previous section, and can include also an info field described in the first section
 
 
-
+----
 
 # More information
 
 ## Localization (fix translation or add a new one)
 Translations are being available online at `http://github.com/ottnav/ott-nav-locale/` (source language supported by developer is English, you can take it as a base).
 Then you choose either:
-- (Github way for tech-ready): fork the repository, make your changes and submit a pull request
+- (Github way for tech-ready guys): fork the repository, make your changes and submit a pull request
 - (Easy way for normal people): just download the corresponding xml file (or create a new one taking strings.xml as a base contents), make changes that are required and send it to us via email
 
 ## Changelog

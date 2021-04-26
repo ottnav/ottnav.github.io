@@ -1,5 +1,5 @@
 ---
-title: OTT Navigator :: FAQ
+title: OTT Navigator FAQ
 ---
 
 # Installation

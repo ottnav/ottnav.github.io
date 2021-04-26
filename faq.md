@@ -265,43 +265,42 @@ Supported attributes:
 - `refresh=”N”` : period of time when the playlist should be reloaded (v1.6.6.1), in hours (if below 24), in minutes (if < 300), or in seconds if a large value, for example: refresh=”3” means refreshing each 3 hours)
 
 `#EXTINF:0  ...,Channel name`
-Channel declaration  
-Supported attributes:
-    • ch-number="27" : default shortcut for channel when using remote keys switching channel
-    • group-title="Movies" : category this channel belongs to
-    • parent-code="0000" : if set, marks a channel as restricted that should be hidden by default unless code entered (like adult)
-    • ch-id="dscru" : channel id. used only with combination when url-epg or url-logo are set in playlist header (appended to the end of the base url)
-    • tvg-id="discoveryHd.ru" : channel id in epg teleguide that was linked in the playlist header (or the one user has configured in the current provider properties)
-    • tvg-name="Discovery HD" : original channel name (channel name as declared in epg teleguide), if differs from channel name specified in playlist
-    • tvg-logo="http://path/to/logo." : link to channel logo (or file name that should be appended to root url set in url-logo in playlist header)
-    • tvg-rec="1" : marker that channel contains archives (0 - off, 1 - on). not needed if catchup* attribute is present (values more than 1 are parsed like aliases for catchup-days=”n”)
-    • catchup* : all catchup settings that are explained in header can be overridden here on channel level
-    • type="playlist", content-type="playlist" : allows to merge another playlist inside the current one. Url specified for this 'channel' is treated as include
-    • type=”movie”, type=”series” : use any of these 2 markers to mark that the channel listed is not a channel, but actually a movie or a series, and should be treated as such, and should be placed to media library
-    • adult="1" : marker that channel is adult (however it’s highly recommended to place all channels in single adult category for simpler user manage)
-    • tvg-shift="-2" : marker specifying that epg data should be shifted by several hours
-    • audio-track=”2” : try to autoselect 2nd audio track
+Channel declaration. Supported attributes:
+- ch-number="27" : default shortcut for channel when using remote keys switching channel
+- group-title="Movies" : category this channel belongs to
+- parent-code="0000" : if set, marks a channel as restricted that should be hidden by default unless code entered (like adult)
+- ch-id="dscru" : channel id. used only with combination when url-epg or url-logo are set in playlist header (appended to the end of the base url)
+- tvg-id="discoveryHd.ru" : channel id in epg teleguide that was linked in the playlist header (or the one user has configured in the current provider properties)
+- tvg-name="Discovery HD" : original channel name (channel name as declared in epg teleguide), if differs from channel name specified in playlist
+- tvg-logo="http://path/to/logo." : link to channel logo (or file name that should be appended to root url set in url-logo in playlist header)
+- tvg-rec="1" : marker that channel contains archives (0 - off, 1 - on). not needed if catchup* attribute is present (values more than 1 are parsed like aliases for catchup-days=”n”)
+- catchup* : all catchup settings that are explained in header can be overridden here on channel level
+- type="playlist", content-type="playlist" : allows to merge another playlist inside the current one. Url specified for this 'channel' is treated as include
+- type=”movie”, type=”series” : use any of these 2 markers to mark that the channel listed is not a channel, but actually a movie or a series, and should be treated as such, and should be placed to media library
+- adult="1" : marker that channel is adult (however it’s highly recommended to place all channels in single adult category for simpler user manage)
+- tvg-shift="-2" : marker specifying that epg data should be shifted by several hours
+- audio-track=”2” : try to autoselect 2nd audio track
 
-#EXTGRP: Sports
+`#EXTGRP: Sports`
 Alternative way to setup channel category (but group-title=”Sports” is preferrable)
 
-#EXTVLCOPT:parameter="value"
+`#EXTVLCOPT:parameter="value"`
 Allows setting some custom parameters for the current channel:
-    • http-user-agent (User-Agent)
-    • http-referrer (HTTP referrer)
+- http-user-agent (User-Agent)
+- http-referrer (HTTP referrer)
 
-#KODIPROP:parameter=value
+`#KODIPROP:parameter=value`
 Allows setting some custom parameters for the current channel. Supported `parameter` are:
-    • inputstream.adaptive.license_
-        ◦ com.widevine.alpha (Widevine)
-        ◦ clearkey (ClearKey)
-        ◦ playready (PlayReady)
-    • inputstream.adaptive.license_
-    • inputstream.adaptive.stream_
+- inputstream.adaptive.license_
+  - com.widevine.alpha (Widevine)
+  - clearkey (ClearKey)
+  - playready (PlayReady)
+- inputstream.adaptive.license_key
+- inputstream.adaptive.stream_type
 
-The app also accepts extra stream headers configured after `|` character in license_key [from v1.6.4.1]
+The app also accepts extra stream headers configured after `|` character in license_key (from v1.6.4.1)
 
-Media library file (json)
+## Media library file (json)
 App supports multiple formats for media library, but preferred format is json:
 
 Inner structure of the item ("info" field of movie/series/season/episodes)
@@ -309,6 +308,7 @@ Inner structure of the item ("info" field of movie/series/season/episodes)
     • rating - 0-10, might be decimal like 5.6
     • added - date when added (unix timestamp)
     • ttl - available till (unix timestamp) if will be removed at this time
+```
 "info": {
     "poster": "http://poster/image.jpg",
     "bg": "http://background/image.jpg",
@@ -324,6 +324,7 @@ Inner structure of the item ("info" field of movie/series/season/episodes)
     "adult": true,
     "ttl": 12354235
 }
+```
 Outer structure of the json file
     • if no data, do not add a field; "info" is also not obligated field anywhere
     • category - not mandatory field (if specified, the item will be placed in the folder).. might be either a "MyCat" or a json like {"name":"MyCat","icon":"http:/
@@ -331,6 +332,7 @@ Outer structure of the json file
     • for episode "duration" in seconds
     • "name" is episode name (if applicable)
     • episodes and season numbers are not mandatory if they are listed incrementally (1, 2, 3, ..)
+```
 [
 {
     "name": "Test video",
@@ -358,46 +360,38 @@ Outer structure of the json file
     ]
 }
 ]
+```
 
 so resulting file would be something like:
-[ {item1}, {item2}, {item3}, {item4} ]
+`[ {item1}, {item2}, {item3}, {item4} ]`
 
 where items are described in previous section, and can include also an info field described in the first section
 
 
 
 
-More information
-(Russian) : Frequently Asked Questions https://bit.ly/ottnav_faq_ru (official)
-(Russian) : http://bit.ly/ottnav_ (unofficial)
+# More information
 
-Localization (fix translation or add a new one)
-Translations are being available online at https://github.com/ottnav/ott- (source language supported by developer is English, you can take it as a base).
+## Localization (fix translation or add a new one)
+Translations are being available online at `http://github.com/ottnav/ott-nav-locale/` (source language supported by developer is English, you can take it as a base).
 Then you choose either:
-    • (Github way for tech-ready): fork the repository, make your changes and submit a pull request
-    • (Easy way for normal people): just download the corresponding xml file (or create a new one taking strings.xml as a base contents), make changes that are required and send it to us via email
+- (Github way for tech-ready): fork the repository, make your changes and submit a pull request
+- (Easy way for normal people): just download the corresponding xml file (or create a new one taking strings.xml as a base contents), make changes that are required and send it to us via email
 
-Channel / Category templates (add icon, category or epg mapping when provider does not offer this
-Channel templates are available at https://github.com/ottnav/
-You can fork the repository and create a pull request suggesting your changes to template adding epg id, category name, or channel icon url to be used by the app.
-To ensure that templates are re-read by app, cache clear is required
+## Changelog
+Changes are published on Telegram `https://t.me/ottnav` or available at `http://bit.ly/ottnav_changelog`
 
-Changelog
-Changes are published on Telegram https://t.me/ottnav or available at http://bit.ly/ottnav_changelog
+## Availability
+Play Market: `http://bit.ly/2PQEAVf `
+Play Market build (direct link for sideloading): `http://bit.ly/ottnav_latest_gp`
+Play Market (beta versions): `http://bit.ly/2PrwwcH` (note that beta versions will not arrive immediately after subscribing)
+Huawei AppGallery: `https://bit.ly/2WHhIvQ`
+Aptoide market: `http://bit.ly/2CqiYcr`
 
-Availability
-Play Market: http://bit.ly/2PQEAVf 
-Play Market build (direct link for sideloading): http://bit.ly/ottnav_latest_gp
-Play Market (beta versions): http://bit.ly/2PrwwcH (note that beta versions will not arrive immediately after subscribing)
-Huawei AppGallery: https://bit.ly/2WHhIvQ
-Aptoide market: http://bit.ly/2CqiYcr 
-
-Contacts
-Support chat on Telegram https://t.me/ottnav_global
-Contact the developer directly at scillarium.studio@gmail.com
-White label / branding contact ottnav.partners@gmail.com
-Reddit https://www.reddit.com/r/
-Twitter https://twitter.com/OttNav 
-Privacy policy http://ott-nav.com/privacy_ 
-
-
+## Contacts
+Support chat on Telegram `https://t.me/ottnav_global`
+Contact the developer directly at `scillarium.studio@gmail.com`
+White label / branding contact `ottnav.partners@gmail.com`
+Reddit `https://www.reddit.com/r/`
+Twitter `https://twitter.com/OttNav` 
+Privacy policy `http://ott-nav.com/privacy_policy.html`

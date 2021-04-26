@@ -162,103 +162,110 @@ When it’s not possible, you can also try one of the following:
 In order to play DRM-protected contents you need to pass the correct DRM keys and extra data in the playlist. Check the M3U playlist structure on clues how to setup it.  
 Please note, that DRM playback is only supported using hardware codecs - so using software VLC, system or external player has no way to pass these license data.
 
-Premium
-How many devices does Premium allow
+----
+
+# Premium
+## How many devices does Premium allow
 Premium will be active on all your devices that, as long, as they:
-    1. Have Google services working (with Play Store)
-    2. Using the same Google account
+- Have Google services working (with Play Store)
+- Using the same Google account
 
-For non-Google devices, please check FAQ.
-PS: Sometimes Play Store takes a while to sync purchases. Check FAQ how to speed up the process.
+For non-Google devices, please check FAQ.  
+PS: Sometimes Play Store takes a while to sync purchases. Check FAQ how to speed up the process.  
+PPS: Fair use policy is insisted, using same Google Account and using it on tons of devices are a clear violation.
 
-Enable premium on a Firestick (or other device without play market)
+## Enable premium on a Firestick (or other device without play market)
 Recommended solution:
-1. Use Android device with Play Market to purchase premium as a single payment. Yearly subscription is also ok (monthly is not).
-2. Find notification email from Google with purchase number (GPA.123.456..), that will be required later on
-3. Forward this email or send this number to us; If you failed to find the purchase number, you can send your email name (google account used by you when purchased premium).
-4. On the device with Fire Stick attached launch the app
-5. Go to the settings - about - installation id; and send this number to us (either paste from clipboard, or scan QR code)
-So we will activate the premium on this device
-WARNING: This number will drop if you uninstall app or remove app data
-PS: If you already purchased a subscription, you should refund it (or send us the purchase number GPA.123.456… so we will refund it) and buy app via one-time payment in order to be able to bind your purchase to the installation id on the non-play market device.
-
+- Use Android device with Play Market to purchase premium as a single payment. Yearly subscription is also ok (monthly is not).
+- Find notification email from Google with purchase number (`GPA.123.456..`), that will be required later on
+- Forward this email or send this number to us; If you failed to find the purchase number, you can send your email name (google account used by you when purchased premium).
+- On the device with Fire Stick attached launch the app
+- Go to the `settings - about - installation id`; and send this number to us (either paste from clipboard, or scan QR code)
+So we will activate the premium on this device  
+WARNING: This number will drop if you uninstall app or remove app data  
+PS: If you already purchased a subscription, you should refund it (or send us the purchase number GPA.123.456… so we will refund it) and buy app via one-time payment in order to be able to bind your purchase to the installation id on the non-play market device.  
 PS: Since the activation is manual, it may take up to a few days to proceed.
 
-Purchased a premium but it’s not active
+## Purchased a premium but it’s not active
 Sometimes it takes a while for Play Store to sync purchases (due to long caching). Steps to guarantee that sync will happen instantly:
-    1. Go to settings - premium - restore purchases. If the process will report that restoration occurred - it means that all is ok, and reactivation has happened.
-    2. Clear cache of Play Store app
-    3. Clear cache of OTT Navigator app (usually not required)
-    4. Reboot your device (might not be needed, but usually triggers cache update for Play Market)
-    5. Relaunch OTT Navigator
-    6. (if does not help) Reinstall the app
-        1. Backup the configuration (settings - extended - backup - backup)
-        2. Write down the backup code
-        3. Delete the app
-        4. Install the app, restore the backup
-        5. Launch the app
-    7. In case it does not help - contact our support (specifying google account used for purchase, or purchase number GPA…)
+- Go to `settings - premium - restore purchases`. If the process will report that restoration occurred - it means that all is ok, and reactivation has happened. Usually this is the only step required!
+- Clear cache of Play Store app
+- Clear cache of OTT Navigator app (usually not required)
+- Reboot your device (might not be needed, but usually triggers cache update for Play Market)
+- Relaunch OTT Navigator
+- (if does not help) Reinstall the app
+  - Backup the configuration (settings - extended - backup - backup)
+  - Write down the backup code
+  - Delete the app
+  - Install the app, restore the backup
+  - Launch the app
+- In case it does not help - contact our support (specifying google account used for purchase, or purchase number GPA…)
 
-Unable to process purchase (Error DF-PDP-3)
+## Unable to process purchase (Error DF-PDP-3)
 Recently Play Market stopped processing purchases when the app was not installed from it. Install application from play market and payment should work.
 
-Premium and multiple accounts on a single device
+## Premium and multiple accounts on a single device
 Play Market: When the device has several Google accounts, then it might switch between accounts by Google services itself, meaning that in-app purchases / subscriptions might be taken from one or other account with almost no user control. Best way to reactivate all purchases to correct account:
-    1. Uninstall the app (backup is suggested via settings - extended - backup)
-    2. Open browser on your desktop PC
-    3. Open play market page in your browser: OTT Navigator IPTV
-    4. Log in to the web interface of Google Play with the account you used to purchase
-    5. Install the app from the browser selecting the device to push the app to
+- Uninstall the app (backup is suggested via settings - extended - backup)
+- Open browser on your desktop PC
+- Open play market page in your browser: OTT Navigator IPTV
+- Log in to the web interface of Google Play with the account you used to purchase
+- Install the app from the browser selecting the device to push the app to
 
-Will the premium purchase work for Family Library?
+## Will the premium purchase work for Family Library?
 No, family library only apply to paid apps. Free apps with in-app purchases are not eligible for this. You can still use the app on several devices that share the same account.
 
-Currently subscribed to premium, willing to purchase via single payment forever
+## Currently subscribed to premium, willing to purchase via single payment forever
 The app protects users from purchasing premium while he has active subscriptions (since it might lead to a person having both subscription and purchase), so you should cancel your subscription (it will continue working for the rest of subscribed period). And after some time an option to buy the app using a single payment will become available.
 
-Partnership / Reseller
-Branded app with customization
-If interested in whitelabel package (custom logo, background, providers, etc), then contact us via email ottnav.partners@gmail.com or reach us on Telegram (contact @FlavusV)
+----
 
-Preparing devices for other users and wish to hide provider details
+# Partnership / Reseller
+## Branded app with customization
+If interested in whitelabel package (custom logo, background, providers, etc), then contact us via email `ottnav.partners@gmail.com` or reach us on Telegram (contact `@FlavusV`)
+
+## Preparing devices for other users and wish to hide provider details
 You can configure the app and then hide provider details.
-Go to the settings - extended, and long press the status line.
-You will be asked for a service code (if set) or receive access to service panel, that allows you changing the service code and/or disable provider settings details availability.
+- Go to the `settings - extended`, and long press the status line.
+- You will be asked for a service code (if set) or receive access to service panel, that allows you changing the service code and/or disable provider settings details availability.
 
-Technical staff (playlist edit)
-M3U Playlist file sample (an idea of supported tags)
+----
 
-#EXTM3U
-Playlist header, marks playlist start
+# Technical staff (playlist edit)
+
+## M3U Playlist file sample (an idea of supported tags)
+`#EXTM3U`
+Playlist header, marks playlist start  
 Supported attributes:
-    • url-epg="http://path/to/epg/" : prefix for getting channel epg for exact channel (not recommended)
-    • url-tvg="http://path/to/epg." : path to EPG teleguide for the whole playlist (either xml or xml.gz format)
-    • url-logo="http://path/to/" : root for all channel icons (used if channel has icon specified without scheme://domain part)
-    • catchup=".."
-    • catchup-type=".." : specifies that there are archives for channels. Supported types:
-        ◦ "default" - only replace variables
-        ◦ "flussonic", "flussonic-hls" - flussonic (HLS)
-        ◦ "flussonic-ts" - flussonic (MPEG-TS)
-        ◦ "flussonic-dash" - flussonic (MPEG-DASH)
-        ◦ "shift" - ?utc=startUnix&lutc=nowUnix
-        ◦ "archive" - ?archive=startUnix&archive_
-        ◦ "xc" - xtream codes
-        ◦ "append" - appending value specified in catchup-source attribute to the base channel url
-        ◦ "timeshift" - timeshift=startUnix&timenow=
-    • catchup-time="10800" : duration for archives being available (in seconds) (not recommended)
-    • catchup-days="3" : duration for archives being available (in days)
-    • catchup-source="..." : allows override path for archive playback (or append to the end of the url if catchup-type="append" is set). Supported variables:
-        ◦ {key}, ${token} - user-configured token
-        ◦ ${start}, {utc} - fromUnix
-        ◦ ${timestamp}, {current_utc} - nowUnix
-        ◦ ${login}, ${password} - user-configured login and password
-        ◦ ${duration} - show duration (seconds)
-    • max-conn="1" : if your provider allows user opening more connections at the same time (like watching picture-in-picture) set number of connections here
-    • billed-till="timestamp" : unix time when user account will expire (will be displayed for user)
-    • billed-msg=”some text” : custom message regarding user account (might be balance or any other info to be shown)
-    • refresh=”N” : period of time when the playlist should be reloaded (v1.6.6.1), in hours (if below 24), in minutes (if < 300), or in seconds if a large value, for example: refresh=”3” means refreshing each 3 hours)
-#EXTINF:0  ...,Channel name
-Channel declaration
+- `url-epg="http://path/to/epg/"` : prefix for getting channel epg for exact channel (not recommended)
+- `url-tvg="http://path/to/epg."` : path to EPG teleguide for the whole playlist (either xml or xml.gz format)
+- `url-logo="http://path/to/"` : root for all channel icons (used if channel has icon specified without scheme://domain part)
+- `catchup=".."`
+- `catchup-type=".."` : specifies that there are archives for channels. Supported types:
+  - "default" - only replace variables
+  - "flussonic", "flussonic-hls" - flussonic (HLS)
+  - "flussonic-ts" - flussonic (MPEG-TS)
+  - "flussonic-dash" - flussonic (MPEG-DASH)
+  - "shift" - `?utc=startUnix&lutc=nowUnix`
+  - "archive" - `?archive=startUnix&archive_end..`
+  - "xc" - xtream codes
+  - "append" - appending value specified in catchup-source attribute to the base channel url
+  - "timeshift" - `timeshift=startUnix&timenow=`
+- `catchup-time="10800"` : duration for archives being available (in seconds) (not recommended)
+- `catchup-days="3"` : duration for archives being available (in days)
+- `catchup-source="..."` : allows override path for archive playback (or append to the end of the url if catchup-type="append" is set). Supported variables:
+  - `{key}`, `${token}` - user-configured token
+  - `${start}`, `{utc}` - fromUnix
+  - `${timestamp}`, `{current_utc}` - nowUnix
+  - `${login}`, `${password}` - user-configured login and password
+  - `${duration}` - show duration (seconds)
+- `max-conn="1"` : if your provider allows user opening more connections at the same time (like watching picture-in-picture) set number of connections here
+- `billed-till="timestamp"` : unix time when user account will expire (will be displayed for user)
+- `billed-msg=”some text”` : custom message regarding user account (might be balance or any other info to be shown)
+- `refresh=”N”` : period of time when the playlist should be reloaded (v1.6.6.1), in hours (if below 24), in minutes (if < 300), or in seconds if a large value, for example: refresh=”3” means refreshing each 3 hours)
+
+`#EXTINF:0  ...,Channel name`
+Channel declaration  
 Supported attributes:
     • ch-number="27" : default shortcut for channel when using remote keys switching channel
     • group-title="Movies" : category this channel belongs to

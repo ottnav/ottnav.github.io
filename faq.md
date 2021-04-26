@@ -1,5 +1,21 @@
-# OTT Navigator FAQ
 {:toc}
+
+# OTT Navigator FAQ
+## What is OTT Navigator?
+OTT Navigator is a video player dedicated to work with streamed and vod content, usually provided by `OTT/IPTV` providers
+
+## Which IPTV service should I use, or which is used by the app?
+The app is just a player and neither has any content, nor can provide you any. In order to use it, you need having an IPTV provider and configuring it within the app.
+
+## How can I contribute to the app development?
+- Translate to your language or improve current translations## Localization (fix translation or add a new one)
+  - Translations are being available online at [github](http://github.com/ottnav/ott-nav-locale/) (source language supported by developer is English, you can take it as a base).
+  - Then you choose either:
+    - (Github way for tech-ready guys): fork the repository, make your changes and submit a pull request
+    - (Easy way for normal people): just download the corresponding xml file (or create a new one taking strings.xml as a base contents), make changes that are required and send it to us via email
+- Provide high-quality detailed description on the issues you are experiencing, and suggestions you feel will perfectly fit the app.
+
+----
 
 # Installation
 
@@ -23,9 +39,19 @@ So if you choose an LG/Samsung TV (the only 2 major vendors that do not use Andr
 
 # Provider (playlist) configuration
 
-## Playlist file setup
+## Which provider template should I choose?
+- If your playlist contains something like `.../get.php?username=...&password=...&type=m3u_plus&output=...` most probably your choice is Xtream Codes template
+- If the url contains something like `/stalker_portal/c/` then you should select either MAC or Stalker portal
+- If you have a m3u file downloaded from provider, you should either upload it and setup as a Playlist (recommended), or configure as a Playlist File
+- In other cases configuring as Playlist is generally preferable
+
+## What playlist formats are supported
+- Preffered format is [M3U/M3U8](https://en.wikipedia.org/wiki/M3U)
+- However, the app also supports lots of more exotic formats (the support might be limited though), including `WebOS webtv`, `Tizen nStream`, `.xspf`, `.tv`, `sat .txt`, etc
+
+## Playlist setup
 Your options are one of the following (it’s always preferred to use links over files):
-- Use a specialized service like `https://m3u4u.com/` or `https://app.m3u.in/` to upload your playlist and configure a link to it
+- Use a specialized service like [m3u4u](https://m3u4u.com/) or [m3u.in](https://app.m3u.in/) to upload your playlist and configure a link to it
 - Use any cloud storage service you prefer. For example, if using Dropbox:
   - Copy a playlist file to your personal Dropbox cloud storage
   - In a context menu select `Dropbox -> Copy Link`
@@ -33,12 +59,6 @@ Your options are one of the following (it’s always preferred to use links over
   - (Not recommended) copy file to Downloads directory, so the app will see it. However, file access is being limited in Android from version-to-version, and especially on Android TV devices, so better use any of the cloud storage.
   - (For admins) make a web server in the local network that is bind to host “iptv.local” and ensure that your playlist is available by HTTP request to `iptv.local/playlist.m3u` and the app will auto-detect the playlist
   - Also you can setup the player on your phone (not using files, links only!) and then use the backup/restore feature of the app to transfer configuration to your TV/box device!
-
-## Which provider template should I choose?
-- If your playlist contains something like `.../get.php?username=...&password=...&type=m3u_plus&output=...` most probably your choice is Xtream Codes template
-- If the url contains something like `/stalker_portal/c/` then you should select either MAC or Stalker portal
-- If you have a m3u file downloaded from provider, you should either upload it and setup as a Playlist (recommended), or configure as a Playlist File
-- In other cases configuring as Playlist is generally preferable
 
 ## Getting IP blocked by provider (or 403 error)
 These issues might be caused by different provider paranoid flood settings/connection restrictions that can affect access to service. Here are some recommendations if you experience such a problem:
@@ -58,8 +78,8 @@ If you configure EPG source in `Settings - EPG - User-provided` then matching by
 
 ## Want easier way to input characters on my Android TV device (from Phone)
 Some of the control apps recommended to serve as a secondary output to your TV/box:
-- (Android) Android TV Remote Control `https://play.google.com/store/apps/details?id=com.google.android.tv.remote`
-- (iOS) Android TV `https://apps.apple.com/ru/app/android-tv/id1078761166`
+- (Android) [Android TV Remote Control](https://play.google.com/store/apps/details?id=com.google.android.tv.remote)
+- (iOS) [Android TV](https://apps.apple.com/ru/app/android-tv/id1078761166)
 
 ----
 
@@ -106,6 +126,11 @@ If this does not help, here are some options available to you to make a virtual 
     • (if using portal) open `provider properties - time shift`
 
 After any of these changes you need to do manual EPG reload (`settings - epg - reload`) in order to apply the changes.
+
+## How to protect some content from other users (parental control)
+There are multiple ways to achive this
+- Child mode (`settings - extended - child mode`) allows to specify which exact channels are available and hides all the other contect (PIN-protected)
+- Restricted mode (`settings - extended - restrict`) allows you to setup a PIN code and protect settings, provider info, or categories/channels, etc to be available
 
 ----
 
@@ -209,7 +234,7 @@ Recently Play Market stopped processing purchases when the app was not installed
 Play Market: When the device has several Google accounts, then it might switch between accounts by Google services itself, meaning that in-app purchases / subscriptions might be taken from one or other account with almost no user control. Best way to reactivate all purchases to correct account:
 - Uninstall the app (backup is suggested via settings - extended - backup)
 - Open browser on your desktop PC
-- Open play market page in your browser: `https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator`
+- Open play market page [in your browser](https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator)
 - Log in to the web interface of Google Play with the account you used to purchase
 - Install the app from the browser selecting the device to push the app to
 
@@ -239,7 +264,7 @@ You can configure the app and then hide provider details.
 Playlist header, marks playlist start  
 Supported attributes:
 - `url-epg="http://path/to/epg/api/"` : prefix for getting channel epg for exact channel (not recommended)
-- `url-tvg="http://path/to/epg.xml.gz"` : path to EPG teleguide for the whole playlist (either xml or xml.gz format)
+- `url-tvg="http://path/to/epg.xml.gz"` : path to EPG teleguide for the whole playlist (`XmlTv` format that is either `xml` or `xml.gz`)
 - `url-logo="http://path/to/icons/root/"` : root for all channel icons (used if channel has icon specified without scheme://domain part)
 - `catchup=".."` : alias for `catchup-type`
 - `catchup-type=".."` : specifies that there are archives for channels. Supported types:
@@ -265,7 +290,7 @@ Supported attributes:
 - `billed-msg="some text"` : custom message regarding user account (might be balance or any other info to be shown)
 - `refresh="N"` : period of time when the playlist should be reloaded (`v1.6.6.1+`), in hours (if below 24), in minutes (if < 300), or in seconds if a large value, for example: refresh=”3” means refreshing each 3 hours)
 
-`#EXTINF:0  ...,Channel name`
+`#EXTINF:0 tag1="value1" tag2="value2"...,Channel name`
 Channel declaration. Supported attributes:
 - `ch-number="27"` : default shortcut for channel when using remote keys switching channel
 - `group-title="Movies"` : category this channel belongs to
@@ -294,11 +319,21 @@ Allows setting some custom parameters for the current channel. Supported `parame
 - inputstream.adaptive.license_type (DRM type, can be one of the following):
   - com.widevine.alpha (Widevine)
   - clearkey (ClearKey)
-  - playready (PlayReady)
+  - com.microsoft.playready (PlayReady)
 - `inputstream.adaptive.license_key` (License key or URL depending on the DRM type; URLs should start from `http://` or `https://`, otherwise it’s a non-url key) and is considered being static
 - `inputstream.adaptive.stream_headers` (extra headers, if required. For example `param1=value1&param2=value2&param3=value3`) (`v1.6.4.1+`)
+Syntax is generally compatible with KODI inputStream.Adaptive plugin declared at [xbmc](https://github.com/xbmc/inputstream.adaptive)
 
 The app also accepts extra stream headers configured after `|` character in license_key (`v1.6.4.1+`)
+
+### A basic M3U file format sample
+```
+#EXTM3U url-tvg="http://example.com/epg.xml.gz"
+#EXTINF:-1 group-title="Music", Music 1
+http://example.com/channel/01
+#EXTINF:-1 group-title="Sports", Sports News
+http://example.com/channel/02
+```
 
 ## Media library file (json)
 App supports multiple formats for media library, but preferred format is json:
@@ -375,26 +410,20 @@ where items are described in previous section, and can include also an info fiel
 
 # More information
 
-## Localization (fix translation or add a new one)
-Translations are being available online at `http://github.com/ottnav/ott-nav-locale/` (source language supported by developer is English, you can take it as a base).
-Then you choose either:
-- (Github way for tech-ready guys): fork the repository, make your changes and submit a pull request
-- (Easy way for normal people): just download the corresponding xml file (or create a new one taking strings.xml as a base contents), make changes that are required and send it to us via email
-
 ## Changelog
-Changes are published on Telegram `https://t.me/ottnav` or available at `http://bit.ly/ottnav_changelog`
+Changes are published on [Telegram](https://t.me/ottnav) or [available at](http://bit.ly/ottnav_changelog)
 
 ## Availability
-Play Market: `http://bit.ly/2PQEAVf `
-Play Market build (direct link for sideloading): `http://bit.ly/ottnav_latest_gp`
-Play Market (beta versions): `http://bit.ly/2PrwwcH` (note that beta versions will not arrive immediately after subscribing)
-Huawei AppGallery: `https://bit.ly/2WHhIvQ`
-Aptoide market: `http://bit.ly/2CqiYcr`
+[Play Market](http://bit.ly/2PQEAVf)
+[Play Market build (direct link for sideloading)](http://bit.ly/ottnav_latest_gp)
+[Play Market (beta versions)](http://bit.ly/2PrwwcH) (note that beta versions will not arrive immediately after subscribing)
+[Huawei AppGallery](https://bit.ly/2WHhIvQ)
+[Aptoide market](http://bit.ly/2CqiYcr)
 
 ## Contacts
-Support chat on Telegram `https://t.me/ottnav_global`
+[Support chat on Telegram](https://t.me/ottnav_global)
 Contact the developer directly at `scillarium.studio@gmail.com`
 White label / branding contact `ottnav.partners@gmail.com`
-Reddit `https://www.reddit.com/r/`
-Twitter `https://twitter.com/OttNav` 
-Privacy policy `http://ott-nav.com/privacy_policy.html`
+[Reddit](https://www.reddit.com/r/)
+[Twitter](https://twitter.com/OttNav)
+[Privacy Policy](http://ott-nav.com/privacy_policy.html)

@@ -414,16 +414,16 @@ where items are described in previous section, and can include also an info fiel
 Changes are published on [Telegram](https://t.me/ottnav) or [available at](http://bit.ly/ottnav_changelog)
 
 ## Availability
-[Play Market](http://bit.ly/2PQEAVf)
-[Play Market build (direct link for sideloading)](http://bit.ly/ottnav_latest_gp)
-[Play Market (beta versions)](http://bit.ly/2PrwwcH) (note that beta versions will not arrive immediately after subscribing)
-[Huawei AppGallery](https://bit.ly/2WHhIvQ)
-[Aptoide market](http://bit.ly/2CqiYcr)
+- [Play Market](http://bit.ly/2PQEAVf)
+- [Play Market build (direct link for sideloading)](http://bit.ly/ottnav_latest_gp)
+- [Play Market (beta versions)](http://bit.ly/2PrwwcH) (note that beta versions will not arrive immediately after subscribing)
+- [Huawei AppGallery](https://bit.ly/2WHhIvQ)
+- [Aptoide market](http://bit.ly/2CqiYcr)
 
 ## Contacts
-[Support chat on Telegram](https://t.me/ottnav_global)
-Contact the developer directly at `scillarium.studio@gmail.com`
-White label / branding contact `ottnav.partners@gmail.com`
-[Reddit](https://www.reddit.com/r/)
-[Twitter](https://twitter.com/OttNav)
-[Privacy Policy](http://ott-nav.com/privacy_policy.html)
+- [Support chat on Telegram](https://t.me/ottnav_global)
+- Contact the developer directly at `scillarium.studio@gmail.com`
+- White label / branding contact `ottnav.partners@gmail.com`
+- [Reddit](https://www.reddit.com/r/)
+- [Twitter](https://twitter.com/OttNav)
+- [Privacy Policy](http://ott-nav.com/privacy_policy.html)

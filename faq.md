@@ -2,6 +2,9 @@
 title: OTT Navigator FAQ
 ---
 
+* TOC {:toc}
+
+
 # Installation
 
 ## How to install on non-Play Market device

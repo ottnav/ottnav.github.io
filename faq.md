@@ -2,8 +2,7 @@
 title: OTT Navigator FAQ
 ---
 
-
-* TOC {:toc}
+{:toc}
 
 
 # Installation

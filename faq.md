@@ -14,6 +14,7 @@ The app is just a player and neither has any content, nor can provide you any. I
     - (Github way for tech-ready guys): fork the repository, make your changes and submit a pull request
     - (Easy way for normal people): just download the corresponding xml file (or create a new one taking strings.xml as a base contents), make changes that are required and send it to us via email
 - Provide high-quality detailed description on the issues you are experiencing, and suggestions you feel will perfectly fit the app.
+- Suggest common questions and solutions for the FAQ
 
 ----
 

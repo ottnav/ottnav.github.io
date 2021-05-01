@@ -419,7 +419,7 @@ where items are described in previous section, and can include also an info fiel
 # More information
 
 ## Changelog
-Changes are published on [Telegram](https://t.me/ottnav) or [available at](http://bit.ly/ottnav_changelog)
+Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ottnav.github.io/changelog.html)
 
 ## Availability
 - [Play Market](http://bit.ly/2PQEAVf)

@@ -1,5 +1,11 @@
+# OTT Navigator Changelog
+
 # 1.6.6
 ## 1.6.6.1 (not yet released)
+- vod dirs: mass hide action
+- config: remote: disable 0-9 for channel switch
+- config: show ip address on home screen
+- new wallpapers
 - allow folding categories under a different category, effectively grouping multiple items
 - duplicates: option to merge by name within category, or merge by epg, in addition to the default global name match
 - stalker: fixed epg loading for some providers

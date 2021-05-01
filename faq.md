@@ -144,6 +144,8 @@ There might be multiple reasons for buffering - starting from poor Internet conn
 - Disable AmLogic fix (settings - player - codec - amlogic)
 - Change resolution from 4K to Full HD on your device if not watching 4K usually
 
+If the solutions above did not resolve your issue, then it's definitely a connectivity issue to your IPTV provider. You should contact him to fix the issue. You can also try setting buffer size to maximum.
+
 ## Problems with video/audio playback
 Since the streams of your provider can be different, your hardware used for playback has different capabilities and your device firmware has bugs, there is no best configuration. App comes with hardware decoders, software decoders, and support for external player, defaulting to software codecs in most cases as being less dependent on firmware bugs.  
 

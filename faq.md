@@ -260,8 +260,11 @@ You can configure the app and then hide provider details.
 
 # Technical staff (playlist edit)
 
+----
+
 ## M3U Playlist file sample (brief info on supported tags)
-`#EXTM3U`
+
+### `#EXTM3U`
 Playlist header, marks playlist start  
 Supported attributes:
 - `url-epg="http://path/to/epg/api/"` : prefix for getting channel epg for exact channel (not recommended)
@@ -291,7 +294,7 @@ Supported attributes:
 - `billed-msg="some text"` : custom message regarding user account (might be balance or any other info to be shown)
 - `refresh="N"` : period of time when the playlist should be reloaded (`v1.6.6.1+`), in hours (if below 24), in minutes (if < 300), or in seconds if a large value, for example: refresh=”3” means refreshing each 3 hours)
 
-`#EXTINF:0 tag1="value1" tag2="value2"...,Channel name`
+### `#EXTINF:0 tag1="value1" tag2="value2"...,Channel name`
 Channel declaration. Supported attributes:
 - `ch-number="27"` : default shortcut for channel when using remote keys switching channel
 - `group-title="Movies"` : category this channel belongs to
@@ -335,6 +338,8 @@ http://example.com/channel/01
 #EXTINF:-1 group-title="Sports", Sports News
 http://example.com/channel/02
 ```
+
+----
 
 ## Media library file (json)
 App supports multiple formats for media library, but preferred format is json:

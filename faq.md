@@ -8,7 +8,7 @@ OTT Navigator is a video player dedicated to work with streamed and vod content,
 The app is just a player and neither has any content, nor can provide you any. In order to use it, you need having an IPTV provider and configuring it within the app.
 
 ## How can I contribute to the app development?
-- Translate to your language or improve current translations## Localization (fix translation or add a new one)
+- Translate to your language or improve current translations
   - Translations are being available online at [github](http://github.com/ottnav/ott-nav-locale/) (source language supported by developer is English, you can take it as a base).
   - Then you choose either:
     - (Github way for tech-ready guys): fork the repository, make your changes and submit a pull request

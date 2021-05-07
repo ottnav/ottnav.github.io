@@ -121,11 +121,11 @@ To preserve your metadata, ensure that new providers are AFTER the current ones.
 Almost always when you see incorrect time it’s incorrect device setting (selected incorrect timezone), so go to the device settings and setup the time and time zone that correctly matches your region.  
 
 If this does not help, here are some options available to you to make a virtual time shift:
-    • `Settings - Extended - System - Time shift (visual)`
-    • `Settings - Extended - System - Time shift (system)`
-    • (if the issue applies only to the some channels) open problematic `channel properties - EPG - time shift`
-    • (if using portal) open `provider properties - time shift`
-
+- `Settings - Extended - System - Time shift (visual)`
+- `Settings - Extended - System - Time shift (system)`
+- (if the issue applies only to the some channels) open problematic `channel properties - EPG - time shift`
+- (if using portal) open `provider properties - time shift`
+  
 After any of these changes you need to do manual EPG reload (`settings - epg - reload`) in order to apply the changes.
 
 ## How to protect some content from other users (parental control)

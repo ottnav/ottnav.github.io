@@ -133,6 +133,13 @@ There are multiple ways to achive this
 - Child mode (`settings - extended - child mode`) allows to specify which exact channels are available and hides all the other contect (PIN-protected)
 - Restricted mode (`settings - extended - restrict`) allows you to setup a PIN code and protect settings, provider info, or categories/channels, etc to be available
 
+## Want to use Studio mode (up to 9 videos at the same time) or Picture-in-Picture, but cannot find how to enable them
+Studio and PiP mode requires you either having multiple providers, or having a provider that allows more than a single connection at the same time. App tries to detect number of connections via provider API, but sometimes might not be able to detect it correctly. To set a number of connections your provider allows manually:
+- `Settings - Provider - (..your provider..) - Properties - Connections`
+After changing, your will have studio mode option available on the main screen, as well as PiP menu option available from a playback menu screen if these modules are not been disabled. To enable if you previously disabled:
+- Long tap any `icon on home screen - Modules` and ensure that Studio and PiP modules are enabled
+- While in playback, `long tap any player menu icon` to check if the corresponding menu item has been enabled.
+
 ----
 
 # Playback

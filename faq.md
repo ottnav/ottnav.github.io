@@ -147,10 +147,10 @@ After changing, your will have studio mode option available on the main screen, 
 
 ## Buffering way too much
 There might be multiple reasons for buffering - starting from poor Internet connection to some firmware specifics. Here comes a list of actions that usually helps if the cause is hardware/firmware, rather than the network issues:
-- Set buffer size to minimal (settings - player - network - buffer)
-- Change hardware codecs quality to compatibility (settings - player - codec - hardware quality)
-- Disable AmLogic fix (settings - player - codec - amlogic)
-- Change resolution from 4K to Full HD on your device if not watching 4K usually
+- Set buffer size to minimal (`settings - player - network - buffer`)
+- Change hardware codecs quality to compatibility (`settings - player - codec - hardware quality`)
+- Disable AmLogic fix (`settings - player - codec - amlogic`)
+- Change device resolution from 4K to Full HD on your device if not watching 4K usually
 
 If the solutions above did not resolve your issue, then it's definitely a connectivity issue to your IPTV provider. You should contact him to fix the issue. You can also try setting buffer size to maximum.
 

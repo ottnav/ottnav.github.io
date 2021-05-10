@@ -1,7 +1,10 @@
 # OTT Navigator Changelog
 
 # 1.6.6
-## 1.6.6.1 (not yet released)
+## 1.6.6.1 (2021-May-10)
+- quick actions layer allows browsing archive sections (continue watching, all movies, all tv-shows) while in playback
+- archives: updated ui and simplified navigation, and add recently viewed
+- optimized mass channel edit actions causing high load on some devices
 - vod dirs: mass hide action
 - config: remote: disable 0-9 for channel switch
 - config: show ip address on home screen

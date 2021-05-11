@@ -141,6 +141,14 @@ After changing, your will have studio mode option available on the main screen, 
 - Long tap any `icon on home screen - Modules` and ensure that Studio and PiP modules are enabled
 - While in playback, `long tap any player menu icon` to check if the corresponding menu item has been enabled.
 
+## I want to use my own background wallpaper image
+You can use any image service you like, here is a quick sample to get idea how to get link to the image:
+- Go to `https://imgur.com/upload` and upload your image
+- You will be redirected to page like `https://imgur.com/a/SomeID`
+- Press `hamburger icon -> Get share links`
+- Copy the one that is named `Share Link` (will be something like `https://imgur.com/SomeID`)
+- Paste the url in the app
+
 ----
 
 # Playback

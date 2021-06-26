@@ -2,19 +2,19 @@
 
 # 1.6.6
 ## 1.6.6.3 (2021-Jun-26)
-profiles: can create multiple user profiles and switch between them, allowing to fine-tune app for each user (applies to channels and categories)
-player action: set resolution+fps manually while playing
-rtsp: support added
-player: audio delay allows setting for all channels (works with vlc codecs only)
-player: long tap last channel menu item to open recent channels category directly
-epg: optimized storage to decrease size even further
-list: show category in channel name when browsing newly added category
-stalker: more provider types supported
-vod: support for custom http headers when configured as playlist
-vod screen: show number of direct children
-text: font shadows improved
-list type: side-by-side (narrow)
-pip: support starting when current provider has only 1 connection, while other providers are available
+- profiles: can create multiple user profiles and switch between them, allowing to fine-tune app for each user (applies to channels and categories)
+- player action: set resolution+fps manually while playing
+- rtsp: support added
+- player: audio delay allows setting for all channels (works with vlc codecs only)
+- player: long tap last channel menu item to open recent channels category directly
+- epg: optimized storage to decrease size even further
+- list: show category in channel name when browsing newly added category
+- stalker: more provider types supported
+- vod: support for custom http headers when configured as playlist
+- vod screen: show number of direct children
+- text: font shadows improved
+- list type: side-by-side (narrow)
+- pip: support starting when current provider has only 1 connection, while other providers are available
 
 ## 1.6.6.2 (2021-May-13)
 - quick actions supports opening channels browsing as well and recents

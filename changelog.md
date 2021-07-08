@@ -1,6 +1,13 @@
 # OTT Navigator Changelog
 
 # 1.6.6
+## 1.6.6.4 (2021-Jul-08)
+- quick channel switch: show up to 5 channels instead of 3
+- vod library: new layout: horizontal gallery view
+- category: mass change timezone shift for all channels
+- text: allow changing text width and shadow size
+- config: allow enabling adult content to appear in recommendations, etc
+
 ## 1.6.6.3 (2021-Jun-26)
 - profiles: can create multiple user profiles and switch between them, allowing to fine-tune app for each user (applies to channels and categories)
 - player action: set resolution+fps manually while playing

@@ -343,6 +343,8 @@ Allows setting some custom parameters for the current channel. Supported `parame
   - clearkey (ClearKey)
   - com.microsoft.playready (PlayReady)
 - `inputstream.adaptive.license_key` (License key or URL depending on the DRM type; URLs should start from `http://` or `https://`, otherwise it’s a non-url key) and is considered being static
+  - license url for playready/widevine content
+  - static key (or keys) for clearkey content. Example (1 key): `abc:def`, Example (multi keys): `{"abc":"def","klm":"opq"}`
 - `inputstream.adaptive.stream_headers` (extra headers, if required. For example `param1=value1&param2=value2&param3=value3`) (`v1.6.4.1+`)
 Syntax is generally compatible with KODI inputStream.Adaptive plugin declared at [xbmc](https://github.com/xbmc/inputstream.adaptive)
 

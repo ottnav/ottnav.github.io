@@ -186,6 +186,7 @@ Bear in mind, that you still can use multiple screens (PiP / Studio) using 1-con
 
 ## Hostname … not verified / Chain validation failed / SSL error when trying to playback
 This error means that your provider is using invalid SSL certificates (either self-signed or without a trusted root). Your solution might be:
+- Check date and time on your device (if it differs too much from the real time the secure connection to your provider will fail)
 - Ask provider to either fix the SSL issues or to provide a link to plain http-only configuration
 - Disable certificate validation within the app:
   - `Settings -> difficulty -> expert`

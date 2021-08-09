@@ -20,9 +20,9 @@ The app is just a player and neither has any content, nor can provide you any. I
 
 # Installation
 
-## How to install on non-Play Market device
+## How to install
+- If you are running Play Market device, then use it to install the app
 - If you are running Huawei device, then use Huawei AppGallery to install the app
-- If you are using Amazon device then use Aptoide market to install the app
 - Alternatively you can sideload the app
 
 ## How to install on my Windows PC/Mac
@@ -445,7 +445,6 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 - [Play Market build (direct link for sideloading)](http://bit.ly/ottnav_latest_gp)
 - [Play Market (beta versions)](http://bit.ly/2PrwwcH) (note that beta versions will not arrive immediately after subscribing)
 - [Huawei AppGallery](https://bit.ly/2WHhIvQ)
-- [Aptoide market](http://bit.ly/2CqiYcr)
 
 ## Contacts
 - [Support chat on Telegram](https://t.me/ottnav_global)

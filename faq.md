@@ -308,6 +308,8 @@ Supported attributes:
   - `${timestamp}`, `{current_utc}` - nowUnix
   - `${login}`, `${password}` - user-configured login and password
   - `${duration}` - show duration (seconds)
+  - `${start-year},${start-mon},${start-day},${start-hour},${start-min},${start-sec}` - show start date/time variables (`v1.6.6.5+`)
+  - `${end-year},${end-mon},${end-day},${end-hour},${end-min},${end-sec}` - show end date/time variables (`v1.6.6.5+`)
 - `max-conn="1"` : if your provider allows user opening more connections at the same time (like watching picture-in-picture) set number of connections here
 - `billed-till="timestamp"` : unix time when user account will expire (will be displayed for user)
 - `billed-msg="some text"` : custom message regarding user account (might be balance or any other info to be shown)

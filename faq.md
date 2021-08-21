@@ -291,23 +291,26 @@ Supported attributes:
 - `url-logo="http://path/to/icons/root/"` : root for all channel icons (used if channel has icon specified without scheme://domain part)
 - `catchup=".."` : alias for `catchup-type`
 - `catchup-type=".."` : specifies that there are archives for channels. Supported types:
-  - "default" - only replace variables
-  - "flussonic", "flussonic-hls" - flussonic (HLS)
-  - "flussonic-ts" - flussonic (MPEG-TS)
-  - "flussonic-dash" - flussonic (MPEG-DASH)
-  - "shift" - `?utc=startUnix&lutc=nowUnix`
-  - "archive" - `?archive=startUnix&archive_end=toUnix`
-  - "xc" - xtream codes
-  - "append" - appending value specified in catchup-source attribute to the base channel url
-  - "timeshift" - `timeshift=startUnix&timenow=nowUnix`
+  - `default` - only replace variables
+  - `flussonic`, `flussonic-hls` - flussonic (HLS)
+  - `flussonic-ts`, `fs` - flussonic (MPEG-TS)
+  - `flussonic-dash` - flussonic (MPEG-DASH)
+  - `shift` - `?utc=startUnix&lutc=nowUnix`
+  - `archive` - `?archive=startUnix&archive_end=toUnix`
+  - `xc` - xtream codes
+  - `append` - appending value specified in catchup-source attribute to the base channel url
+  - `timeshift` - `timeshift=startUnix&timenow=nowUnix`
 - `catchup-time="10800"` : duration for archives being available (in seconds) (not recommended)
 - `catchup-days="3"` : duration for archives being available (in days)
 - `catchup-source="..."` : allows override path for archive playback (or append to the end of the url if catchup-type="append" is set). Supported variables:
   - `{key}`, `${token}` - user-configured token
-  - `${start}`, `{utc}` - fromUnix
-  - `${timestamp}`, `{current_utc}` - nowUnix
+  - `${start}`, `{utc}` - show start (unix time)
+  - `${timestamp}`, `{current_utc}` - current time (unix time)
+  - `${end}` - show end (unix time)
   - `${login}`, `${password}` - user-configured login and password
   - `${duration}` - show duration (seconds)
+  - `${durmin}` - show duration (minutes)
+  - `${offset}` - delta from current time to show start (seconds)
   - `${start-year},${start-mon},${start-day},${start-hour},${start-min},${start-sec}` - show start date/time variables (`v1.6.6.5+`)
   - `${end-year},${end-mon},${end-day},${end-hour},${end-min},${end-sec}` - show end date/time variables (`v1.6.6.5+`)
 - `max-conn="1"` : if your provider allows user opening more connections at the same time (like watching picture-in-picture) set number of connections here

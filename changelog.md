@@ -1,6 +1,20 @@
 # OTT Navigator Changelog
 
 # 1.6.6
+## 1.6.6.5 (2021-Aug-23)
+- config: limit epg duration in past
+- config: auto-number favorite channels
+- quick action: recommend video streams that just started like movies (and bindable action to this)
+- playlist: added more template vars for playlist when providing catchup-source: `${start-year},${start-mon},${start-day},${start-hour},${start-min},${start-sec},${end-year},${end-mon},${end-day},${end-hour},${end-min},${end-sec}`
+- manage: mass channel/category hide action to show/hide all
+- playlist: improved nested playlist support
+- player action: change category of active channel
+- category props icon: animal, food
+- epg: support multi-language source if one of the language configured within the app
+- stalker: improved support for series episodes on some portals
+- epg: support for xz archive type
+- vod screen: horizontal: show selected item counter on screen and use bottom popup info block instead of fullscreen
+
 ## 1.6.6.4 (2021-Jul-08)
 - quick channel switch: show up to 5 channels instead of 3
 - vod library: new layout: horizontal gallery view

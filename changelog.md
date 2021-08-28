@@ -1,6 +1,12 @@
 # OTT Navigator Changelog
 
 # 1.6.6
+## 1.6.6.6 (2021-Aug-28)
+- playlist: more http headers tags supported
+- config: show seconds in player
+- list: fix progress bar not working for huge lists or hidden for some themes
+- optimize: browsing content especially on devices with slow flash memory
+
 ## 1.6.6.5 (2021-Aug-23)
 - config: limit epg duration in past
 - config: auto-number favorite channels

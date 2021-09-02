@@ -82,6 +82,14 @@ Some of the control apps recommended to serve as a secondary output to your TV/b
 - (Android) [Android TV Remote Control](https://play.google.com/store/apps/details?id=com.google.android.tv.remote)
 - (iOS) [Android TV](https://apps.apple.com/ru/app/android-tv/id1078761166)
 
+## Fail to connect to the portal, however it works well in the other app
+- First, please check all the data you input for misprints, correct url, etc - usually it just means that your provider requires some additional fields to be passed, like `device_id` or using some exact `user-agent`.
+- If all the data seems correct but you cannot still connect via the app then please record a network dump working with your provider using the different app (stbemu highly preferred):
+  - Install network capture software (or proxy) like `Wireshark`, start recording
+  - Launch an app that works against your provider well (like `stbemu`)
+  - Login to your provider, do some actions like list channels or videos
+  - Stop recording and send the resulting capture file (`cap`) to the support email of the app, providing details on your provider and connection. It will help investigating the specifics of your provider and will help adding support for it in the future.
+
 ----
 
 # General issues

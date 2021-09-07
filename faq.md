@@ -216,6 +216,9 @@ When it’s not possible, you can also try one of the following:
 In order to play DRM-protected contents you need to pass the correct DRM keys and extra data in the playlist. Check the M3U playlist structure on clues how to setup it.  
 Please note, that DRM playback is only supported using hardware codecs - so using software VLC, system or external player has no way to pass these license data.
 
+## Experiencing ENOENT (FileNotFoundException) while trying to play a channel
+It is a provider issue meaning that master playlist for the stream contains a link for one of the tracks in invalid format - instead of providing full url to the file with the domain, path, etc, it just only gives the path that is considered a local (like `/videos/12345/segment12345.mpg`) - of course, there is no such file on your current device.
+
 ----
 
 # Premium

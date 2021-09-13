@@ -1,6 +1,19 @@
 # OTT Navigator Changelog
 
 # 1.6.6
+## 1.6.6.7 (2021-Sep-13)
+- playlist: basic group-logo support (currently in archive view only)
+- epg: improved support for provider sources containing multiple channels with same name but different id
+- playlist: support for adding multiple at once using xml list
+- bindable action: open recent shows
+- epg: more update range selection (1h - 7d)
+- vod: vertical gallery style
+- lists: side-by-side (large)
+- airmouse: improved support, assuming that ever used mouse mode in the session, most of the ui should assume still be in mouse mode
+- vod json: add support for passing drm and headers info
+- drm: support specific keys only for drm request (via `|` in drm license url)
+- provider props: disable vod or live tv
+
 ## 1.6.6.6 (2021-Aug-28)
 - playlist: more http headers tags supported
 - config: show seconds in player

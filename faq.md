@@ -333,6 +333,7 @@ Supported attributes:
 Channel declaration. Supported attributes:
 - `ch-number="27"` : default shortcut for channel when using remote keys switching channel
 - `group-title="Movies"` : category this channel belongs to
+- `group-logo="http://url/to/image.png"` : category icon (`v1.6.6.7+`)
 - `parent-code="0000"` : if set, marks a channel as restricted that should be hidden by default unless code entered (like adult)
 - `ch-id=".."` : channel id. used only with combination when url-epg or url-logo are set in playlist header (appended to the end of the base url)
 - `tvg-id="abc.yz"` : channel id in epg teleguide that was linked in the playlist header (or the one user has configured in the current provider properties)

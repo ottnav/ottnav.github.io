@@ -1,6 +1,19 @@
 # OTT Navigator Changelog
 
 # 1.6.6
+## 1.6.6.8 (2021-Sep-26)
+- config: subtitles can be set to always to auto-select first track even if it does not match app language
+- stalker: improve support for vod-only portals
+- archive: do not remove duplicates when browsing exact channel
+- playlist: support for group-logo
+- config: bindable action to select video effect
+- player: allow quick switch to configure 0.1s-30s and process OK button
+- player: num of retries has option that disable retries keeping the active channel
+- restrict: assume setting code to 0000 as disabling code
+- epg: support basic http auth
+- studio: support up to 20 screens (no guarantee on how it will work in maximized mode and if any device is capable running that much)
+- vod: preserve sort mode on profile level
+
 ## 1.6.6.7 (2021-Sep-13)
 - playlist: basic group-logo support (currently in archive view only)
 - epg: improved support for provider sources containing multiple channels with same name but different id

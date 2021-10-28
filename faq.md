@@ -416,7 +416,7 @@ Sample:
 - if the item contains the link to the video using `video` tag, you can also pass additional parameters (`v1.6.6.7+`) like you do using `m3u` format:
   - `"drm": "..."` to pass drm type (like clearkey, widevine, etc)
   - `"drmkey": "..."` to pass drm key (for clearkey) or drm license url (you can use `|` to pass additional headers to be only used for drm request)
-  - `"headers": "header1=value1&header2=value2` to pass additional headers (will be passed both to drm request and video request)
+  - `"headers": "header1=value1&header2=value2` to pass additional headers (will be passed both to drm request and video request) or JSON format `{"User-Agent": "Chrome", "SomeOtherAttr": "SomeValue"}` (`v1.6.6.9+`)
 Sample:
 ```
 [

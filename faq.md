@@ -349,6 +349,8 @@ Channel declaration. Supported attributes:
 
 `#EXTGRP: Sports` - alias for `group-title` tag
 
+`#EXTHTTP:{"User-Agent":"Chrome","SomeOtherTag":"SomeValue"}` - simple way for passing extra http attrs (`v1.6.6.9+`)
+
 `#EXTVLCOPT:parameter="value"`
 Allows setting some custom parameters for the current channel:
 - `http-user-agent` (User-Agent)

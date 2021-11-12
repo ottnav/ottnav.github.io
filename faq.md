@@ -237,10 +237,10 @@ Recommended solution:
 - Find notification email from Google with purchase number (`GPA.123.456..`), that will be required later on
 - Forward this email or send this number to us; If you failed to find the purchase number, you can send your email name (google account used by you when purchased premium).
 - On the device with Fire Stick attached launch the app
-- Go to the `settings - about - installation id`; and send this number to us (either paste from clipboard, or scan QR code)
+- Go to the `settings - about - installation id`; and send this text to us
 So we will activate the premium on this device  
 WARNING: This number will drop if you uninstall app or remove app data  
-PS: If you already purchased a subscription, you should refund it (or send us the purchase number GPA.123.456… so we will refund it) and buy app via one-time payment in order to be able to bind your purchase to the installation id on the non-play market device.  
+PS: If you already purchased a subscription, you should refund it (or send us the purchase number GPA.123.456… so we will refund it) and buy app via one-time payment in order to be able to bind your purchase to the \ on the non-play market device.  
 PS: Since the activation is manual, it may take up to a few days to proceed.
 
 ## Purchased a premium but it’s not active

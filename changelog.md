@@ -1,6 +1,33 @@
 # OTT Navigator Changelog
 
 # 1.6.6
+## 1.6.6.9 (2021-Oct-15)
+- font: very bold text width option
+- vod: can mark item for continue watching
+- vod: can clear continue watching or remove individual items from it
+- lists: show icon if epg marked to remind to switch when online
+- lists: config to disable current epg info in channel list
+- home: allow to pin up to 3 channels
+- home: allow to pin up to 3 categories (was 1)
+- provider: set multiple http attrs in provider properties
+- font: fixing incorrect text shadows on some phones in dark mode
+- new 2 video effects (testing)
+- pip: open recent channel now asks where to load it
+- player: show up to 3 last channels in playback menu instead of single one
+- new wallpapers
+- archive: can delete watch history via category context menu
+- manage: easier access for mass category and channels hide via manage screen (and tweaked it a bit)
+- player: allow to bind different actions for left/right buttons when watching live or archive
+- player: allow to override RW/FF buttons
+- player: bindable action to open quick actions
+- touch: long tap allows to change hud button behavior in player
+- playlist: support #EXTHTTP tag for easier http headers passing, and also support json format for otv vod library http headers format
+- vod json: support user-agent overriding
+- config: allow to increase maximal allowed playlist file size
+- config: broardcast of playback events to tvquickactions app for afr on realtek devices (android 9 and 10)
+- provider: config to delete or rename channels coming from provider if they starts/ends with any of the specified text
+- duplicate: auto-refold on config change, and accept ; also as a separator
+
 ## 1.6.6.8 (2021-Sep-26)
 - config: subtitles can be set to always to auto-select first track even if it does not match app language
 - stalker: improve support for vod-only portals

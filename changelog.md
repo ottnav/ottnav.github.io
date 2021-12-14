@@ -1,6 +1,20 @@
 # OTT Navigator Changelog
 
 # 1.6.6
+## 1.6.6.9.3 (2021-Dec-14)
+- duplicate: auto switch to suitable when opening archived record on a channel with no archive
+- duplicate: auto switch to suitable when using pip/studio mode and lacking connections
+- icons: improve matching from user-defined folder
+- restrict: drop code entered on app relaunch
+- home: allow to pin up to 3 vod folders (non-system, might not work with deferred subfolders)
+- archive: optimized data building, decreasing cpu and memory load
+- home: config to change number of columns (default: 6)
+- home: duplicate current epg loading status on home items context menu
+- net: trying to improving chunk cookie support
+- backup: choice between full backup and active data only
+- stalker: fix expire date detection on some portals
+- codecs: updated bundled vlc to v3.4.5
+
 ## 1.6.6.9 (2021-Oct-15)
 - font: very bold text width option
 - vod: can mark item for continue watching

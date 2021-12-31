@@ -1,6 +1,21 @@
 # OTT Navigator Changelog
 
 # 1.6.6
+## 1.6.6.9.4 (2021-Dec-31)
+config: added button to search for app options (ignores difficulty level setting)
+subtitles: give more transparency if transparent windows are set, or use background from currect theme
+epg: added config to choose what match type to prefer for provider sources
+epg: improved matching by tvg-id when configuring multiple epg source per provider
+epg: allow up to 5 user-configured epg sources in provider attrs
+category props: action with all channels to clear all channel modifications
+archives screen: show marker if the video was already seen
+codecs: added new codec available in most scenarios - exo v1 (might work better than hardware on some streams)
+playlist: can disable playlist update at all (while cache exists) in provider attrs
+preview: use soft audio decoder when sound enabled for preview
+xc: media library: support for trailer and background image
+watch history: less time needed for playback to remember
+icons: folder: config to add ignored words when matching
+
 ## 1.6.6.9.3 (2021-Dec-14)
 - duplicate: auto switch to suitable when opening archived record on a channel with no archive
 - duplicate: auto switch to suitable when using pip/studio mode and lacking connections

@@ -233,7 +233,7 @@ PPS: Fair use policy is insisted, using same Google Account and using it on tons
 
 ## Enable premium on a Firestick (or other device without play market)
 Recommended solution:
-- Use Android device with Play Market to purchase premium as a single payment. Yearly subscription is also ok (monthly is not).
+- Use Android device with Play Market to purchase premium as a single one-time payment or an yearly subscription (or Huawei market with one-time payment).
 - Find notification email from Google with purchase number (`GPA.123.456..`), that will be required later on
 - Forward this email or send this number to us; If you failed to find the purchase number, you can send your email name (google account used by you when purchased premium).
 - On the device with Fire Stick attached launch the app
@@ -389,6 +389,8 @@ App supports multiple formats for media library, but preferred format is json:
 - rating - 0-10, might be decimal like 5.6
 - added - date when added (unix timestamp)
 - ttl - available till (unix timestamp) if will be removed at this time
+- trailer - youtube trailer (link or the video ID part) `v1.6.6.9.5+`
+- backdrop - larger image (usually a screenshot from a video) `v1.6.6.9.5+`
 Sample:
 ```
 "info": {
@@ -404,6 +406,8 @@ Sample:
     "added": 12354235,
     "duration": 3600,
     "adult": true,
+    "trailer": "HGH34ghgAU",
+    "backdrop": "http://video/image.jpg",
     "ttl": 12354235
 }
 ```

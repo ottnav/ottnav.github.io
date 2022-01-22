@@ -2,17 +2,17 @@
 
 # 1.6.6
 ## 1.6.6.9.5 (2021-Jan-22)
-playlist: support vod-only url
-category props: allow mass mark/unmark favorites via actions with multiple channels option
-backup: option to save settings only
-search: option to find future records from epg as well
-vod: auto-hide title if poster is available (can be disabled in vod screen settings)
-archive section: allow video preview
-quick switch: auto cancel channel switch after hud display timeout expires
-vod: json: support trailer/backdrop image as well
-xc: support for some providers without batch epg file, and fallback 2 to one-by-one loading
-epg: added a builtin source if provider does not have any epg configured (but still has a valid tvg-id) to try loading from a common public sources
-text: allow to change text and accent text colors separately from the app theme
+- playlist: support vod-only url
+- category props: allow mass mark/unmark favorites via actions with multiple channels option
+- backup: option to save settings only
+- search: option to find future records from epg as well
+- vod: auto-hide title if poster is available (can be disabled in vod screen settings)
+- archive section: allow video preview
+- quick switch: auto cancel channel switch after hud display timeout expires
+- vod: json: support trailer/backdrop image as well
+- xc: support for some providers without batch epg file, and fallback 2 to one-by-one loading
+- epg: added a builtin source if provider does not have any epg configured (but still has a valid tvg-id) to try loading from a common public sources
+- text: allow to change text and accent text colors separately from the app theme
 
 ## 1.6.6.9.4 (2021-Dec-31)
 - config: added button to search for app options (ignores difficulty level setting)

@@ -21,20 +21,20 @@ The app is just a player and neither has any content, nor can provide you any. I
 # Installation
 
 ## How to install
-- If you are running Play Market device, then use it to install the app
-- If you are running Huawei device, then use Huawei AppGallery to install the app
-- Alternatively you can sideload the app
+- Install from supported app store
+- Sideload non-store build of the app (check the link at the bottom of the FAQ)
 
 ## How to install on my Windows PC/Mac
 There is no special version dedicated to be used on Windows PC or Mac, however, there is a solution to use the app with negligible side effects.
-Install NoxPlayer app on your PC - it allows running Android apps and is highly optimized and recommended.
+- Windows 11 has a decent Android apps support, so it's recommended to use builtin solution for running apps.
+- Install NoxPlayer app on your PC - it allows running Android apps and is highly optimized and recommended.
 Just use it like it was a native app.Some users are running the app on different emulators, like BlueStacks emulator and report that it also works quite well, and supports later Android versions.  
-Please note, that hardware acceleration might not be available when using emulator, so you might need selecting software codecs to watch your content.
+Please note, that hardware acceleration might not be available when using emulator on some devices, so you might need selecting software codecs to watch your content.
 
 ## Will the app work on my TV? Why not WebOS/Tizen?
 The app only works on Android, so if your TV is running Android TV / Google TV then it will run perfectly.
 We have investigated the tech and even did some proof-of-concept, but WebOS/Tizen are simply not powerful enough to make a really good app. It's suitable for simple web pages that pretend to be apps, but lack real power to do complex under-the-hood tasks.
-So if you choose an LG/Samsung TV (the only 2 major vendors that do not use Android these days) - then it's highly recommended to purchase an Android / AndroidTV / GoogleTV / Chromecast(2021+ model) / FireTV / etc box or stick to be attached, to make it really smart (not pretending to be one).
+So if you choose an LG/Samsung TV (the only 2 major vendors that do not use Android these days) - then it's highly recommended to purchase an Android / AndroidTV / GoogleTV / Chromecast(2021+ model) / FireTV / etc box or stick to be attached.
 
 ----
 
@@ -140,12 +140,13 @@ After any of these changes you need to do manual EPG reload (`settings - epg - r
 There are multiple ways to achive this
 - Child mode (`settings - extended - child mode`) allows to specify which exact channels are available and hides all the other contect (PIN-protected)
 - Restricted mode (`settings - extended - restrict`) allows you to setup a PIN code and protect settings, provider info, or categories/channels, etc to be available
+- Moreover you can setup different user profiles in the app, and each profile can hide categories not interested in
 
 ## Want to use Studio mode (up to 9 videos at the same time) or Picture-in-Picture, but cannot find how to enable them
 Studio and PiP mode requires you either having multiple providers, or having a provider that allows more than a single connection at the same time. App tries to detect number of connections via provider API, but sometimes might not be able to detect it correctly. To set a number of connections your provider allows manually:
 - `Settings - Provider - (..your provider..) - Properties - Connections`
-  
-After changing, your will have studio mode option available on the main screen, as well as PiP menu option available from a playback menu screen if these modules are not been disabled. To enable if you previously disabled:
+
+After changing, your will have studio mode option available on the main screen, as well as PiP menu option available from a playback menu screen if these modules are not been disabled. To enable if you previously disabled (they are disabled by default on phones):
 - Long tap any `icon on home screen - Modules` and ensure that Studio and PiP modules are enabled
 - While in playback, `long tap any player menu icon` to check if the corresponding menu item has been enabled.
 
@@ -223,27 +224,23 @@ It is a provider issue meaning that master playlist for the stream contains a li
 
 # Premium
 ## How many devices does Premium allow
-Premium will be active on all your devices that, as long, as they:
-- Have Google services working (with Play Store)
-- Using the same Google account
-
-For non-Google devices, please check FAQ.  
-PS: Sometimes Play Store takes a while to sync purchases. Check FAQ how to speed up the process.  
-PPS: Fair use policy is insisted, using same Google Account and using it on tons of devices are a clear violation.
+- for Play Store/AppGallery version you can install the app on as many devices as you want (as long as they use same Google account), but it's a violation to use more than 5 devices at the same time (fair use policy is insisted).
+- for standalone version there is a limit of 5 devices per account max. You can purchase more slots for your premium.
 
 ## Enable premium on a Firestick (or other device without play market)
 Recommended solution:
-- Use Android device with Play Market to purchase premium as a single one-time payment or an yearly subscription (or Huawei market with one-time payment).
-- Find notification email from Google with purchase number (`GPA.123.456..`), that will be required later on
-- Forward this email or send this number to us; If you failed to find the purchase number, you can send your email name (google account used by you when purchased premium).
-- On the device with Fire Stick attached launch the app
-- Go to the `settings - about - installation id`; and send this text to us
-So we will activate the premium on this device  
-WARNING: This number will drop if you uninstall app or remove app data  
-PS: If you already purchased a subscription, you should refund it (or send us the purchase number GPA.123.456… so we will refund it) and buy app via one-time payment in order to be able to bind your purchase to the \ on the non-play market device.  
-PS: Since the activation is manual, it may take up to a few days to proceed.
+- install `OttNav Companion` app, register an account and purchase premium
+- install a standalone version of the app on your firestick or other device without play market, login with the same account and ensure that current device is added (in `settings - premium`)
+- As soon as activated you can manage your devices from your app or `OttNav Companion` app
 
-## Purchased a premium but it’s not active
+Another solution:
+- Use Android device with Play Store to purchase premium as a single one-time payment or an yearly subscription (or Huawei market with one-time payment).
+- Find notification email from Google with purchase number (`GPA.123.456..`) or find the order number on `pay.google.com`, that will be required later on
+- Install a standalone version of the app on your firestick or other device without play market, login (or register new account if not done this before) (in `settings - premium`)
+- Write an email to support giving your account and purchase number in request for manual activation of your purchase (this might take a couple of days)
+- As soon as activated you can manage your devices from your app or `OttNav Companion` app
+
+## Purchased a premium on Play Store but it’s not active
 Sometimes it takes a while for Play Store to sync purchases (due to long caching). Steps to guarantee that sync will happen instantly:
 - Go to `settings - premium - restore purchases`. If the process will report that restoration occurred - it means that all is ok, and reactivation has happened. Usually this is the only step required!
 - Clear data and cache of Play Store app
@@ -468,10 +465,10 @@ where items are described in previous section, and can include also an info fiel
 Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ottnav.github.io/changelog.html)
 
 ## Availability
+- [Direct download of standalone app build](http://app.ott-nav.com/dist/std/latest.apk) (you will need to allow installing apps from unknown sources on your device)
 - [Play Market](http://bit.ly/2PQEAVf)
-- [Play Market build (direct link for sideloading)](http://bit.ly/ottnav_latest_gp)
-- [Play Market (beta versions)](http://bit.ly/2PrwwcH) (note that beta versions will not arrive immediately after subscribing)
 - [Huawei AppGallery](https://bit.ly/2WHhIvQ)
+- [Play Market (beta versions)](http://bit.ly/2PrwwcH) (note that beta versions will not arrive immediately after subscribing)
 
 ## Contacts
 - [Support chat on Telegram](https://t.me/ottnav_global)

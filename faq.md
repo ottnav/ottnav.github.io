@@ -276,7 +276,7 @@ The app protects users from purchasing premium while he has active subscriptions
 
 # Partnership / Reseller
 ## Branded app with customizations
-If interested in whitelabel package (custom logo, background, providers, etc), then contact us via email `ottnav.partners@gmail.com` or reach us on Telegram (contact `@FlavusV`)
+If interested in whitelabel package (custom logo, background, etc), then contact us via email `ottnav.partners@gmail.com` or reach us on Telegram (contact `@FlavusV`)
 
 ## Preparing devices for other users and wish to hide provider details
 You can configure the app and then hide provider details.
@@ -475,5 +475,4 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 - Contact the developer directly at `scillarium.studio@gmail.com`
 - White label / branding contact `ottnav.partners@gmail.com`
 - [Reddit](https://www.reddit.com/r/)
-- [Twitter](https://twitter.com/OttNav)
 - [Privacy Policy](http://ott-nav.com/privacy_policy.html)

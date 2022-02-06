@@ -465,7 +465,7 @@ where items are described in previous section, and can include also an info fiel
 Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ottnav.github.io/changelog.html)
 
 ## Availability
-- [Direct download of standalone app build](http://app.ott-nav.com/dist/std/latest.apk) (you will need to allow installing apps from unknown sources on your device)
+- [Direct download of standalone app build](https://app.ott-nav.com/dist/std/latest.apk) (you will need to allow installing apps from unknown sources on your device)
 - [Play Market](http://bit.ly/2PQEAVf)
 - [Huawei AppGallery](https://bit.ly/2WHhIvQ)
 - [Play Market (beta versions)](http://bit.ly/2PrwwcH) (note that beta versions will not arrive immediately after subscribing)

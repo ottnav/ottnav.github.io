@@ -224,21 +224,17 @@ It is a provider issue meaning that master playlist for the stream contains a li
 
 # Premium
 ## How many devices does Premium allow
-- for Play Store/AppGallery version you can install the app on as many devices as you want (as long as they use same Google account), but it's a violation to use more than 5 devices at the same time (fair use policy is insisted).
+- for Play Store/AppGallery version you can install the app on as many devices as you want (as long as they use same account), but it's a violation to use more than 5 devices at the same time (fair use policy is insisted).
 - for standalone version there is a limit of 5 devices per account max. You can purchase more slots for your premium.
 
 ## Enable premium on a Firestick (or other device without play market)
-Recommended solution:
-- install `OttNav Companion` app, register an account and purchase premium
-- install a standalone version of the app on your firestick or other device without play market, login with the same account and ensure that current device is added (in `settings - premium`)
-- As soon as activated you can manage your devices from your app or `OttNav Companion` app
-
-Another solution:
-- Use Android device with Play Store to purchase premium as a single one-time payment or an yearly subscription (or Huawei market with one-time payment).
-- Find notification email from Google with purchase number (`GPA.123.456..`) or find the order number on `pay.google.com`, that will be required later on
-- Install a standalone version of the app on your firestick or other device without play market, login (or register new account if not done this before) (in `settings - premium`)
-- Write an email to support giving your account and purchase number in request for manual activation of your purchase (this might take a couple of days)
-- As soon as activated you can manage your devices from your app or `OttNav Companion` app
+- install `OttNav Companion` app (check the link in the bottom of the FAQ)
+- launch it, create a new account, and press add more max devices button
+- purchase device slots, to have some free slots on your account
+- install a standalone version of OTT Navigator app (check the link at the bottom of the FAQ) (you might need enable installing from unknown sources)
+- launch the app, go to settings - premium, log in with the same account you have created in `OttNav Companion`
+- ensure that the current device is added to the list of active devices (4-word phrase represents an unique installation id), use `Add Device` button if it was not automatically added
+- congrads, you can repeat last 3 steps on your other devices!
 
 ## Purchased a premium on Play Store but it’s not active
 Sometimes it takes a while for Play Store to sync purchases (due to long caching). Steps to guarantee that sync will happen instantly:
@@ -466,9 +462,14 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 
 ## Availability
 - [Direct download of standalone app build](https://app.ott-nav.com/dist/std/latest.apk) (you will need to allow installing apps from unknown sources on your device)
-- [Play Market](http://bit.ly/2PQEAVf)
+- [Google Play Store](http://bit.ly/2PQEAVf)
 - [Huawei AppGallery](https://bit.ly/2WHhIvQ)
-- [Play Market (beta versions)](http://bit.ly/2PrwwcH) (note that beta versions will not arrive immediately after subscribing)
+
+## `OttNav Companion` app for managing premium on standalone builds:
+- [Google Play Store](https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator.companion)
+
+## Alpha/Beta versions of the app
+- [Google Play Store](http://bit.ly/2PrwwcH) (note that beta versions will not arrive immediately after subscribing)
 
 ## Contacts
 - [Support chat on Telegram](https://t.me/ottnav_global)

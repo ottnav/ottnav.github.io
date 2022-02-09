@@ -460,7 +460,7 @@ where items are described in previous section, and can include also an info fiel
 ## Changelog
 Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ottnav.github.io/changelog.html)
 
-## Availability
+## `OTT Navigator` app Availability
 - [Direct download of standalone app build](https://app.ott-nav.com/dist/std/latest.apk) (you will need to allow installing apps from unknown sources on your device)
 - [Google Play Store](http://bit.ly/2PQEAVf)
 - [Huawei AppGallery](https://bit.ly/2WHhIvQ)

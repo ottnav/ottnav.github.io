@@ -227,7 +227,7 @@ It is a provider issue meaning that master playlist for the stream contains a li
 - for Play Store/AppGallery version you can install the app on as many devices as you want (as long as they use same account), but it's a violation to use more than 5 devices at the same time (fair use policy is insisted).
 - for standalone version there is a limit of 5 devices per account max. You can purchase more slots for your premium.
 
-## Enable premium on a Firestick (or other device without play market)
+## Purchase premium on a Firestick (or other device without play market)
 - install `OttNav Companion` app (check the link in the bottom of the FAQ)
 - launch it, create a new account, and press add more max devices button
 - purchase device slots, to have some free slots on your account
@@ -235,6 +235,18 @@ It is a provider issue meaning that master playlist for the stream contains a li
 - launch the app, go to settings - premium, log in with the same account you have created in `OttNav Companion`
 - ensure that the current device is added to the list of active devices (4-word phrase represents an unique installation id), use `Add Device` button if it was not automatically added
 - congrads, you can repeat last 3 steps on your other devices!
+
+## I already have active purchase/subscription on Play Store and want to activate on non-Play Store device
+- install a standalone version of OTT Navigator app (check the link at the bottom of the FAQ) (you might need enable installing from unknown sources)
+- launch the app, go to settings - premium, create a new account
+- press claim purchase button and enter your purchase number, ensure that number of available slots has been increased
+- ensure that the current device is added to the list of active devices (4-word phrase represents an unique installation id), use `Add Device` button if it was not automatically added
+
+Notes:
+- If you recently made a purchase it might take several hours for system get it loaded, so please try later
+- If you cannot find your purchase number in email from Google, then go to `pay.google.com` and find the transaction there
+- Single purchase can be claimed only once
+- Keep in mind that it's against Fair Use Policy to actively use more than 5 devices at the same time
 
 ## Purchased a premium on Play Store but it’s not active
 Sometimes it takes a while for Play Store to sync purchases (due to long caching). Steps to guarantee that sync will happen instantly:

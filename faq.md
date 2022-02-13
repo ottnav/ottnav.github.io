@@ -224,8 +224,8 @@ It is a provider issue meaning that master playlist for the stream contains a li
 
 # Premium
 ## How many devices does Premium allow
-- for Play Store/AppGallery version you can install the app on as many devices as you want (as long as they use same account), but it's a violation to use more than 5 devices at the same time (fair use policy is insisted).
-- for standalone version there is a limit of 5 devices per account max. You can purchase more slots for your premium.
+- for Play Store/AppGallery version you can install the app on as many devices as you want (as long as they use same account), but it's a violation to use more than 5 devices at the same time (fair use policy is insisted) for a purchase.
+- for Standalone version you can use as many devices as you have purchased via `OttNav Companion` app.
 
 ## Purchase premium on a Firestick (or other device without play market)
 - install `OttNav Companion` app (check the link in the bottom of the FAQ)
@@ -246,7 +246,7 @@ Notes:
 - If you recently made a purchase it might take several hours for system get it loaded, so please try later
 - If you cannot find your purchase number in email from Google, then go to `pay.google.com` and find the transaction there
 - Single purchase can be claimed only once
-- Keep in mind that it's against Fair Use Policy to actively use more than 5 devices at the same time
+- Keep in mind that it's against Fair Use Policy to actively use more than 5 devices at the same time for a single purchase
 
 ## Purchased a premium on Play Store but it’s not active
 Sometimes it takes a while for Play Store to sync purchases (due to long caching). Steps to guarantee that sync will happen instantly:

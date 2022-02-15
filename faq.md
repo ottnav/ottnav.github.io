@@ -481,6 +481,7 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 - [Google Play Store](https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator.companion)
 
 ## Development versions
+- Standalone version allows selecting between stable, beta and alpha update channels
 - Beta versions on [Google Play Store](http://bit.ly/2PrwwcH) (note that beta versions will not arrive immediately after subscribing)
 
 ## Contacts

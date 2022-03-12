@@ -479,6 +479,7 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 
 ## `OttNav Companion` app for managing premium on standalone builds:
 - [Google Play Store](https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator.companion)
+- [Aptoide](https://ottnav-companion.en.aptoide.com/app)
 
 ## Development versions
 - Standalone version allows selecting between stable, beta and alpha update channels

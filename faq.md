@@ -490,7 +490,7 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
   - Allows switching between `stable`, `beta` and `alpha` update channels
 - Store-specific version of the app (payments managed via the corresponding app store)
   - [OTT Navigator at Google Play Store](http://bit.ly/2PQEAVf)
-    - Subscribing to [OTT Navigator Beta](http://bit.ly/2PrwwcH)
+    - Accessing `beta` update channels via [subscribing to Beta versions on Play Store](http://bit.ly/2PrwwcH)
   - [OTT Navigator at Huawei AppGallery](https://bit.ly/2WHhIvQ)
 
 ## `OttNav Companion` app for managing premium account, sub-accounts (for standalone builds)

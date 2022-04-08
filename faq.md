@@ -485,17 +485,17 @@ where items are described in previous section, and can include also an info fiel
 Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ottnav.github.io/changelog.html)
 
 ## `OTT Navigator` app Availability
-- [Direct download of standalone app build](https://app.ott-nav.com/dist/std/latest.apk) (you will need to allow installing apps from unknown sources on your device)
-- [Google Play Store](http://bit.ly/2PQEAVf)
-- [Huawei AppGallery](https://bit.ly/2WHhIvQ)
+- Standalone version of the app (not linked to any store, premium can be purchased and managed using `OttNav Companion` app)
+  - [Direct download)](https://app.ott-nav.com/dist/std/latest.apk) (you will need to allow installing apps from unknown sources on your device)
+  - Allows switching between `stable`, `beta` and `alpha` update channels
+- Store-specific version of the app (payments managed via the corresponding app store)
+  - [Google Play Store](http://bit.ly/2PQEAVf)
+    - Subscribing to [beta versions](http://bit.ly/2PrwwcH)
+  - [Huawei AppGallery](https://bit.ly/2WHhIvQ)
 
-## `OttNav Companion` app for managing premium on standalone builds:
+## `OttNav Companion` app for managing premium account, sub-accounts (for standalone builds)
 - [Google Play Store](https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator.companion)
 - [Aptoide](https://ottnav-companion.en.aptoide.com/app)
-
-## Development versions
-- Standalone version allows selecting between stable, beta and alpha update channels
-- Beta versions on [Google Play Store](http://bit.ly/2PrwwcH) (note that beta versions will not arrive immediately after subscribing)
 
 ## Contacts
 - [Support chat on Telegram](https://t.me/ottnav_global)

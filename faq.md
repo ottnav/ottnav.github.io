@@ -486,16 +486,16 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 
 ## `OTT Navigator` app Availability
 - Standalone version of the app (not linked to any store, premium can be purchased and managed using `OttNav Companion` app)
-  - [Direct download)](https://app.ott-nav.com/dist/std/latest.apk) (you will need to allow installing apps from unknown sources on your device)
+  - [Direct download of OTT Navigator](https://app.ott-nav.com/dist/std/latest.apk) (you will need to allow installing apps from unknown sources on your device)
   - Allows switching between `stable`, `beta` and `alpha` update channels
 - Store-specific version of the app (payments managed via the corresponding app store)
-  - [Google Play Store](http://bit.ly/2PQEAVf)
-    - Subscribing to [beta versions](http://bit.ly/2PrwwcH)
-  - [Huawei AppGallery](https://bit.ly/2WHhIvQ)
+  - [OTT Navigator at Google Play Store](http://bit.ly/2PQEAVf)
+    - Subscribing to [OTT Navigator Beta](http://bit.ly/2PrwwcH)
+  - [OTT Navigator at Huawei AppGallery](https://bit.ly/2WHhIvQ)
 
 ## `OttNav Companion` app for managing premium account, sub-accounts (for standalone builds)
-- [Google Play Store](https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator.companion)
-- [Aptoide](https://ottnav-companion.en.aptoide.com/app)
+- [OttNav Companion at Google Play Store](https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator.companion)
+- [OttNav Companion at Aptoide](https://ottnav-companion.en.aptoide.com/app)
 
 ## Contacts
 - [Support chat on Telegram](https://t.me/ottnav_global)

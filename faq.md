@@ -274,11 +274,23 @@ When the device has several Google accounts, then it might switch between accoun
 - Log in to the web interface of Google Play with the account you used to purchase
 - Install the app from the browser selecting the device to push the app to
 
+Or switch to using standalone version of the app that is not linked to the active google account
+
 ## Will the premium purchase work for Family Library?
 No, family library only apply to paid apps. Free apps with in-app purchases are not eligible for this. You can still use the app on several devices that share the same account.
 
 ## Currently subscribed to premium, willing to purchase via single payment forever
 The app protects users from purchasing premium while he has active subscriptions (since it might lead to a person having both subscription and purchase), so you should cancel your subscription (it will continue working for the rest of subscribed period). And after some time an option to buy the app using a single payment will become available.
+
+## I want to purchase a lot of premium access and provide them to some users (clients), acting like a dealer
+You can purchase more slots for device when you need and can give some of the slots to different users. In order to do this:
+- Install `OttNav Companion app` (check bottom of the FAQ), register an account (if do not have ottnav account yet)
+- Purchase as many premium device slots as you need (the larger pack you are purchasing, the cheaper it will per-device)
+- Create a subaccount configuring a number of slots you wish to share with a different user/client
+  - The app will generate a new login and password that you will share with this user
+  - The user will need to install a `standalone version` of the app (check bottom of the FAQ) and log in using generated credentials
+  - The user will be allowed to use the number of slots (devices activated) you have allowed
+- You will be able to manage subaccounts using `OttNav Companion` app, adding new subaccounts, deleting them, or changing the number of slots (devices) allowed for this client to use
 
 ----
 

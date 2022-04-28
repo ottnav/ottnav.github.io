@@ -294,7 +294,7 @@ You can purchase more slots for device when you need and can give some of the sl
   - The app will generate a new login and password that you will share with this user
   - The user will need to install a `standalone version` of the app (check bottom of the FAQ) and log in using generated credentials
   - The user will be allowed to use the number of slots (devices activated) you have allowed
-- You will be able to manage subaccounts using `OttNav Companion` app, adding new subaccounts, deleting them, or changing the number of slots (devices) allowed for this client to use
+- You will be able to manage subaccounts using `OttNav Companion` app, adding new subaccounts, deleting them, or changing the number of slots (devices) allowed for this client to use. Alternatively you can use `API` to manage subaccounts
 
 ## API to manage client subaccounts
 In addition to manual processing of client user accounts via `OttNav Companion` you are also able to achieve the same actions via the `API` making network requests to the server `api.ott-nav.com:8080`:

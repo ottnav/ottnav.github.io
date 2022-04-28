@@ -298,16 +298,16 @@ You can purchase more slots for device when you need and can give some of the sl
 
 ## API to manage client subaccounts
 In addition to manual processing of client user accounts via `OttNav Companion` you are also able to achieve the same actions via the `API` making network requests to the server `api.ott-nav.com:8080`:
-- `POST /login`
+- Authorize: `POST /login`
   - Arguments: `login`, `pass`
   - Returns: a bean representing your account including `session` id and subaccounts
-- `GET /addsub`
+- Create subaccount: `GET /addsub`
   - Arguments: `session`, `name` (some meaningfull title for the subaccount), `slots` (number of slots to give to this subaccount)
   - Returns: `{"<login>": "<password>"}` with the data of newly created subaccount
-- `GET /rmsubacc`
+- Delete subaccount: `GET /rmsubacc`
   - Arguments: `session`, `login`
   - Returns: a bean representing your account including `session` id and subaccounts
-- `GET /editsubacc`
+- Change subaccount properties: `GET /editsubacc`
   - Arguments: `session`, `login`
   - Optional arguments (depending on what you wish to change): `name`, `pwd`, `slots`
   - Returns: a bean representing your account including `session` id and subaccounts

@@ -136,12 +136,6 @@ If this does not help, here are some options available to you to make a virtual 
   
 After any of these changes you need to do manual EPG reload (`settings - epg - reload`) in order to apply the changes.
 
-## How to protect some content from other users (parental control)
-There are multiple ways to achive this
-- Child mode (`settings - extended - child mode`) allows to specify which exact channels are available and hides all the other contect (PIN-protected)
-- Restricted mode (`settings - extended - restrict`) allows you to setup a PIN code and protect settings, provider info, or categories/channels, etc to be available
-- Moreover you can setup different user profiles in the app, and each profile can hide categories not interested in
-
 ## Want to use Studio mode (up to 9 videos at the same time) or Picture-in-Picture, but cannot find how to enable them
 Studio and PiP mode requires you either having multiple providers, or having a provider that allows more than a single connection at the same time. App tries to detect number of connections via provider API, but sometimes might not be able to detect it correctly. To set a number of connections your provider allows manually:
 - `Settings - Provider - (..your provider..) - Properties - Connections`
@@ -284,7 +278,7 @@ The app protects users from purchasing premium while he has active subscriptions
 
 ----
 
-# Managing activations for multiple users
+# Managing activations for multiple users (Partnership / Reseller)
 
 ## I want to purchase a lot of premium access and provide them to some users (clients), acting like a dealer
 You can purchase more slots for device when you need and can give some of the slots to different users. In order to do this:
@@ -314,9 +308,24 @@ In addition to manual processing of client user accounts via `OttNav Companion` 
 
 ----
 
-# Partnership / Reseller
+# Re-branding / white-label app
+
 ## Branded app with customizations
 If interested in whitelabel package (custom logo, background, etc), then contact us via email `ottnav.partners@gmail.com` or reach us on Telegram (contact `@FlavusV`)
+
+----
+
+# Restricting functionality for users of the app
+
+## How to protect some content from other users (parental control)
+There are multiple ways to achive this
+- Child mode (`settings - extended - child mode`) allows to specify which exact channels are available and hides all the other contect (PIN-protected)
+- Restricted mode (`settings - extended - restrict`) allows you to setup a PIN code and protect settings, provider info, or categories/channels, etc to be available
+- Using multiple user profiles
+
+## Sharing same device between muktiple users
+You can setup different user profiles, and some user-specific history, settings and suggestions will be saved on a user base, like custom favorites, etc.
+You can also protect some of the user profiles via PIN code.
 
 ## Preparing devices for other users and wish to hide provider details
 You can configure the app and then hide provider details.

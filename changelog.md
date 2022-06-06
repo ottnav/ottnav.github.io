@@ -1,7 +1,24 @@
 # OTT Navigator Changelog
 
+# 1.6.7
+## 1.6.7.1 (2022-Jun-6)
+- lists: option to enable cyclic navigation between categories (using L/R)
+- lists: new compact view type with channel numbers
+- player hud: allow to move buffering/brightness/etc status to different parts of the screen
+- player hud: new clear variant #5 added (supports both top and bottom)
+- vod: deny entering adult group if restriction is configured
+- vod player: support active edges to change brightness and volume
+- vod: setting to use provider order for media library
+- just started: allow user to remove certain channels or categories from this suggestion
+- epg: allow to change epg shift for a provider
+- playlist: support for portal:: link providers
+- new wallpapers
+- config: action to reset RC to default settings
+- afr: better support for slower devices that skips frames on some streams, leading to unstable fps calculation (that triggers afr switch), applies for cases when stream does not declare frame rate by itself
+- player: setting to set huge clock size
+
 # 1.6.6
-## 1.6.6.9.5 (2021-Jan-22)
+## 1.6.6.9.5 (2022-Jan-22)
 - playlist: support vod-only url
 - category props: allow mass mark/unmark favorites via actions with multiple channels option
 - backup: option to save settings only

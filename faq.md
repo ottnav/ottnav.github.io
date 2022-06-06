@@ -515,7 +515,7 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 
 ## `OTT Navigator` app Availability
 - Standalone version of the app (not linked to any store, premium can be purchased and managed using `OttNav Companion` app)
-  - [Direct download of OTT Navigator](https://app.ott-nav.com/dist/std/latest.apk) (you will need to allow installing apps from unknown sources on your device)
+  - [Direct download of OTT Navigator](https://app.ott-nav.com/dist/std/latest.apk) (you will need to allow installing apps from unknown sources on your device). Code for `Downloader` app is `982469`.
   - Allows switching between `stable`, `beta` and `alpha` update channels
 - Store-specific version of the app (payments managed via the corresponding app store)
   - [OTT Navigator at Google Play Store](http://bit.ly/2PQEAVf)

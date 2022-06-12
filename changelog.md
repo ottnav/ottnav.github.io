@@ -1,6 +1,13 @@
 # OTT Navigator Changelog
 
 # 1.6.7
+## 1.6.7.2 (2022-Jun-12)
+- preview: config to start preview on clicking channel, and using second click to start playing fullscreen
+- home: added indicators when no connection avail or time invalid
+- drm: improve support for some mpd streams
+- backup: allows to encrypt the user-data with a password (uses AES crypto)
+- lists: option to disable all category
+
 ## 1.6.7.1 (2022-Jun-6)
 - lists: option to enable cyclic navigation between categories (using L/R)
 - lists: new compact view type with channel numbers

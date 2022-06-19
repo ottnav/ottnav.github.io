@@ -1,6 +1,11 @@
 # OTT Navigator Changelog
 
 # 1.6.7
+## 1.6.7.3 (2022-Jun-19)
+- tvguide: option to prefer it to the standard channel browser in most places
+- tvguide: do not close when launching playback and restore state when returning from playback to main screen
+- backup: support saving and restoring backup using user-provided http storage via url (assume that the url applies POST data)
+
 ## 1.6.7.2 (2022-Jun-12)
 - preview: config to start preview on clicking channel, and using second click to start playing fullscreen
 - home: added indicators when no connection avail or time invalid

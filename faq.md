@@ -277,8 +277,6 @@ Or switch to using standalone version of the app that is not linked to the activ
 No, family library only apply to paid apps. Free apps with in-app purchases are not eligible for this. You can still use the app on several devices that share the same account.
 
 ## Currently subscribed to premium, willing to purchase via single payment forever
-The app protects users from purchasing premium while he has active subscriptions (since it might lead to a person having both subscription and purchase), so you should cancel your subscription (it will continue working for the rest of subscribed period). And after some time an option to buy the app using a single payment will become available.
-
 ## How to change subscription period
 If you wish to change your subscription, like switching from 3 months to annual, you need:
 - Cancel auto-renewal of your subscription (this is done in a store app)

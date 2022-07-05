@@ -279,6 +279,12 @@ No, family library only apply to paid apps. Free apps with in-app purchases are 
 ## Currently subscribed to premium, willing to purchase via single payment forever
 The app protects users from purchasing premium while he has active subscriptions (since it might lead to a person having both subscription and purchase), so you should cancel your subscription (it will continue working for the rest of subscribed period). And after some time an option to buy the app using a single payment will become available.
 
+## How to change subscription period
+If you wish to change your subscription, like switching from 3 months to annual, you need:
+- Cancel auto-renewal of your subscription (this is done in a store app)
+- The subscription will last until the end of the payed period (we do not allow purchasing a different subscription at the same time to protect users from accidental purchase of several subscriptions at once)
+- After the premium period will expire you will have options to subscribe to a different period or purchase using one-time payment.
+
 ----
 
 # Managing activations for multiple users (Partnership / Reseller)

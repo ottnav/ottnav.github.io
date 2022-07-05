@@ -160,13 +160,15 @@ The exact time may vary (depending on the load auto-cleanup may be done more or 
 # Playback
 
 ## Buffering way too much
-There might be multiple reasons for buffering - starting from poor Internet connection to some firmware specifics. Here comes a list of actions that usually helps if the cause is hardware/firmware, rather than the network issues:
+There might be multiple reasons for buffering - starting from poor Internet connection to some firmware specifics. Here comes a list of actions that usually helps if the cause is hardware/firmware, rather than the network issues, try one-by-one:
 - Set buffer size to minimal (`settings - player - network - buffer`)
 - Change hardware codecs quality to compatibility (`settings - player - codec - hardware quality`)
 - Disable AmLogic fix (`settings - player - codec - amlogic`)
 - Change device resolution from 4K to Full HD on your device if not watching 4K usually
+- Use a different codec for the given channel (since some codecs might not work well on your device/firmware)
+- Set buffer size to maximum (assuming that your network connectivity have packet loss)
 
-If the solutions above did not resolve your issue, then it's definitely a connectivity issue to your IPTV provider. You should contact him to fix the issue. You can also try setting buffer size to maximum.
+If the solutions above did not resolve your issue, then it's definitely a connectivity issue to your IPTV provider. You should contact him to fix the issue.
 
 ## Problems with video/audio playback
 Since the streams of your provider can be different, your hardware used for playback has different capabilities and your device firmware has bugs, there is no best configuration. App comes with hardware decoders, software decoders, and support for external player, defaulting to software codecs in most cases as being less dependent on firmware bugs.  

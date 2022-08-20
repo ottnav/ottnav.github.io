@@ -1,6 +1,15 @@
 # OTT Navigator Changelog
 
 # 1.6.7
+## 1.6.7.4 (2022-Aug-21)
+- player: config to not popup hud on broadcast update
+- visual: setting to fine-tune text color for current channel, and broadcast names
+- touch: allow to configure action on touching different parts of a player screen
+- touch: action to show quick playback control widget (defaults on touching corners of the screen)
+- playlist: improved support for xspf sources
+- drm: improved support for some mpd/ism streams
+- player: improve support for streams with broken non-vital tracks like subtitles
+
 ## 1.6.7.3 (2022-Jun-19)
 - tvguide: option to prefer it to the standard channel browser in most places
 - tvguide: do not close when launching playback and restore state when returning from playback to main screen

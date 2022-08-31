@@ -315,6 +315,17 @@ In addition to manual processing of client user accounts via `OttNav Companion` 
   - Optional arguments (depending on what you wish to change): `name`, `pwd`, `slots`
   - Returns: a bean representing your account including `session` id and subaccounts
 
+## Backup directly to your server for you and/or your clients
+Since `v1.6.7.3` the app supports specifying custom url for backup service. This endpoint is called with `POST` data sent to it, so you can create script that stores backups for you or your clients on your hosting with your control. A very basic acceptor script in `PHP` that saves backup to `backup.nav` file would look like this:
+```
+<?php
+$data = file_get_contents("php://input"); // get data from POST
+$fp = fopen('backup.nav', 'w'); // creates a backup.nav file in the current directory storying the backup
+fwrite($fp, $data);
+fclose($fp);
+?>
+```
+
 ----
 
 # Re-branding / white-label app

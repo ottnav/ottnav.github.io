@@ -1,6 +1,10 @@
 # OTT Navigator Changelog
 
 # 1.6.7
+## 1.6.7.5 (2022-Aug-31)
+- phone: open main app screen in vertical mode by default (can be disabled in main screen settings)
+- epg: allow playing archives even with no valid epg available for channel (might not work for some providers)
+
 ## 1.6.7.4 (2022-Aug-21)
 - player: config to not popup hud on broadcast update
 - visual: setting to fine-tune text color for current channel, and broadcast names

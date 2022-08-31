@@ -154,6 +154,7 @@ You can use any image service you like, here is a quick sample to get idea how t
 
 ## How long does backup in a cloud available?
 The exact time may vary (depending on the load auto-cleanup may be done more or less frequently), but in any case it will be available 7 days at least. General service target range lies between 1 and 5 weeks.
+You can also store backup on your own server - check FAQ about it
 
 ----
 

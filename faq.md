@@ -27,8 +27,10 @@ The app is just a player and neither has any content, nor can provide you any. I
 ## How to install on my Windows PC/Mac
 There is no special version dedicated to be used on Windows PC or Mac, however, there is a solution to use the app with negligible side effects.
 - Windows 11 has a decent Android apps support, so it's recommended to use builtin solution for running apps.
-- Install NoxPlayer app on your PC - it allows running Android apps and is highly optimized and recommended.
-Just use it like it was a native app.Some users are running the app on different emulators, like BlueStacks emulator and report that it also works quite well, and supports later Android versions.  
+  - Step 1: Install `Windows Subsystem for Android` following this instruction https://www.windowscentral.com/how-get-started-android-apps-windows-11
+  - Step 2: Install `standalone OTT Navigator` app (check bottom of the FAQ)
+- Install NoxPlayer app on your PC - it allows running Android apps and is highly optimized and recommended. Just use it like it was a native app.Some users are running the app on different emulators, like BlueStacks emulator and report that it also works quite well, and supports later Android versions. 
+
 Please note, that hardware acceleration might not be available when using emulator on some devices, so you might need selecting software codecs to watch your content.
 
 ## Will the app work on my TV? Why not WebOS/Tizen?

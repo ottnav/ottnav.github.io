@@ -1,6 +1,16 @@
 # OTT Navigator Changelog
 
 # 1.6.7
+## 1.6.7.6 (2022-Oct-31)
+- profiles: allows to restrict provider to be only used by a single user profile (via provider attributes)
+- config: allow to setup default app-wide zoom for channels
+- backup: better support for larger backups with more data (note that it may not load on older app versions)
+- playlist: basic support for non-proxy acestream channels
+- player: ask user what to do on channel error after num of retries exceeded
+- category props: on hiding category show quick option to undo the action
+- restrict: add action in settings to lock settings immediately
+- phone: better treat screen cutouts in vertical view
+
 ## 1.6.7.5 (2022-Aug-31)
 - phone: open main app screen in vertical mode by default (can be disabled in main screen settings)
 - epg: allow playing archives even with no valid epg available for channel (might not work for some providers)

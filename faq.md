@@ -15,6 +15,7 @@ The app is just a player and neither has any content, nor can provide you any. I
     - (Easy way for normal people): just download the corresponding xml file (or create a new one taking strings.xml as a base contents), make changes that are required and send it to us via email
 - Provide high-quality detailed description on the issues you are experiencing, and suggestions you feel will perfectly fit the app.
 - Suggest common questions and solutions for the FAQ
+- Spread the word and help the app to grow and get new users
 
 ----
 
@@ -22,7 +23,7 @@ The app is just a player and neither has any content, nor can provide you any. I
 
 ## How to install
 - Install from supported app store
-- Sideload non-store build of the app (check the link at the bottom of the FAQ)
+- Sideload non-store (standalone) build of the app (check the link at the bottom of the FAQ)
 
 ## How to install on my Windows PC/Mac
 There is no special version dedicated to be used on Windows PC or Mac, however, there is a solution to use the app with negligible side effects.
@@ -52,7 +53,7 @@ So if you choose an LG/Samsung TV (the only 2 major vendors that do not use Andr
 
 ## What playlist formats are supported
 - Preffered format is [M3U/M3U8](https://en.wikipedia.org/wiki/M3U)
-- However, the app also supports lots of more exotic formats (the support might be limited though), including `WebOS webtv`, `Tizen nStream`, `.xspf`, `.tv`, `sat .txt`, etc
+- However, the app also supports lots of more exotic formats (the support might be limited though), including `WebOS webtv`, `Tizen nStream`, `.xspf`, `.tv`, `SAT .txt`, etc
 
 ## Playlist setup
 Your options are one of the following (it’s always preferred to use links over files):

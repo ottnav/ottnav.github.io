@@ -1,6 +1,11 @@
 # OTT Navigator Changelog
 
 # 1.6.7
+## 1.6.7.7 (2022-Nov-7)
+- stalker: improve support for vods on some providers
+- lists: added side-by-side (huge)
+- xc: improved archives support for some providers
+
 ## 1.6.7.6 (2022-Oct-31)
 - profiles: allows to restrict provider to be only used by a single user profile (via provider attributes)
 - config: allow to setup default app-wide zoom for channels

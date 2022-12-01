@@ -419,17 +419,20 @@ Channel declaration. Supported attributes:
 - `tvg-shift="-2"` : marker specifying that epg data should be shifted by several hours
 - `audio-track="2"` : try to autoselect 2nd audio track
 
-`#EXTGRP: Sports` - alias for `group-title` tag
+### `#EXTGRP: Category Name`
+Alias for `group-title` tag
 
-`#EXTHTTP:{"User-Agent":"Chrome","SomeOtherTag":"SomeValue"}` - simple way for passing extra http attrs (`v1.6.6.9+`)
+### `#EXTHTTP:{..http tags..}`
+Simple way for passing extra http attrs (`v1.6.6.9+`):
+- `#EXTHTTP:{"User-Agent":"Chrome","SomeOtherTag":"SomeValue"}`
 
-`#EXTVLCOPT:parameter="value"`
-Allows setting some custom parameters for the current channel:
+### `#EXTVLCOPT:parameter="value"`
+Allows setting some custom parameters for the current channel (`VLC` compatibility tags):
 - `http-user-agent` (User-Agent)
 - `http-referrer` (HTTP referrer)
 
-`#KODIPROP:parameter=value`
-Allows setting some custom parameters for the current channel. Supported `parameter` are:
+### `#KODIPROP:parameter=value`
+Allows setting some custom parameters for the current channel (`KODI` compatibility tags). Supported `parameter` are:
 - inputstream.adaptive.license_type (DRM type, can be one of the following):
   - com.widevine.alpha (Widevine)
   - clearkey (ClearKey)

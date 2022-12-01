@@ -1,5 +1,13 @@
 # OTT Navigator Changelog
 
+# 1.6.8
+## 1.6.8.1 (2022-Dec-1)
+- rc: increase minimal delay when waiting for channel switch by number
+- config: trust user-provided epg sources (allow to override provider information)
+- vod ui: show backdrop image from poster
+- voice: improved voice search on some devices
+- config: app-wide setting to override user-agent (remember that per-provider or per-channel setting has more priority as in other app places)
+
 # 1.6.7
 ## 1.6.7.7 (2022-Nov-7)
 - stalker: improve support for vods on some providers

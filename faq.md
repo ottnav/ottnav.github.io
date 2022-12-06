@@ -110,6 +110,7 @@ Some TVs are coming with overscan enabled in their configuration (especially for
 App supports 2 ways of sending a stream to a TV (when both are located in the same WiFi network). Both are not very reliable and cannot be used if your provider requires some DRM tags or specific attributes being passed in addition to the stream url. The options are:
 - If your TV supports working as WiFi TV (and is acting as UPnP device), while playing video open the menu -> parameters -> send to TV -> select your device. If successful (and the stream supported by your TV) it will start playing on TV and you should stop playing it on your phone not to take extra network connection. Note, that TVs supports only limited set of stream types and might not support the one your provider is offering.
 - If you are using an old Chromecast device (2020 and older) and have Chromecast devices available in the network there will be a button on HUD to send the stream. This does not apply to newer Chromecast that are actually a Google TV device with Android, so you can just install the app and use it via remote, instead of just casting the stream.
+
 Please note that due to limitations of your TV/Chromecast devices some streams cannot be sent - this includes streams that are encoded in `mpeg-ts`, or when your provider requires passing extra `http` tags to the stream (like `user-agent`, `referrer`, extra headers, etc). In this way it's recommended to use external player like `VLC` that can transcode `mpeg-ts` streams to `hls` that are usually playable on TV/Chromecast.
 
 ## Having multiple providers, how to manage channels?
@@ -118,6 +119,7 @@ One the best that suits most use cases (when you need max channels from all prov
 - Remove/Hide categories you are not interested in
 - Group channels (move) them so all channels of the same category (like sports) from all providers are located in the same category
 - Enable duplicates folding. This way all channels with same or close names (like HD variants will be folded into a single record)
+
 If a playback issue will occur the app will automatically switch to the next source (eg folded channel). You can alternatively manually switch between sources.
 Note, that unless you manually switch the source of the exact channel, the default channel to be used will be the first one in the list if duplicate folding is disabled.  
 

@@ -164,7 +164,7 @@ You can use any image service you like, here is a quick sample to get idea how t
 The exact time may vary (depending on the load auto-cleanup may be done more or less frequently), but in any case it will be available 7 days at least. General service target range lies between 1 and 5 weeks.
 You can also store backup on your own server - check FAQ about it
 
-## Launch on boot not working
+## Auto-start on device reboot
 You can enable the app to auto-start on non-phone device boot via `Settings > Extended > Start on boot`.
 However, the newer Android version is, the lower is the chance that this feature will work (though you should try, since it depends on your device firmware), since apps are limited when launching any visual screens from background by default.
 However, you can enable `allow background activity starts` checkbox in `Developer Settings` (unlock them by going `Settings > About Phone > Build Number` and tap this option 7 times.

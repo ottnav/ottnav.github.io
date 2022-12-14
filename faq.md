@@ -67,7 +67,7 @@ Your options are one of the following (it’s always preferred to use links over
   - Also you can setup the player on your phone (not using files, links only!) and then use the backup/restore feature of the app to transfer configuration to your TV/box device!
 
 ## Streams not playing (401, 403 or other 4xx and 5xx errors)
-These erorrs are returned from your provider (check [manual](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#client_error_responses)), so in general you should refer to your provider for more details.
+These errors are returned from your provider (check [manual](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#client_error_responses)), so in general you should refer to your provider for more details.
 
 Sometimes it may mean that your provider requires some extra headers (like `User-Agent` or `Referrer`) in the requests that you should configure via playlist or via the app, sometimes it might mean that your provider sources are configured incorrectly or even your subscription to your provider's services has been expired. Since it's provider-specific, there cannot be generic solution for this, contact your provider for help.
 

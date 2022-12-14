@@ -167,7 +167,7 @@ You can also store backup on your own server - check FAQ about it
 ## Auto-start on device reboot
 You can enable the app to auto-start on non-phone device boot via `Settings > Extended > Start on boot`.
 However, the newer Android version is, the lower is the chance that this feature will work (though you should try, since it depends on your device firmware), since apps are limited when launching any visual screens from background by default.
-However, you can enable `allow background activity starts` checkbox in `Developer Settings` (unlock them by going `Settings > About Phone > Build Number` and tap this option 7 times.
+However, you can enable `allow background activity starts` checkbox in `Developer Settings` (unlock them by going into your device settings, `About > Build Number` and tap this option 7 times).
 
 
 ----

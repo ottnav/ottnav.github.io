@@ -1,6 +1,13 @@
 # OTT Navigator Changelog
 
 # 1.6.8
+## 1.6.8.2 (2022-Dec-21)
+tablet: allow enabling vertical mode on start screen
+vod: sort mode by release year
+xc: support playing vod with incorrect container type reported by providers
+vod id: improved preview screen
+studio: improve layout and switching for small amount unfocused screens
+
 ## 1.6.8.1 (2022-Dec-1)
 - rc: increase minimal delay when waiting for channel switch by number
 - config: trust user-provided epg sources (allow to override provider information)

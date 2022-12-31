@@ -1,6 +1,17 @@
 # OTT Navigator Changelog
 
 # 1.6.8
+## 1.6.8.3 (2022-Dec-31)
+- rtp: improved basic support for rtp and udp streams
+- tvguide: restored original scrollable view for phones (always) and tablets (if vertical mode enabled)
+- manage: action to remove metadata of channels/categories that are not currently used
+- restrict: config to hide password when entering it via RC
+- stalker: option to select different stb type
+- vod: config to list directories first (in gallery view)
+- vod ui: improved processing media items with multiple backgrounds, and tweaked ui as well
+- cache: load vod data from provider from cache (only refresh manually or after configured timeout) if quick start cache is enabled, thus making media library appearing much faster
+- cache: now uses channels cache if provider playlist is temporarily down
+
 ## 1.6.8.2 (2022-Dec-21)
 - tablet: allow enabling vertical mode on start screen
 - vod: sort mode by release year

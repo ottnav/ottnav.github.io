@@ -548,6 +548,15 @@ So resulting file would be something like:
 
 where items are described in previous section, and can include also an info field described in the first section
 
+----
+
+## Default app user-agent
+User-Agent used by the app by default is `OTT Navigator/VER (Linux;Android ANDVER; LOCALE; HASH) CODECINFO` where:
+- `VER` is app version like `1.6.8.3`
+- `ANDVER` is android version
+- `LOCALE` is a language set in the app
+- `HASH` (optional) is installation identifier, should be quite unique between devices (may not always be passed)
+- `CODECINFO` (optional) is information about the currently used codec for the channel (if it is a stream request), may contain something related for the codec used, for example when using hardware codecs will be something like `ExoPlayerLib/2.15.1`
 
 ----
 

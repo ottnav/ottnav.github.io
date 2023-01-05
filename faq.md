@@ -576,6 +576,10 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
     - Accessing `beta` update channels via [subscribing to Beta versions on Play Store](http://bit.ly/2PrwwcH)
   - [OTT Navigator at Huawei AppGallery](https://bit.ly/2WHhIvQ)
 
+### Versions for old devices not longer supported
+- for `Android 4.x` latest version is `1.6.4.4` [google](https://app.ott-nav.com/dist/std/latest4.apk).
+- for `Android 5.x` latest version is `1.6.7.7` [standalone](https://app.ott-nav.com/dist/std/latest5.apk).
+
 ## `OttNav Companion` app for managing premium account, sub-accounts (for standalone builds)
 - [OttNav Companion at Google Play Store](https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator.companion)
 - [OttNav Companion at Aptoide](https://ottnav-companion.en.aptoide.com/app)

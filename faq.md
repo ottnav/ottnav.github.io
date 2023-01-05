@@ -568,22 +568,23 @@ Please note that this attribute might be modified by user, provider attributes i
 Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ottnav.github.io/changelog.html)
 
 ## `OTT Navigator` app Availability
-## Standalone version of the app
-Not linked to any store, premium can be purchased and managed using `OttNav Companion` app
-- [Direct download of OTT Navigator](https://app.ott-nav.com/dist/std/latest.apk) (you will need to allow installing apps from unknown sources on your device). Code for `Downloader` app is `982469`.
+### Standalone version of the app
+- Not linked to any store
+- Premium can be purchased and managed using `OttNav Companion` app
+- [Direct download of OTT Navigator](https://app.ott-nav.com/dist/std/latest.apk) (you will need to allow installing apps from unknown sources on your device)
+- Code for `Downloader` app is `982469`.
 - Allows switching between `stable`, `beta` and `alpha` update channels
-
-## Store-specific version of the app
-- Payments managed via the corresponding app store
 
 ### Google Play
 - [OTT Navigator at Google Play Store](http://bit.ly/2PQEAVf)
+- Payments managed via the store
 - Accessing `beta` update channels via [subscribing to Beta versions on Play Store](http://bit.ly/2PrwwcH)
 
 ### Huawei AppGallery
 - [OTT Navigator at Huawei AppGallery](https://bit.ly/2WHhIvQ)
+- Payments managed via the store
 
-## Versions for old devices not longer supported
+### Versions for old devices not longer supported
 - for `Android 4.x` latest version is `1.6.4.4` [google](https://app.ott-nav.com/dist/std/latest4.apk).
 - for `Android 5.x` latest version is `1.6.7.7` [standalone](https://app.ott-nav.com/dist/std/latest5.apk).
 

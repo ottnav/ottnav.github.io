@@ -1,5 +1,13 @@
 # OTT Navigator Changelog
 
+# 1.6.9
+## 1.6.9.1 (2023-Jan-12)
+- xc: changed default stream request format from mpeg-ts to hls (you can change to ts back via provider props or generally if have issues with your provider)
+- xc: fixed closed captions detection on some streams
+- vod: long press left/right while browsing shows quick selection of different folders on the same folder level
+- manage: option to drop custom channel order in a category
+- manage: option to clear all channels data
+
 # 1.6.8
 ## 1.6.8.3 (2022-Dec-31)
 - rtp: improved basic support for rtp and udp streams

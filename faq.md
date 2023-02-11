@@ -519,7 +519,7 @@ Sample:
     "name": "Test video",
     "category": "Action",
     "info": { ... },
-    "video": "http://video/file.mp4",
+    "video": "http://video/file.mp4",
 },
 {
     "name": "Test serial",
@@ -543,10 +543,48 @@ Sample:
 ]
 ```
 
-So resulting file would be something like:
-`[ {item1}, {item2}, {item3}, {item4} ]`
+### full sample of json VOD libarary
+```
+[
+{
+    "name": "Test video",
+    "category": "Action",
+    "info": {
+      "poster": "http://poster/image.jpg",
+      "rating": "5.5",
+      "genre": [ "drama", "history" ]
+    },
+    "video": "http://video/file.mp4",
+},
+{
+    "name": "Test serial",
+    "category": "Drama",
+    "info": {
+      "genre": [ "drama", "history" ],
+    },
+    "seasons": [
+        {
+            "season": 1,
+            "info": {
+              "genre": [ "drama", "history" ],
+            },
+            "episodes": [
+                {
+                    "episode": 1,
+                    "name": "Intro",
+                    "info": {
+                      "plot": "Something happens...",
+                      "cast": [ "John Dow" , "Jane Dow" ]
+                    },
+                    "video": "http://episodes/file.mp4"
+                }
+            ]
+        }
+    ]
+}
+]
+```
 
-where items are described in previous section, and can include also an info field described in the first section
 
 ----
 

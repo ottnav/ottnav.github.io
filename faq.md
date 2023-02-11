@@ -495,8 +495,8 @@ Sample:
     "added": 12354235,
     "duration": 3600,
     "adult": true,
-    "trailer": "HGH34ghgAU",
-    "backdrop": "http://video/image.jpg",
+    "trailer": "HGH34ghgAU",
+    "backdrop": "http://video/image.jpg",
     "ttl": 12354235
 }
 ```
@@ -519,7 +519,7 @@ Sample:
     "name": "Test video",
     "category": "Action",
     "info": { ... },
-    "video": "http://video/file.mp4",
+    "video": "http://video/file.mp4",
 },
 {
     "name": "Test serial",

@@ -459,6 +459,19 @@ Syntax is generally compatible with KODI inputStream.Adaptive plugin declared at
 
 The app also accepts extra stream headers configured after `|` character in license_key (`v1.6.4.1+`)
 
+### `#EXTATTRFROMURL:http://some/url/for/data.m3u`
+`v1.6.9.2+`
+If you wish to hide some sensitive tags from the playlist itself, or wish some of these tags to be generated upon request (like DRM keys to match the content), then you can specify this attribute targeting to your server service. App will make a request to this url when user going to play this channel/vod entry.
+
+Sample response from your service should look something like this:
+```
+#EXTINF:-1, Demo channel
+#KODIPROP:inputstream.adaptive.license_key=...
+#KODIPROP:inputstream.adaptive.license_type=...
+http://example.com/channel/02
+```
+Please note, that the app will also use the url to the content that is returned from your response rather the one you have in your playlist.
+
 ### A basic M3U file format sample
 ```
 #EXTM3U url-tvg="http://example.com/epg.xml.gz"

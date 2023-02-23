@@ -63,9 +63,9 @@ Your options are one of the following (it’s always preferred to use links over
   - Copy a playlist file to your personal Dropbox cloud storage
   - In a context menu select `Dropbox -> Copy Link`
   - Open a text editor and paste a link there; replace `dl=0` to `dl=1` in the link (since by default it copies a link to the web page rather than to the file itself)
-  - (Not recommended) copy file to Downloads directory, so the app will see it. However, file access is being limited in Android from version-to-version, and especially on Android TV devices, so better use any of the cloud storage.
-  - (For admins) make a web server in the local network that is bind to host “iptv.local” and ensure that your playlist is available by HTTP request to `iptv.local/playlist.m3u` and the app will auto-detect the playlist
-  - Also you can setup the player on your phone (not using files, links only!) and then use the backup/restore feature of the app to transfer configuration to your TV/box device!
+- (Not recommended) copy file to Downloads directory, so the app will see it. However, file access is being limited in Android from version-to-version, and especially on Android TV devices, so better use any of the cloud storage.
+- (For admins) make a web server in the local network that is bind to host “iptv.local” and ensure that your playlist is available by HTTP request to `iptv.local/playlist.m3u` and the app will auto-detect the playlist
+- Also you can setup the player on your phone (not using files, links only!) and then use the backup/restore feature of the app to transfer configuration to your TV/box device!
 
 ## Streams not playing (401, 403 or other 4xx and 5xx errors)
 These errors are returned from your provider (check [manual](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#client_error_responses)), so in general you should refer to your provider for more details.

@@ -175,6 +175,13 @@ You can enable the app to auto-start on non-phone device boot via `Settings > Ex
 However, the newer Android version is, the lower is the chance that this feature will work (though you should try, since it depends on your device firmware), since apps are limited when launching any visual screens from background by default.
 However, you can enable `allow background activity starts` checkbox in `Developer Settings` (unlock them by going into your device settings, `About > Build Number` and tap this option 7 times).
 
+## Cannot use local files for playlist, backup or other features
+It is highly recommended not to work with local files. Recent Android versions greatly limited the app to work with files NOT created by the app, meaning that loading playlist from network and saving as a file, or using a backup after app reinstall is not available directly. While it is not problem when using a phone, since Android on phones has built-in file manager that allows browsing for file and getting access to it, it is still a problem on Android TV devices, since the firmware does NOT come with file browsing API, so there is no way besides rooting the device to access user-created files.
+
+For the app we prefer features that works perfectly, that means that adding feature like backup to local file that will work in some cases (when clearing app data) but will not work in other cases (when reinstalling the app) - it is unsafe, since user is expecting the feature to work. So we prefer to hide such an option on devices that has limited access to files (like Android TV devices) instead of providing only a half-working feature.
+
+So you should use different options - use cloud storage or services like `m3u4u` for playlists, and cloud backup options, etc.
+
 
 ----
 

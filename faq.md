@@ -247,6 +247,11 @@ Please note, that DRM playback is only supported using hardware codecs - so usin
 ## Experiencing ENOENT (FileNotFoundException) while trying to play a channel
 It is a provider issue meaning that master playlist for the stream contains a link for one of the tracks in invalid format - instead of providing full url to the file with the domain, path, etc, it just only gives the path that is considered a local (like `/videos/12345/segment12345.mpg`) - of course, there is no such file on your current device.
 
+## Cannot change volume on some channels
+Some channels are using audio tracks that might not be supported by your TV box (like 5.1, 7.1). In this case the app passes the audio stream directly to your TV, since TVs usually supports such tracks. But as a side effect the volume can be only controlled using a TV remote. Possible solutions are:
+- enable software audio decoder globally in the app codecs, or on this exact channel (this way the audio stream will be processed on your box, so the full volume control will be available)
+- or enable manual audio volume fine-tune within the app
+
 ----
 
 # Premium

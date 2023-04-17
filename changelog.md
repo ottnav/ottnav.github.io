@@ -1,6 +1,14 @@
 # OTT Navigator Changelog
 
 # 1.6.9
+## 1.6.9.2 (2023-Apr-17)
+- lists: added indicators for channel that has duplicates/fav/banned in addition to archive marker
+- playlist: support for #EXTATTRFROMURL tag to defer channel url and some attributes until channel is going to be played
+- config: do not switch to a different duplicate source on error automatically
+- manage: allow user to restrict category the same way how adult category is restricted
+- player: better automatic audio/cc track matching by use-configured list of languages
+- player: allow to override scaling X-zoom separately from Y-zoom
+
 ## 1.6.9.1 (2023-Jan-12)
 - xc: changed default stream request format from mpeg-ts to hls (you can change to ts back via provider props or generally if have issues with your provider)
 - xc: fixed closed captions detection on some streams

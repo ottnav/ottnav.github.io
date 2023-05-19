@@ -460,7 +460,7 @@ Allows setting some custom parameters for the current channel (`VLC` compatibili
 
 ### `#KODIPROP:parameter=value`
 Allows setting some custom parameters for the current channel (`KODI` compatibility tags). Supported `parameter` are:
-- inputstream.adaptive.license_type (DRM type, can be one of the following):
+- `inputstream.adaptive.license_type` (DRM type, can be one of the following):
   - com.widevine.alpha (Widevine)
   - clearkey (ClearKey)
   - com.microsoft.playready (PlayReady)
@@ -492,6 +492,70 @@ Please note, that the app will also use the url to the content that is returned 
 http://example.com/channel/01
 #EXTINF:-1 group-title="Sports", Sports News
 http://example.com/channel/02
+```
+
+## OTC playlist format
+`1.6.9.3+`
+As a good alternative to `m3u` format you can also use `otc` format encoded in `json`.
+
+### OTC playlist format provider properties
+- `"epg": "url/to/epg.xml.gz"` - url for `xmltv` teleguide
+- `"archive_days": 3` - number of days of archived (`catchup`) records are available
+- `"archive_type": "default"` - see `catchup-type` in `m3u` format description
+- `"refresh_minutes": 30` - how often to reload this playlist
+- `"max_connections": 2` - maximal amount of connections for the user that is allowed to watch at the same time
+- `"billed_till": 214363576` - unix time when user account will expire (will be displayed for user)
+- `"user_message": "HI"` - custom message regarding user account (might be balance or any other info to be shown)
+
+### OTC playlist format category properties
+- `"name": "Sample Category"` - name
+- `"icon": "url/to/category/icon"` - icon of the category
+- `"adult": 1` - set to `1` or `true` to mark this category as adult
+
+### OTC playlist format provider properties
+- `"category": "main"` - id of category declared earlier in this json
+- `"name": "Sample Channel"` - name
+- `"number": 123` - channel number
+- `"epg_id": "ch27"` - channel id in `xmltv` teleguide that corresponds to the current channel
+- `"epg_name": "Correct Channel Name"` - if you fail to specify exact `epg_id` you can also try to specify alias for the channel name to the one that you believe will have data in `xmltv` teleguide
+- `"epg_shift": 2` - shift program from `xmltv` teleguide by this amount of hours
+- `"icon": "url/to/icon` - channel icon
+- `"archive_days": 3` - number of days while archived shows are available
+- `"archive_source": "source/url/format"` - check `catchup-source` in `m3u` format description
+- `"user_agent": "Chrome.."` - allows to set custom `HTTP User-Agent`
+- `"referrer": "some/url"` - allows to set custom `HTTP Referrer`
+- `"drm_type": "widevine"` - check `inputstream.adaptive.license_type` in `m3u` format description
+- `"drm_key": "abc:xyz"` - check `inputstream.adaptive.license_key` in `m3u` format description
+- `"drm_url": "url/for/drm/provider"` - check `inputstream.adaptive.license_key` in `m3u` format description
+- `"headers": "..."` - check `EXTHTTP` or `inputstream.adaptive.stream_headers` in `m3u` format description
+- `"runtime_attr_url": "custom/url/for/getting/tags/at/runtime"` - check `EXTATTRFROMURL` in `m3u` format description
+- `"url": "url/for/stream"` - url to the stream that should be played
+
+### Simple OTC playlist sample
+Basic structure looks like:
+```
+{
+  "provider": {
+    "epg": "url/to/epg/xml.gz"
+  },
+  "categories": {
+    "main": {
+      "name": "General channels"
+    }
+  },
+  "channels": [
+    {
+      "category": "main",
+      "name": "Sample Channel 1",
+      "url": "url/to/channel/stream"
+    },
+    {
+      "category": "main",
+      "name": "Sample Channel 2",
+      "url": "url/to/channel/stream"
+    }
+  ]
+}
 ```
 
 ----

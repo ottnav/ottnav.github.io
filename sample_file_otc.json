@@ -1,0 +1,22 @@
+{
+  "provider": {
+    "epg": "url/to/epg/xml.gz"
+  },
+  "categories": {
+    "main": {
+      "name": "General channels"
+    }
+  },
+  "channels": [
+    {
+      "category": "main",
+      "name": "Sample Channel 1",
+      "url": "url/to/channel/stream"
+    },
+    {
+      "category": "main",
+      "name": "Sample Channel 2",
+      "url": "url/to/channel/stream"
+    }
+  ]
+}

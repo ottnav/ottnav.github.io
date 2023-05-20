@@ -532,31 +532,7 @@ As a good alternative to `m3u` format you can also use `otc` format encoded in `
 - `"url": "url/for/stream"` - url to the stream that should be played
 
 ### Simple OTC playlist sample
-Basic structure looks like:
-```
-{
-  "provider": {
-    "epg": "url/to/epg/xml.gz"
-  },
-  "categories": {
-    "main": {
-      "name": "General channels"
-    }
-  },
-  "channels": [
-    {
-      "category": "main",
-      "name": "Sample Channel 1",
-      "url": "url/to/channel/stream"
-    },
-    {
-      "category": "main",
-      "name": "Sample Channel 2",
-      "url": "url/to/channel/stream"
-    }
-  ]
-}
-```
+Check [sample_file_otc.json](https://ottnav.github.io/sample_file_otc.json)
 
 ----
 

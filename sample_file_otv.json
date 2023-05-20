@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Test video",
+    "category": "Action",
+    "info": {
+      "poster": "http://poster/image.jpg",
+      "rating": "5.5",
+      "genre": [
+        "drama",
+        "history"
+      ]
+    },
+    "video": "http://video/file.mp4"
+  },
+  {
+    "name": "Test serial",
+    "category": "Drama",
+    "info": {
+      "genre": [
+        "drama",
+        "history"
+      ]
+    },
+    "seasons": [
+      {
+        "season": 1,
+        "info": {
+          "genre": [
+            "drama",
+            "history"
+          ]
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Intro",
+            "info": {
+              "plot": "Something happens...",
+              "cast": [
+                "John Dow1",
+                "Jane Dow2"
+              ]
+            },
+            "video": "http://episodes/file.mp4"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -496,9 +496,10 @@ http://example.com/channel/02
 
 ## OTC playlist format
 `1.6.9.3+`
-As a good alternative to `m3u` format you can also use `otc` format encoded in `json`.
+As a good alternative to `m3u` format you can also use `otc` format encoded in `json`. Values can be given in `plain text` or `BASE64` encoding (with `no_padding` and `no_wrap` flags).
 
 ### OTC playlist format provider properties
+- `"base64": "name,url"` - specify field names (comma-separated) that are encoded with `BASE64`. Defaults to none, can use `*` to mark all string values.
 - `"epg": "url/to/epg.xml.gz"` - url for `xmltv` teleguide
 - `"archive_days": 3` - number of days of archived (`catchup`) records are available
 - `"archive_type": "default"` - see `catchup-type` in `m3u` format description

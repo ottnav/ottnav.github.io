@@ -496,7 +496,9 @@ http://example.com/channel/02
 
 ## OTC playlist format
 `1.6.9.3+`
-As a good alternative to `m3u` format you can also use `otc` format encoded in `json`. Values can be given in `plain text` or `BASE64` encoding (with `no_padding` and `no_wrap` flags).
+As a good alternative to `m3u` format you can also use `otc` format encoded in `json`.
+- Values can be given in `plain text` or `BASE64` encoding (with `no_padding` and `no_wrap` flags).
+- You can give different values in different languages by specifying `:xx` at the end of a key (check sample), where `xx` is a 2-letter language code.
 
 ### OTC playlist format provider properties
 - `"base64": "name,url"` - specify field names (comma-separated) that are encoded with `BASE64`. Defaults to none, can use `*` to mark all string values.

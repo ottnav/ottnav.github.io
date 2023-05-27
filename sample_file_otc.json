@@ -4,13 +4,15 @@
   },
   "categories": {
     "main": {
-      "name": "General channels"
+      "name": "General channels",
+      "name:es": "Generale"
     }
   },
   "channels": [
     {
       "category": "main",
       "name": "Sample Channel 1",
+      "name:es": "Spanish name of channel1",
       "url": "url/to/channel/stream"
     },
     {

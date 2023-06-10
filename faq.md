@@ -445,6 +445,7 @@ Channel declaration. Supported attributes:
 - `adult="1"` : marker that channel is adult (however it’s highly recommended to place all channels in single adult category for simpler user manage)
 - `tvg-shift="-2"` : marker specifying that epg data should be shifted by several hours
 - `audio-track="2"` : try to autoselect 2nd audio track
+- `codec="auto"` : can specify which codec to use when playing this channel by default (if it is available) (`v1.6.9.3+`). Can specify several codecs, separated by comma in order of priority. Supported values are `auto`, `hard`, `exo1`, `system`, `soft_vlc`, and `external` to open in external player
 
 ### `#EXTGRP: Category Name`
 Alias for `group-title` tag

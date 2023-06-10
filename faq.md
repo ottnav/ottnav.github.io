@@ -534,6 +534,7 @@ As a good alternative to `m3u` format you can also use `otc` format encoded in `
 - `"headers": "..."` - check `EXTHTTP` or `inputstream.adaptive.stream_headers` in `m3u` format description
 - `"runtime_attr_url": "custom/url/for/getting/tags/at/runtime"` - check `EXTATTRFROMURL` in `m3u` format description
 - `"url": "url/for/stream"` - url to the stream that should be played
+- `"codec": "auto"` - check `codec` in `m3u` format description
 
 ### Simple OTC playlist sample
 Check [sample_file_otc.json](https://ottnav.github.io/sample_file_otc.json)

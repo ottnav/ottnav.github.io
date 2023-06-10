@@ -416,7 +416,7 @@ Supported attributes:
   - `{key}`, `${token}` - user-configured token
   - `${start}`, `{utc}` - show start (unix time)
   - `${timestamp}`, `{current_utc}` - current time (unix time)
-  - `${end}` - show end (unix time)
+  - `${end}`, `{utcend}` (`v1.6.9.3+`) - show end (unix time)
   - `${login}`, `${password}` - user-configured login and password
   - `${duration}` - show duration (seconds)
   - `${durmin}` - show duration (minutes)

@@ -1,7 +1,7 @@
 [
   {
-    "name:lv": "Testa video",
     "name": "Test video",
+    "name:lv": "Testa video",
     "category": "Action",
     "info": {
       "poster": "http://poster/image.jpg",

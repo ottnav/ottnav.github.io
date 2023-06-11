@@ -615,7 +615,7 @@ Sample:
 ]
 ```
 
-### technical headers
+### Technical headers in OTV format
 You can add non-video item to the list, that will not be added to the media library changing some aspects of parsing (`v1.6.9.3+`).
 - `{ "base64": "name,url" }` - specify field names (comma-separated) that are encoded with `BASE64`. Defaults to none, can use `*` to mark all string values.
 

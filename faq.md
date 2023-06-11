@@ -496,8 +496,7 @@ http://example.com/channel/02
 ```
 
 ## OTC playlist format
-`1.6.9.3+`
-As a good alternative to `m3u` format you can also use `otc` format encoded in `json`.
+(`1.6.9.3+`) As a good alternative to `m3u` format you can also use `otc` format encoded in `json`.
 - Values can be given in `plain text` or `BASE64` encoding (with `no_padding` and `no_wrap` flags).
 - You can give different values in different languages by specifying `:xx` at the end of a key (check sample), where `xx` is a 2-letter language code.
 
@@ -542,7 +541,9 @@ Check [sample_file_otc.json](https://ottnav.github.io/sample_file_otc.json)
 ----
 
 ## Media library file (json)
-App supports multiple formats for media library, but preferred format is json:
+Preferable format for media library is `OTV` encoded in `json`.
+- Values can be given in `plain text` or `BASE64` encoding (with `no_padding` and `no_wrap` flags) (`v1.6.9.3+`).
+- You can give different values in different languages by specifying `:xx` at the end of a key (check sample), where `xx` is a 2-letter language code  (`v1.6.9.3+`).
 
 ### Inner structure of the item ("info" field of movie/series/season/episodes)
 - on no data - can be not added
@@ -613,6 +614,10 @@ Sample:
 }
 ]
 ```
+
+### technical headers
+You can add non-video item to the list, that will not be added to the media library changing some aspects of parsing (`v1.6.9.3+`).
+- `{ "base64": "name,url" }` - specify field names (comma-separated) that are encoded with `BASE64`. Defaults to none, can use `*` to mark all string values.
 
 ### full sample of json VOD libarary
 Check [sample_file_otv.json](https://ottnav.github.io/sample_file_otv.json)

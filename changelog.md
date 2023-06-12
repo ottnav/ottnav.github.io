@@ -1,6 +1,18 @@
 # OTT Navigator Changelog
 
 # 1.6.9
+## 1.6.9.3 (2023-Jun-12)
+- vod: support for localized text and base64 encoding in otv media library format
+- playlist: can specify codec for channel to be used by default
+- epg: allows to configure non-hours TZ shift (with minutes) via channel, category or provider properties
+- epg: improved manual mapping of channel to epg with source selection and program preview
+- restrict: config to require code to be entered on app launch
+- ux: improve actions with multiple channels in category props to allow selecting all, inverting selection, and displaying current state in most common cases
+- playlist: partial support for channel icons in svg format (please bear in mind that some places like android tv home screen might not support such images on some devices)
+- playlist: support for json channels format (otc) with support for localized text and base64 encoding
+- config: list setting to allow changing order of system categories (like favorites, all, new, etc)
+- config: reload epg data if new channels detected from provider
+
 ## 1.6.9.2 (2023-Apr-17)
 - lists: added indicators for channel that has duplicates/fav/banned in addition to archive marker
 - playlist: support for #EXTATTRFROMURL tag to defer channel url and some attributes until channel is going to be played

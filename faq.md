@@ -477,7 +477,7 @@ The app also accepts extra stream headers configured after `|` character in lice
 `v1.6.9.2+`
 If you wish to hide some sensitive tags from the playlist itself, or wish some of these tags to be generated upon request (like DRM keys to match the content), then you can specify this attribute targeting to your server service. App will make a request to this url when user going to play this channel/vod entry.
 
-Sample response from your service should look something like this:
+Sample response (if you choose to return response in `m3u` format) from your service should look something like this:
 ```
 #EXTINF:-1, Demo channel
 #KODIPROP:inputstream.adaptive.license_key=...
@@ -531,7 +531,7 @@ http://example.com/channel/02
 - `"drm_key": "abc:xyz"` - check `inputstream.adaptive.license_key` in `m3u` format description
 - `"drm_url": "url/for/drm/provider"` - check `inputstream.adaptive.license_key` in `m3u` format description
 - `"headers": "..."` - check `EXTHTTP` or `inputstream.adaptive.stream_headers` in `m3u` format description
-- `"runtime_attr_url": "custom/url/for/getting/tags/at/runtime"` - check `EXTATTRFROMURL` in `m3u` format description
+- `"runtime_attr_url": "custom/url/for/getting/tags/at/runtime"` - in `m3u` or `OTC` (without base64) format channel data to patch some channel attributes before starting playback. More details available in `EXTATTRFROMURL` in `m3u` format description.
 - `"url": "url/for/stream"` - url to the stream that should be played
 - `"codec": "auto"` - check `codec` in `m3u` format description
 

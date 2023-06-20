@@ -552,6 +552,7 @@ Preferable format for media library is `OTV` encoded in `json`.
 - ttl - available till (unix timestamp) if will be removed at this time
 - trailer - youtube trailer (link or the video ID part) `v1.6.6.9.5+`
 - backdrop - larger image (usually a screenshot from a video) `v1.6.6.9.5+`
+
 Sample:
 ```
 "info": {
@@ -585,6 +586,7 @@ Sample:
   - `"drmkey": "..."` to pass drm key (for clearkey) or drm license url (you can use `|` to pass additional headers to be only used for drm request)
   - `"headers": "header1=value1&header2=value2` to pass additional headers (will be passed both to drm request and video request) or JSON format `{"User-Agent": "Chrome", "SomeOtherAttr": "SomeValue"}` (`v1.6.6.9+`)
   - `"runtime_attr_url": "custom/url/for/getting/tags/at/runtime"` (`v1.6.9.4+)`- in `m3u` or `OTC` (without base64) format data to patch attributes before starting playback. More details available in `EXTATTRFROMURL` in `m3u` format description.
+
 Sample:
 ```
 [

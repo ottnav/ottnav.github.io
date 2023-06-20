@@ -584,6 +584,7 @@ Sample:
   - `"drm": "..."` to pass drm type (like clearkey, widevine, etc)
   - `"drmkey": "..."` to pass drm key (for clearkey) or drm license url (you can use `|` to pass additional headers to be only used for drm request)
   - `"headers": "header1=value1&header2=value2` to pass additional headers (will be passed both to drm request and video request) or JSON format `{"User-Agent": "Chrome", "SomeOtherAttr": "SomeValue"}` (`v1.6.6.9+`)
+  - `"runtime_attr_url": "custom/url/for/getting/tags/at/runtime"` (`v1.6.9.4+)`- in `m3u` or `OTC` (without base64) format data to patch attributes before starting playback. More details available in `EXTATTRFROMURL` in `m3u` format description.
 Sample:
 ```
 [

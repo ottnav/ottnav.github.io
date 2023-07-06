@@ -86,6 +86,8 @@ You can check whatever EPG is provided and alive from your IPTV provider by navi
 
 If your provider has an EPG source but for some reason does not specify it in playlist, then it’s recommended to configure it in `Settings - Provider - (your provider) - Parameters - EPG`.
 This way the channels mapping will be searched by both channel names and tvg-id fields.
+Since `v1.6.9.4` app replaces following placeholdes to provider configuration, if founds them: `${token}`, `${login}`, `${password}`.
+
 If you configure EPG source in `Settings - EPG - User-provided` then matching by name is only used.
 
 ## Want easier way to input characters on my Android TV device (from Phone)

@@ -1,6 +1,16 @@
 # OTT Navigator Changelog
 
 # 1.6.9
+## 1.6.9.4 (2023-Jul-15)
+- drm: support for DRM streams without default_kid and pssh but with enough data in playready
+- profile: option to copy prefs from another profile
+- player: remove extra buffering when auto-switching to next archived show while playing mpeg-ts streams (enabled for xc by default, can be disabled in provider properties)
+- ux: some settings for lists and visuals are storied in user profile rather than globaly, allowing more different setup for different users
+- player bindable actions: restart live stream, change playback speed
+- xc: improved support for some providers that incorrectly threats epg request with the provided number of days
+- xc: improve support for channels loading of provider on bad network conditions that sometimes may lead to broken state
+- stalker: allow to specify sig in provider properties
+
 ## 1.6.9.3 (2023-Jun-12)
 - vod: support for localized text and base64 encoding in otv media library format
 - playlist: can specify codec for channel to be used by default

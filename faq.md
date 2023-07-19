@@ -471,6 +471,7 @@ Allows setting some custom parameters for the current channel (`KODI` compatibil
 - `inputstream.adaptive.license_key` (License key or URL depending on the DRM type; URLs should start from `http://` or `https://`, otherwise it’s a non-url key) and is considered being static
   - license url for playready/widevine content
   - static key (or keys) for clearkey content. Example (1 key): `abc:def`, Example (multi keys): `{"abc":"def","klm":"opq"}`
+- `inputstream.adaptive.license_data` `base64` of `default_kid` (`v1.7.0.1+`)
 - `inputstream.adaptive.stream_headers` (extra headers, if required. For example `param1=value1&param2=value2&param3=value3`) (`v1.6.4.1+`)
 Syntax is generally compatible with KODI inputStream.Adaptive plugin declared at [xbmc](https://github.com/xbmc/inputstream.adaptive)
 
@@ -533,6 +534,7 @@ http://example.com/channel/02
 - `"drm_type": "widevine"` - check `inputstream.adaptive.license_type` in `m3u` format description
 - `"drm_key": "abc:xyz"` - check `inputstream.adaptive.license_key` in `m3u` format description
 - `"drm_url": "url/for/drm/provider"` - check `inputstream.adaptive.license_key` in `m3u` format description
+- `"drm_data"`: `"..."` - `base64` of `default_kid` (`v1.7.0.1+`)
 - `"headers": "..."` - check `EXTHTTP` or `inputstream.adaptive.stream_headers` in `m3u` format description
 - `"runtime_attr_url": "custom/url/for/getting/tags/at/runtime"` - in `m3u` or `OTC` (without base64) format channel data to patch some channel attributes before starting playback. More details available in `EXTATTRFROMURL` in `m3u` format description.
 - `"url": "url/for/stream"` - url to the stream that should be played
@@ -587,6 +589,7 @@ Sample:
 - if the item contains the link to the video using `video` tag, you can also pass additional parameters (`v1.6.6.7+`) like you do using `m3u` format:
   - `"drm": "..."` to pass drm type (like clearkey, widevine, etc)
   - `"drmkey": "..."` to pass drm key (for clearkey) or drm license url (you can use `|` to pass additional headers to be only used for drm request)
+  - `"drmdata"`: `"..."` - `base64` of `default_kid` (`v1.7.0.1+`)
   - `"headers": "header1=value1&header2=value2` to pass additional headers (will be passed both to drm request and video request) or JSON format `{"User-Agent": "Chrome", "SomeOtherAttr": "SomeValue"}` (`v1.6.6.9+`)
   - `"runtime_attr_url": "custom/url/for/getting/tags/at/runtime"` (`v1.6.9.4+)`- in `m3u` or `OTC` (without base64) format data to patch attributes before starting playback. More details available in `EXTATTRFROMURL` in `m3u` format description.
 

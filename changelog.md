@@ -1,5 +1,12 @@
 # OTT Navigator Changelog
 
+# 1.7.0
+## 1.7.0.1 (2023-Aug-13)
+- provider: can mark it non-editable so user cannot edit or view its properties
+- atv: support adding provider (of common type) via QR code from phone
+- playlist: support vod_library tag in otc/m3u to bundle url to media library (in otv/m3u/xml format)
+- drm: improved support for some sources with license_data attribute
+
 # 1.6.9
 ## 1.6.9.4 (2023-Jul-15)
 - drm: support for DRM streams without default_kid and pssh but with enough data in playready

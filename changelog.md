@@ -1,6 +1,20 @@
 # OTT Navigator Changelog
 
 # 1.7.0
+## 1.7.0.2 (2023-Sep-9)
+- improve list performance for users with huge lists
+- config: can change number of recent channels to show in player menu
+- config: player bindable actions to exit to launcher, media library, archives
+- config: option to auto-refresh background (if random is configured)
+- cfg: action to drop changes in settings to defaults
+- archive: show hud on seeking with more details about selected tv-show
+- archive: fix seeking to prev/next show on channels with no epg
+- home: show local ip in addition to public ip, if enabled
+- vod: allow setting buffer size for media library playback (default to match live channels settings)
+- xc vods: add separate recently added section for movies and series
+- provider: allow to select categories that will not be loaded from a provider (via properties)
+- epg: treat tvg-id as case-sensitive to avoid clashing issues on some providers (now in testing)
+
 ## 1.7.0.1 (2023-Aug-13)
 - provider: can mark it non-editable so user cannot edit or view its properties
 - atv: support adding provider (of common type) via QR code from phone

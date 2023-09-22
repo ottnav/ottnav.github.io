@@ -661,7 +661,7 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 - Allows switching between `stable`, `beta` and `alpha` update channels
 
 ### Aptoide
-- [OTT Navigator at Aptoide](bit.ly/2CqiYcr)
+- [OTT Navigator at Aptoide](http://bit.ly/2CqiYcr)
 - Payments managed via ottnav account (via the app or `OttNav Companion` app)
 
 ### Google Play

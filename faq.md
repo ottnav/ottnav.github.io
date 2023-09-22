@@ -660,6 +660,10 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 - Code for `Downloader` app is `982469`.
 - Allows switching between `stable`, `beta` and `alpha` update channels
 
+### Aptoide
+- [OTT Navigator at Aptoide](bit.ly/2CqiYcr)
+- Payments managed via ottnav account (via the app or `OttNav Companion` app)
+
 ### Google Play
 - [OTT Navigator at Google Play Store](http://bit.ly/2PQEAVf)
 - Payments managed via the store
@@ -670,8 +674,8 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 - Payments managed via the store
 
 ### Versions for old devices not longer supported
-- for `Android 4.x` latest version is `1.6.4.4` [google](https://app.ott-nav.com/dist/std/latest4.apk).
-- for `Android 5.x` latest version is `1.6.7.7` [standalone](https://app.ott-nav.com/dist/std/latest5.apk).
+- for `Android 4.x` latest version is `1.6.4.4` [google](https://app.ott-nav.com/dist/std/latest4.apk) (downloader code `406893`).
+- for `Android 5.x` latest version is `1.6.7.7` [standalone](https://app.ott-nav.com/dist/std/latest5.apk) (downloader code `345565`).
 
 ## `OttNav Companion` app for managing premium account, sub-accounts (for standalone builds)
 - [OttNav Companion at Google Play Store](https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator.companion)

@@ -673,6 +673,9 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 - [OTT Navigator at Huawei AppGallery](https://bit.ly/2WHhIvQ)
 - Payments managed via the store
 
+### Other stores where you can get OTT Navigator
+- VIVO Store
+
 ### Versions for old devices not longer supported
 - for `Android 4.x` latest version is `1.6.4.4` [google](https://app.ott-nav.com/dist/std/latest4.apk) (downloader code `406893`).
 - for `Android 5.x` latest version is `1.6.7.7` [standalone](https://app.ott-nav.com/dist/std/latest5.apk) (downloader code `345565`).

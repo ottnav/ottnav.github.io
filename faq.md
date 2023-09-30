@@ -260,10 +260,10 @@ Some channels are using audio tracks that might not be supported by your TV box 
 # Premium
 ## How many devices does Premium allow
 - for `Play Store/AppGallery` version you can install the app on as many devices as you want (as long as they use same account), but it's a violation to use more than 5 devices at the same time (`Fair Use Policy` is insisted) for a purchase.
-- for `Standalone` version you can use as many devices as you have purchased via `OttNav Companion` app.
+- for `Standalone` version you can use as many devices as you have purchased via `OttNav Companion`.
 
 ## Purchase premium on a Firestick (or other device without play market)
-- install `OttNav Companion` app (check the link in the bottom of the FAQ)
+- use `OttNav Companion` (check the link in the bottom of the FAQ)
 - launch it, create a new account, and press add more max devices button
 - purchase device slots, to have some free slots on your account
 - install a `standalone` version of `OTT Navigator` app (check the link at the bottom of the FAQ) (you might need enable installing from unknown sources)
@@ -327,13 +327,13 @@ If you wish to change your subscription, like switching from 3 months to annual,
 
 ## I want to purchase a lot of premium access and provide them to some users (clients), acting like a dealer
 You can purchase more slots for device when you need and can give some of the slots to different users. In order to do this:
-- Install `OttNav Companion app` (check bottom of the FAQ), register an account (if do not have ottnav account yet)
+- Install `OttNav Companion` (check bottom of the FAQ), register an account (if do not have ottnav account yet)
 - Purchase as many premium device slots as you need (the larger pack you are purchasing, the cheaper it will cost per-device)
 - Create a subaccount configuring a number of slots you wish to share with a different user/client
   - The app will generate a new login and password that you will share with this user
   - The user will need to install a `standalone version` of the app (check bottom of the FAQ) and log in using generated credentials
   - The user will be allowed to use the number of slots (devices activated) you have allowed
-- You will be able to manage subaccounts using `OttNav Companion` app, adding new subaccounts, deleting them, or changing the number of slots (devices) allowed for this client to use. Alternatively you can use `API` to manage subaccounts
+- You will be able to manage subaccounts using `OttNav Companion`, adding new subaccounts, deleting them, or changing the number of slots (devices) allowed for this client to use. Alternatively you can use `API` to manage subaccounts
 
 ## API to manage client subaccounts
 In addition to manual processing of client user accounts via `OttNav Companion` you are also able to achieve the same actions via the `API` making network requests to the server `api.ott-nav.com:8080/account/` to these endpoints:
@@ -662,7 +662,7 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 
 ### Aptoide
 - [OTT Navigator at Aptoide](http://bit.ly/2CqiYcr)
-- Payments managed via ottnav account (via the app or `OttNav Companion` app)
+- Payments managed via ottnav account (via the in-apps or `OttNav Companion` app)
 
 ### Google Play
 - [OTT Navigator at Google Play Store](http://bit.ly/2PQEAVf)
@@ -680,9 +680,10 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 - for `Android 4.x` latest version is `1.6.4.4` [google](https://app.ott-nav.com/dist/std/latest4.apk) (downloader code `406893`).
 - for `Android 5.x` latest version is `1.6.7.7` [standalone](https://app.ott-nav.com/dist/std/latest5.apk) (downloader code `345565`).
 
-## `OttNav Companion` app for managing premium account, sub-accounts (for standalone builds)
-- [OttNav Companion at Google Play Store](https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator.companion)
-- [OttNav Companion at Aptoide](https://ottnav-companion.en.aptoide.com/app)
+## `OttNav Companion` for managing premium account, sub-accounts (for standalone builds)
+- [OttNav Companion at Google Play Store](https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator.companion) - purchase subscription, one-time, manage your account devices and subaccounts
+- [OttNav Companion web](https://companion.ott-nav.com/) - manage your account devices and subaccounts
+- [OttNav Companion at Aptoide](https://ottnav-companion.en.aptoide.com/app) - manage your account devices and subaccounts
 
 ## Contacts
 - [Support chat on Telegram](https://t.me/ottnav_global)

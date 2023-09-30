@@ -681,9 +681,9 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 - for `Android 5.x` latest version is `1.6.7.7` [standalone](https://app.ott-nav.com/dist/std/latest5.apk) (downloader code `345565`).
 
 ## `OttNav Companion` for managing premium account, sub-accounts (for standalone builds)
-- [OttNav Companion at Google Play Store](https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator.companion) - purchase subscription, one-time, manage your account devices and subaccounts
-- [OttNav Companion web](https://companion.ott-nav.com/) - manage your account devices and subaccounts
-- [OttNav Companion at Aptoide](https://ottnav-companion.en.aptoide.com/app) - manage your account devices and subaccounts
+- [OttNav Companion at Google Play Store](https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator.companion) - `Android` purchase subscription, one-time, manage your account devices and subaccounts
+- [OttNav Companion web](https://companion.ott-nav.com/) - `web` manage your account devices and subaccounts
+- [OttNav Companion at Aptoide](https://ottnav-companion.en.aptoide.com/app) - `Android` manage your account devices and subaccounts
 
 ## Contacts
 - [Support chat on Telegram](https://t.me/ottnav_global)

@@ -430,7 +430,7 @@ Supported attributes:
 - `billed-till="timestamp"` : unix time when user account will expire (will be displayed for user)
 - `billed-msg="some text"` : custom message regarding user account (might be balance or any other info to be shown)
 - `refresh="N"` : period of time when the playlist should be reloaded (`v1.6.6.1+`), in hours (if below 24), in minutes (if < 300), or in seconds if a large value, for example: refresh=”3” means refreshing each 3 hours)
-- `vod_library` : url to vod library in `otv`,`m3u` or `xml` format (`v1.7.0.1+`)
+- `vod_library` : url to vod library in `otv`,`m3u` or `xml` format (`v1.7.0.1+`), can have multiple entries (comma-separated) (`v1.7.1.1+`)
 
 ### `#EXTINF:0 tag1="value1" tag2="value2"...,Channel name`
 Channel declaration. Supported attributes:
@@ -514,7 +514,7 @@ http://example.com/channel/02
 - `"max_connections": 2` - maximal amount of connections for the user that is allowed to watch at the same time
 - `"billed_till": 214363576` - unix time when user account will expire (will be displayed for user)
 - `"user_message": "HI"` - custom message regarding user account (might be balance or any other info to be shown)
-- `"vod_library": "url/to/vods.otv"` : url to vod library in `otv`,`m3u` or `xml` format (`v1.7.0.1+`)
+- `"vod_library": "url/to/vods.otv"` : url to vod library in `otv`,`m3u` or `xml` format (`v1.7.0.1+`), can be array of strings to pass multiple values (`v1.7.1.1+`)
 
 ### OTC playlist format category properties
 - `"name": "Sample Category"` - name

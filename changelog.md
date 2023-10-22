@@ -1,5 +1,11 @@
 # OTT Navigator Changelog
 
+# 1.7.1
+## 1.7.1.1 (2023-Oct-22)
+- otc/m3u: support for multiple vod_library links per playlist
+- account: code activation improved
+- vod: new section movies and series added (supports xc and otv currently) for TV devices with the support for more streamlined navigation for providers with flat media library structure 
+
 # 1.7.0
 ## 1.7.0.2 (2023-Sep-9)
 - improve list performance for users with huge lists

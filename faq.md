@@ -521,7 +521,7 @@ http://example.com/channel/02
 - `"icon": "url/to/category/icon"` - icon of the category
 - `"adult": 1` - set to `1` or `true` to mark this category as adult
 
-### OTC playlist format provider properties
+### OTC playlist format channel properties
 - `"category": "main"` - id of category declared earlier in this json
 - `"name": "Sample Channel"` - name
 - `"number": 123` - channel number

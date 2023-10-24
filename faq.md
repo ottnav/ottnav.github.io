@@ -328,7 +328,7 @@ If you wish to change your subscription, like switching from 3 months to annual,
 ## I want to purchase a lot of premium access and provide them to some users (clients), acting like a dealer
 You can purchase more slots for device when you need and can give some of the slots to different users. In order to do this:
 - Install `OttNav Companion` (check bottom of the FAQ), register an account (if do not have ottnav account yet)
-- Purchase as many premium device slots as you need (the larger pack you are purchasing, the cheaper it will cost per-device)
+- Purchase as many premium device slots as you need (the larger pack you are purchasing, the cheaper it will cost per-device). Contact us if you are interested in larger amount of premium device slots.
 - Create a subaccount configuring a number of slots you wish to share with a different user/client
   - The app will generate a new login and password that you will share with this user
   - The user will need to install a `standalone version` of the app (check bottom of the FAQ) and log in using generated credentials

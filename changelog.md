@@ -1,6 +1,15 @@
 # OTT Navigator Changelog
 
 # 1.7.1
+## 1.7.1.2 (2023-Nov-17)
+- preview: config to enable video preview support for 1-connection providers (pausing current playback)
+- profiles: when having multiple user profiles can enable profile selection on app start
+- home: allow to pin some of android system intents to home screen
+- series: always use popup widget to select episode instead of going via folders
+- media library: show filter button to quick filter current directory contents by genres
+- provider: show installation hash in settings-extended-click on version number (last line) that is used by default in user-agent
+- provider: allow to auto-rename categories on loading from provider (via properties)
+
 ## 1.7.1.1 (2023-Oct-22)
 - otc/m3u: support for multiple vod_library links per playlist
 - account: code activation improved

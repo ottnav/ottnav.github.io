@@ -259,8 +259,7 @@ Some channels are using audio tracks that might not be supported by your TV box 
 
 # Premium
 ## How many devices does Premium allow
-- for `Play Store/AppGallery` version you can install the app on as many devices as you want (as long as they use same account), but it's a violation to use more than 5 devices at the same time (`Fair Use Policy` is insisted) for a purchase.
-- for `Standalone` version you can use as many devices as you have purchased via `OttNav Companion`.
+You can use as many devices as you have purchased via `OttNav Companion` or other methods to your ottnav account. Standard premium package on purchase allows to be used on 5 devices.
 
 ## Purchase premium on a Firestick (or other device without play market)
 - (on your phone) use `OttNav Companion` (check the link in the bottom of the FAQ)
@@ -270,45 +269,8 @@ Some channels are using audio tracks that might not be supported by your TV box 
 - ensure that the current device is added to the list of active devices (4-word phrase represents an unique installation id), use `Add Device` button if it was not automatically added
 - congrads, you can repeat last 3 steps on your other devices!
 
-## I already have active purchase/subscription on Play Store and want to activate on non-Play Store device
-- install a `standalone` version of the app (check the link at the bottom of the FAQ) (you might need enable installing from unknown sources)
-- launch the app, go to `settings - premium`, create a new account
-- press `claim purchase` button and enter your purchase number, ensure that number of available slots has been increased
-- ensure that the current device is added to the list of active devices (4-word phrase represents an unique installation id), use `Add Device` button if it was not automatically added
-
-Notes:
-- If you recently made a purchase it might take several hours for system get it loaded, so please try later
-- If you cannot find your purchase number in email from Google, then go to `pay.google.com` and find the transaction there
-- Single purchase can be claimed only once
-- Keep in mind that it's against `Fair Use Policy` to actively use more than 5 devices at the same time for a single purchase
-
-## Purchased a premium on Play Store but it’s not active
-Sometimes it takes a while for Play Store to sync purchases (due to long caching). Steps to guarantee that sync will happen instantly:
-- Go to `settings - premium - restore purchases`. If the process will report that restoration occurred - it means that all is ok, and reactivation has happened. Usually this is the only step required!
-- Clear data and cache of Play Store app
-- Clear cache of OTT Navigator app (usually not required)
-- Reboot your device (might not be needed, but usually triggers cache update for Play Market), and relogin to Play Store
-- Relaunch OTT Navigator
-- (if does not help) Reinstall the app
-  - Backup the configuration (settings - extended - backup - backup)
-  - Write down the backup code
-  - Delete the app
-  - Install the app, restore the backup
-  - Launch the app
-- In case it does not help - contact our support (specifying google account used for purchase, or purchase number GPA…)
-
 ## Unable to process purchase (Error DF-PDP-3)
 Recently Play Market stopped processing purchases when the app was not installed from it. Install application from play market and payment should work.
-
-## Premium and multiple accounts on a single device on Play Store
-When the device has several Google accounts, then it might switch between accounts by Google services itself, meaning that in-app purchases / subscriptions might be taken from one or other account with almost no user control. Best way to reactivate all purchases to correct account:
-- Uninstall the app (backup is suggested via settings - extended - backup)
-- Open browser on your desktop PC
-- Open play market page [in your browser](https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator)
-- Log in to the web interface of Google Play with the account you used to purchase
-- Install the app from the browser selecting the device to push the app to
-
-Or switch to using standalone version of the app that is not linked to the active google account
 
 ## Will the premium purchase work for Family Library?
 No, family library only apply to paid apps. Free apps with in-app purchases are not eligible for this. You can still use the app on several devices that share the same account.
@@ -639,7 +601,7 @@ User-Agent used by the app by default is `OTT Navigator/VER (Linux;Android ANDVE
 - `VER` is app version like `1.6.8.3`
 - `ANDVER` is android version
 - `LOCALE` (optional) is a language set in the app
-- `HASH` (optional) is installation identifier, should be quite unique between devices (may not always be passed)
+- `HASH` (optional) is installation identifier, should be quite unique between devices (may not always be passed), (`v1.7.1.2+`: you can check hash in settings-extended, clicking on version number)
 - `CODECINFO` (optional) is information about the currently used codec for the channel (if it is a stream request), may contain something related for the codec used, for example when using hardware codecs will be something like `ExoPlayerLib/2.15.1`
 
 Please note that this attribute might be modified by user, provider attributes in playlist or provider API (portal uses different agents)
@@ -666,7 +628,6 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 ### Google Play
 - [OTT Navigator at Google Play Store](http://bit.ly/2PQEAVf)
 - Payments managed via the store
-- Accessing `beta` update channels via [subscribing to Beta versions on Play Store](http://bit.ly/2PrwwcH)
 
 ### Huawei AppGallery
 - [OTT Navigator at Huawei AppGallery](https://bit.ly/2WHhIvQ)

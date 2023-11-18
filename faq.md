@@ -263,11 +263,10 @@ Some channels are using audio tracks that might not be supported by your TV box 
 - for `Standalone` version you can use as many devices as you have purchased via `OttNav Companion`.
 
 ## Purchase premium on a Firestick (or other device without play market)
-- use `OttNav Companion` (check the link in the bottom of the FAQ)
+- (on your phone) use `OttNav Companion` (check the link in the bottom of the FAQ)
 - launch it, create a new account, and press add more max devices button
 - purchase device slots, to have some free slots on your account
-- install a `standalone` version of `OTT Navigator` app (check the link at the bottom of the FAQ) (you might need enable installing from unknown sources)
-- launch the app, go to settings - premium, log in with the same account you have created in `OttNav Companion`
+- (on your TV device) launch the player app, go to settings - premium, log in with the same account you have created in `OttNav Companion`
 - ensure that the current device is added to the list of active devices (4-word phrase represents an unique installation id), use `Add Device` button if it was not automatically added
 - congrads, you can repeat last 3 steps on your other devices!
 

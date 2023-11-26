@@ -379,8 +379,11 @@ Supported attributes:
 - `catchup-source="..."` : allows override path for archive playback (or append to the end of the url if catchup-type="append" is set). Supported variables:
   - `{key}`, `${token}` - user-configured token
   - `${start}`, `{utc}` - show start (unix time)
+  - `{start_iso}` (`v1.7.1.3+`) - show start time (ISO8601)
   - `${timestamp}`, `{current_utc}` - current time (unix time)
+  - `{now_iso}` (`v1.7.1.3+`) - current time (ISO8601)
   - `${end}`, `{utcend}` (`v1.6.9.3+`) - show end (unix time)
+  - `{end_iso}` (`v1.7.1.3+`) - show end time (ISO8601)
   - `${login}`, `${password}` - user-configured login and password
   - `${duration}` - show duration (seconds)
   - `${durmin}` - show duration (minutes)

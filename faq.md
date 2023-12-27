@@ -626,11 +626,12 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 
 ### Aptoide
 - [OTT Navigator at Aptoide](http://bit.ly/2CqiYcr)
-- Payments managed via ottnav account (via the in-apps or `OttNav Companion` app)
+- Payments managed via ottnav account (via the in-apps or `OttNav Companion`)
 
 ### Google Play
-- [OTT Navigator at Google Play Store](http://bit.ly/2PQEAVf)
-- Payments managed via the store
+- [for Phones/Tablets](https://play.google.com/store/apps/details?id=appnovatica.stbp)
+- [for TV](https://play.google.com/store/apps/details?id=appnovatica.tv)
+- Payments managed via ottnav account (check `OttNav Companion`)
 
 ### Huawei AppGallery
 - [OTT Navigator at Huawei AppGallery](https://bit.ly/2WHhIvQ)
@@ -646,11 +647,10 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 ## `OttNav Companion` for managing premium account, sub-accounts (for standalone builds)
 - [OttNav Companion at Google Play Store](https://play.google.com/store/apps/details?id=studio.scillarium.ottnavigator.companion) - `Android` purchase subscription, one-time, manage your account devices and subaccounts
 - [OttNav Companion web](https://companion.ott-nav.com/) - `web` manage your account devices and subaccounts
-- [OttNav Companion at Aptoide](https://ottnav-companion.en.aptoide.com/app) - `Android` manage your account devices and subaccounts
+- [OttNav Companion at Aptoide](https://ottnav-companion.en.aptoide.com/app) - `Android` manage your account devices and subaccounts (no purchases)
 
 ## Contacts
 - [Support chat on Telegram](https://t.me/ottnav_global)
 - Contact the developer directly at `scillarium.studio@gmail.com`
 - White label / branding contact `ottnav.partners@gmail.com`
-- [Reddit](https://www.reddit.com/r/)
 - [Privacy Policy](http://ott-nav.com/privacy_policy.html)

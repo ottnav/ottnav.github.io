@@ -484,6 +484,7 @@ http://example.com/channel/02
 - `"name": "Sample Category"` - name
 - `"icon": "url/to/category/icon"` - icon of the category
 - `"adult": 1` - set to `1` or `true` to mark this category as adult
+- `"type": ".."` - (`v1.7.1.3+`) type of the category, changes icon and may add some extra related in-app features (`movie`, `child`, `music`, `news`, `adult`, `game`, `radio`, `edu`, `foreign`)
 
 ### OTC playlist format channel properties
 - `"category": "main"` - id of category declared earlier in this json

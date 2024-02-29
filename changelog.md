@@ -1,6 +1,19 @@
 # OTT Navigator Changelog
 
 # 1.7.1
+## 1.7.1.3 (2023-Feb-28)
+- player: try to auto-switch to hls if content unparsable as mpeg-ts
+- playlist: otc format supports passing category type
+- vod: support for hidden categories in new movies/series ui
+- config: control whatever to reopen stream when unpausing archived video that was paused for the given amount of seconds (default 20)
+- ux: try to trigger app start action on reactivating without active fragment (may help most scenarios when app launch leads to empty page)
+- xc: fix invalid movie response parsing that breaks movies loading
+- ux: fix afr setting unreachable when user has too many supported resolutions
+- backup: added option to merge providers on restoring backup (only unique urls are accepted)
+- player: bindable action to switch to prev/next archive record on current channel
+- ux: backup option to store both settings + channel meta (but skip providers)
+- playlist: added templates {start_iso}, {end_iso} and {now_iso} to represent starting/ending/current time in ISO8601 format
+
 ## 1.7.1.2 (2023-Nov-17)
 - preview: config to enable video preview support for 1-connection providers (pausing current playback)
 - profiles: when having multiple user profiles can enable profile selection on app start

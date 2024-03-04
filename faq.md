@@ -503,7 +503,8 @@ http://example.com/channel/02
 - `"drm_key": "abc:xyz"` - check `inputstream.adaptive.license_key` in `m3u` format description
 - `"drm_url": "url/for/drm/provider"` - check `inputstream.adaptive.license_key` in `m3u` format description
 - `"drm_data"`: `"..."` - `base64` of `default_kid` (`v1.7.0.1+`)
-- `"headers": "..."` - check `EXTHTTP` or `inputstream.adaptive.stream_headers` in `m3u` format description
+- `"headers": "..."` - check `inputstream.adaptive.stream_headers` in `m3u` format description
+- `"headers": {"header1":"value1"}` - check `EXTHTTP` in `m3u` format description (`v1.7.1.4+`)
 - `"runtime_attr_url": "custom/url/for/getting/tags/at/runtime"` - in `m3u` or `OTC` (without base64) format channel data to patch some channel attributes before starting playback. More details available in `EXTATTRFROMURL` in `m3u` format description.
 - `"url": "url/for/stream"` - url to the stream that should be played
 - `"codec": "auto"` - check `codec` in `m3u` format description

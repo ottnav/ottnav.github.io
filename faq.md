@@ -445,6 +445,7 @@ The app also accepts extra stream headers configured after `|` character in lice
 ### `#EXTATTRFROMURL:http://some/url/for/data.m3u`
 `v1.6.9.2+`
 If you wish to hide some sensitive tags from the playlist itself, or wish some of these tags to be generated upon request (like DRM keys to match the content), then you can specify this attribute targeting to your server service. App will make a request to this url when user going to play this channel/vod entry.
+App also supports if the whole response to this request will be `BASE64`-encoded (`v1.7.1.4+`).
 
 Sample response (if you choose to return response in `m3u` format) from your service should look something like this:
 ```

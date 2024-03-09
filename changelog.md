@@ -1,6 +1,18 @@
 # OTT Navigator Changelog
 
 # 1.7.1
+## 1.7.1.4 (2023-Mar-10)
+- home: allow pinning virtual categories (with folded subcategories) to main screen
+- archive: fix auto-switch to next archive record when no epg available
+- stalker: support new series/movies screens
+- playlist: support for audio_track and video_track to auto-select a track on playback by default
+- recent: can clear recent channels via recent category properties
+- codec: fallback to low-priority decoder if high-priority fails and fine-tuned default bufer values
+- otc: support for key-value pairs in headers attr
+- playlist: support for base64-encoded response for EXTATTRFROMURL/runtime_attr_url
+- config: allow user to change position of home screen launcher buttons
+- module: allows to toggle showing streams just started view on main screen
+
 ## 1.7.1.3 (2023-Feb-28)
 - player: try to auto-switch to hls if content unparsable as mpeg-ts
 - playlist: otc format supports passing category type

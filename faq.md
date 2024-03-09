@@ -413,6 +413,7 @@ Channel declaration. Supported attributes:
 - `adult="1"` : marker that channel is adult (however it’s highly recommended to place all channels in single adult category for simpler user manage)
 - `tvg-shift="-2"` : marker specifying that epg data should be shifted by several hours
 - `audio-track="2"` : try to autoselect 2nd audio track
+- `video-track="2"` : try to autoselect 2nd video track (`v1.7.1.4+`)
 - `codec="auto"` : can specify which codec to use when playing this channel by default (if it is available) (`v1.6.9.3+`). Can specify several codecs, separated by comma in order of priority. Supported values are `auto`, `hard`, `exo1`, `system`, `soft_vlc`, and `external` to open in external player
 
 ### `#EXTGRP: Category Name`
@@ -508,6 +509,9 @@ http://example.com/channel/02
 - `"runtime_attr_url": "custom/url/for/getting/tags/at/runtime"` - in `m3u` or `OTC` (without base64) format channel data to patch some channel attributes before starting playback. More details available in `EXTATTRFROMURL` in `m3u` format description.
 - `"url": "url/for/stream"` - url to the stream that should be played
 - `"codec": "auto"` - check `codec` in `m3u` format description
+- `"audio_track": "2"` : try to autoselect 2nd audio track (`v1.7.1.4+`)
+- `"video-track": "2"` : try to autoselect 2nd video track (`v1.7.1.4+`)
+
 
 ### Simple OTC playlist sample
 Check [sample_file_otc.json](https://ottnav.github.io/sample_file_otc.json)

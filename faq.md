@@ -42,6 +42,15 @@ The app only works on Android, so if your TV is running Android TV / Google TV t
 We have investigated the tech and even did some proof-of-concept, but WebOS/Tizen are simply not powerful enough to make a really good app. It's suitable for simple web pages that pretend to be apps, but lack real power to do complex under-the-hood tasks.
 So if you choose an LG/Samsung TV (the only 2 major vendors that do not use Android these days) - then it's highly recommended to purchase an Android / AndroidTV / GoogleTV / Chromecast(2021+ model) / FireTV / etc box or stick to be attached.
 
+## Cannot update to a newer version, or how to update to beta versions
+The app development cycle goes in the following cycle:
+- development version (closed avaiability, available via direct build by developer)
+- alpha version (if released, in most cases skipped, only available for `standalone` version of the app)
+- beta version (only available for `standalone` version of the app)
+- stable version (available on all installation sources)
+
+So in order to use non-stable version of the app, you need to be using `stanalone` version of the app (check the `Availability` section in the bottom of the `FAQ`), go to `Settings > About > Update channel` and select `alpha` or `beta`, and then check for updates.
+
 ----
 
 # Provider (playlist) configuration

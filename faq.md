@@ -667,6 +667,7 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 
 ## Contacts
 - [Support chat on Telegram](https://t.me/ottnav_global)
-- Contact the developer directly at `scillarium.studio@gmail.com`
+- Support e-mail at `support@ott-nav.com`
+- Contact the developer directly at `admin@ott-nav.com`
 - White label / branding contact `ottnav.partners@gmail.com`
 - [Privacy Policy](http://ott-nav.com/privacy_policy.html)

@@ -639,6 +639,7 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 - [Direct download of OTT Navigator](https://app.ott-nav.com/dist/std/latest.apk) (you will need to allow installing apps from unknown sources on your device)
 - Code for `Downloader` app is `982469`.
 - Allows switching between `stable`, `beta` and `alpha` update channels
+- Direct links for [stable](https://app.ott-nav.com/dist/std/stable.apk), [beta](https://app.ott-nav.com/dist/std/beta.apk) and [alpha](https://app.ott-nav.com/dist/std/alpha.apk) versions
 
 ### Aptoide
 - [OTT Navigator at Aptoide](http://bit.ly/2CqiYcr)

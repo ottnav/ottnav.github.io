@@ -1,6 +1,20 @@
 # OTT Navigator Changelog
 
 # 1.7.1
+## 1.7.1.5 (2024-Aug-24)
+- playlist: support for archive url variables providing custom time shift for requests using templates
+- config: allow to disable checking for network connection before automatical channel list or epg update
+- home: improved network connectivity detection
+- playlist: extra retries are made to recover from "from cache" status (when applies to all active providers)
+- player: media prev/next button default to archive prev/next if archives supported by active providers
+- config: allow disabling normalizing tv-show names when loading epg
+- archive: show exact time in past while seeking old show on tv
+- config: allow user to configure preferred languages for subtitles separately from audio
+- xc: improve stream format detection for direct source streams
+- search: allow searching for tv series from playing live content
+- stalker: fix api for non-250 devices that might affect some providers
+- player bindable action: reload epg
+
 ## 1.7.1.4 (2024-Mar-10)
 - home: allow pinning virtual categories (with folded subcategories) to main screen
 - archive: fix auto-switch to next archive record when no epg available

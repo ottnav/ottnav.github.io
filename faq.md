@@ -400,7 +400,7 @@ Supported attributes:
   - `${start-year},${start-mon},${start-day},${start-hour},${start-min},${start-sec}` - show start date/time variables (`v1.6.6.5+`)
   - `${end-year},${end-mon},${end-day},${end-hour},${end-min},${end-sec}` - show end date/time variables (`v1.6.6.5+`)
   - You can also modify the starting and/or ending time passed by ott navigator by including the following template in the url (`v1.7.1.5+`):
-    - {{shift:start:XX}}, {{shift:end:XX}} where `XX` can be specified in days (with suffix `d`, like `+1d`, `-2d`, `5d`), hours (with suffix `h`), minutes (with suffix `m`), or seconds (with suffix `s`). It will affect all time template variables in this url.
+    - {% raw %}{{shift:start:XX}{% endraw %}, {% raw %}shift:end:XX{% endraw %} where `XX` can be specified in days (with suffix `d`, like `+1d`, `-2d`, `5d`), hours (with suffix `h`), minutes (with suffix `m`), or seconds (with suffix `s`). It will affect all time template variables in this url.
 - `max-conn="1"` : if your provider allows user opening more connections at the same time (like watching picture-in-picture) set number of connections here
 - `billed-till="timestamp"` : unix time when user account will expire (will be displayed for user)
 - `billed-msg="some text"` : custom message regarding user account (might be balance or any other info to be shown)

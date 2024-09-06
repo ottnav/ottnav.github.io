@@ -523,7 +523,7 @@ http://example.com/channel/02
 - `"codec": "auto"` - check `codec` in `m3u` format description
 - `"audio_track": "2"` : try to autoselect 2nd audio track (`v1.7.1.4+`)
 - `"video-track": "2"` : try to autoselect 2nd video track (`v1.7.1.4+`)
-
+- `"source-format": "..."` - specify stream format (`v1.7.1.6+`), like `ts`,`hls`,`dash`,`ss`,`rtsp`,`rtp`,`udp`
 
 ### Simple OTC playlist sample
 Check [sample_file_otc.json](https://ottnav.github.io/sample_file_otc.json)
@@ -577,6 +577,7 @@ Sample:
   - `"drmdata"`: `"..."` - `base64` of `default_kid` (`v1.7.0.1+`)
   - `"headers": "header1=value1&header2=value2` to pass additional headers (will be passed both to drm request and video request) or JSON format `{"User-Agent": "Chrome", "SomeOtherAttr": "SomeValue"}` (`v1.6.6.9+`)
   - `"runtime_attr_url": "custom/url/for/getting/tags/at/runtime"` (`v1.6.9.4+)`- in `m3u` or `OTC` (without base64) format data to patch attributes before starting playback. More details available in `EXTATTRFROMURL` in `m3u` format description.
+  - `"source-format": "..."` - check `OTC` format for possible values (`v1.7.1.6+`)
 
 Sample:
 ```

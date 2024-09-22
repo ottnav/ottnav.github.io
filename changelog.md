@@ -1,6 +1,17 @@
 # OTT Navigator Changelog
 
 # 1.7.1
+## 1.7.1.6 (2024-Sep-22)
+- epg: improved support with some providers messing valid and invalid epg data for channel at the same time
+- home: when 1-column mode selected, selection menu is moved to screen center
+- config: option to group channel categories by country (virtual category / folder), if country detected in category name
+- changed default setting for folding channels to apply within a category instead of being global due to some providers having same-named channels in different categories
+- backup: option to auto-delete backup after it has been used (requires new app version)
+- player: support for streams that has http auth in their link
+- playlist: support source_format tag for OTC playlist to specify stream format 
+- playlist: support passing start utc time for #EXTATTRFROMURL/runtime_attr_url calls if request is made for archived show, by replacing {fromUnix} template
+- config: option to unload app (fully exit) from memory on back button press
+
 ## 1.7.1.5 (2024-Aug-24)
 - playlist: support for archive url variables providing custom time shift for requests using templates
 - config: allow to disable checking for network connection before automatical channel list or epg update

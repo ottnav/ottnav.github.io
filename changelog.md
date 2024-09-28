@@ -1,7 +1,9 @@
 # OTT Navigator Changelog
 
 # 1.7.1
-## 1.7.1.6 (2024-Sep-22)
+## 1.7.1.6 (2024-Sep-28)
+- epg: consider preferred media language in addition to app language when selecting text from multi-language epg source
+- cache: speed-up last channel auto-launch on app launch if cache is enabled
 - epg: improved support with some providers messing valid and invalid epg data for channel at the same time
 - home: when 1-column mode selected, selection menu is moved to screen center
 - config: option to group channel categories by country (virtual category / folder), if country detected in category name

@@ -580,6 +580,7 @@ Sample:
   - `"headers": "header1=value1&header2=value2` to pass additional headers (will be passed both to drm request and video request) or JSON format `{"User-Agent": "Chrome", "SomeOtherAttr": "SomeValue"}` (`v1.6.6.9+`)
   - `"runtime_attr_url": "custom/url/for/getting/tags/at/runtime"` (`v1.6.9.4+)`- in `m3u` or `OTC` (without base64) format data to patch attributes before starting playback. More details available in `EXTATTRFROMURL` in `m3u` format description.
   - `"source-format": "..."` - check `OTC` format for possible values (`v1.7.1.6+`)
+- if for some reason the episode is split into several videos (like part 1, 2, 3), then you can also specify `"part": 1` for the episode, and in this way the player will understand multiple episodes with same `episode` number (`v1.7.2.1+`).
 
 Sample:
 ```

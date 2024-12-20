@@ -570,6 +570,7 @@ Sample:
 - if no data, do not add a field; "info" is also not obligated field anywhere
 - category - not mandatory field (if specified, the item will be placed in the folder).. might be either a "MyCat" or a json like `{"name":"MyCat","icon":"http:/..jpg"}`
 - field "video" means it's a movie, "season" means it's series
+  - Also you you can use marker field `"tv_show": true` so the app will understand that the item is not `Series`, but is a `TV show`, and place it separate root folder (`v1.7.2.1+`).
 - for episode "duration" in seconds
 - "name" is episode name (if applicable)
 - episodes and season numbers are not mandatory if they are listed incrementally (1, 2, 3, ..)

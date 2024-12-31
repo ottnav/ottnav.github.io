@@ -420,8 +420,10 @@ Channel declaration. Supported attributes:
 - `tvg-logo="http://path/to/logo.jpg"` : link to channel logo (or file name that should be appended to root url set in url-logo in playlist header)
 - `tvg-rec="1"` : marker that channel contains archives (0 - off, 1 - on). not needed if catchup* attribute is present (values more than 1 are parsed like aliases for catchup-days=”n”)
 - `catchup*` : all catchup settings that are explained in header can be overridden here on channel level
-- `type="playlist"`, `content-type="playlist"` : allows to merge another playlist inside the current one. Url specified for this 'channel' is treated as include
-- `type="movie"`, `type="series"` : use any of these 2 markers to mark that the channel listed is not a channel, but actually a movie or a series, and should be treated as such, and should be placed to media library
+- `type="type"` specify type of the channel entry, possible values are:
+  - `playlist` (also can be specified as `content-type="playlist"`) : allows to merge another playlist inside the current one. Url specified for this 'channel' is treated as include
+  - `movie`, `series` : use any of these 2 markers to mark that the channel listed is not a channel, but actually a movie or a series, and should be treated as such, and should be placed to media library (though using separate media source is way much preferrable then messing channels with vods/series)
+  - `radio` : mark that the channels is actually a radio station (`v1.7.2.1+`)
 - `adult="1"` : marker that channel is adult (however it’s highly recommended to place all channels in single adult category for simpler user manage)
 - `tvg-shift="-2"` : marker specifying that epg data should be shifted by several hours
 - `audio-track="2"` : try to autoselect 2nd audio track
@@ -526,6 +528,7 @@ http://example.com/channel/02
 - `"audio_track": "2"` : try to autoselect 2nd audio track (`v1.7.1.4+`)
 - `"video-track": "2"` : try to autoselect 2nd video track (`v1.7.1.4+`)
 - `"source-format": "..."` - specify stream format (`v1.7.1.6+`), like `ts`,`hls`,`dash`,`ss`,`rtsp`,`rtp`,`udp`
+- `"type": "..."` - specify type of the channel, supported values are `radio` (`v1.7.2.1+`)
 
 ### Simple OTC playlist sample
 Check [sample_file_otc.json](https://ottnav.github.io/sample_file_otc.json)

@@ -1,5 +1,18 @@
 # OTT Navigator Changelog
 
+# 1.7.2
+## 1.7.2.1 (2025-Jan-11)
+- radio: added basic separate screen for radio channels playback (check FAQ on how to mark channels as radio)
+- media: otv: support for tv_show marker to split Shows from Series
+- media: otv: support for part tag of episode, supporting single series episode being split into several broadcasts/files
+- ux: allow easier live channels switch between active providers when pressing left on channel browsing channels from player
+- xc: improved incorrect channel cache restore when provider explictly mark user as expired
+- config: option to set fallback channel sort mode if first (like frequency) not succeeded, defaulting to provider order
+- backup: allow local file backup on atv devices in expert mode in standalone version (but beware that save/load might not work on your device)
+- config: allow disabling splitting media library into movies and series sections when supported by providers api
+- player: fix margins not applied to playback due to zoom overriding it
+- playlist: added refresh_at tag to playlist header to set fixed date/time when it should be refreshed (in ISO 6801 format)
+
 # 1.7.1
 ## 1.7.1.6 (2024-Sep-28)
 - epg: consider preferred media language in addition to app language when selecting text from multi-language epg source

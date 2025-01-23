@@ -1,6 +1,17 @@
 # OTT Navigator Changelog
 
 # 1.7.2
+## 1.7.2.2 (2025-Jan-23)
+- vod: new views to get top rated content, and random selection for both movies/series and media library section
+- phone: added home screen config to use vertical player while browsing channels
+- playlist: support tvg-season, tvg-episode tags
+- xc: improved archive support for some providers (and allow changing archive type via provider properties, since some providers are not supporting standard api)
+- config: allows to change subtitles (cc) display style
+- home: new launcher buttons style in a single bottom row
+- search: allow to disable deep search (by actors, countries, etc)
+- touch: allow to specify different actions depending on swipe direction (normal and reversed)
+- studio: allow focused channel size to be set to 50%, meaning that if few channels are showing, it will be the same size
+
 ## 1.7.2.1 (2025-Jan-11)
 - radio: added basic separate screen for radio channels playback (check FAQ on how to mark channels as radio)
 - media: otv: support for tv_show marker to split Shows from Series

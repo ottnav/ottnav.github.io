@@ -429,6 +429,7 @@ Channel declaration. Supported attributes:
 - `audio-track="2"` : try to autoselect 2nd audio track
 - `video-track="2"` : try to autoselect 2nd video track (`v1.7.1.4+`)
 - `codec="auto"` : can specify which codec to use when playing this channel by default (if it is available) (`v1.6.9.3+`). Can specify several codecs, separated by comma in order of priority. Supported values are `auto`, `hard`, `exo1`, `system`, `soft_vlc`, and `external` to open in external player
+- `tvg-season="1"`. `tvg-episode="123"` - allow specify season-specific information about serie item (`v1.7.2.2+`)
 
 ### `#EXTGRP: Category Name`
 Alias for `group-title` tag

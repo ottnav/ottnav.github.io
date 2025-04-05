@@ -1,5 +1,16 @@
 # OTT Navigator Changelog
 
+# 1.7.3
+## 1.7.3.1 (2025-Apr-5)
+- search: fix widget partially hidden while virtual text input keyboard is shown on tv
+- radio: basic support of showing current station metadata while playing
+- playlist: improve json fields reading of drmkey/drm_key attributes to accept objects for list of keys (otc,otv)
+- xc: improve epg matching for some providers listing channels with incorrect data
+- media library: allow using new movies/series views as well for phones/tables (though the module disabled by default)
+- xc: show 403/404 provider errors in provider status
+- settings: separate setting allowing to set category sort mode different from channels
+- vod/series: allow searching within selected category, sorting contents
+
 # 1.7.2
 ## 1.7.2.2 (2025-Jan-23)
 - vod: new views to get top rated content, and random selection for both movies/series and media library section

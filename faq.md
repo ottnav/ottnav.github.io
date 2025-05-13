@@ -427,7 +427,7 @@ Channel declaration. Supported attributes:
 - `adult="1"` : marker that channel is adult (however it’s highly recommended to place all channels in single adult category for simpler user manage)
 - `tvg-shift="-2"` : marker specifying that epg data should be shifted by several hours
 - `audio-track="2"` : try to autoselect 2nd audio track
-- `video-track="2"` : try to autoselect 2nd video track (`v1.7.1.4+`)
+- `video-track="2"` : try to autoselect 2nd video track (`v1.7.1.4+`). Also supports specifying resolution of the track to switch to (like `1920x1080` if such track is found, `v1.7.3.2+`)
 - `codec="auto"` : can specify which codec to use when playing this channel by default (if it is available) (`v1.6.9.3+`). Can specify several codecs, separated by comma in order of priority. Supported values are `auto`, `hard`, `exo1`, `system`, `soft_vlc`, and `external` to open in external player
 - `tvg-season="1"`. `tvg-episode="123"` - allow specify season-specific information about serie item (`v1.7.2.2+`)
 
@@ -527,7 +527,7 @@ http://example.com/channel/02
 - `"url": "url/for/stream"` - url to the stream that should be played
 - `"codec": "auto"` - check `codec` in `m3u` format description
 - `"audio_track": "2"` : try to autoselect 2nd audio track (`v1.7.1.4+`)
-- `"video-track": "2"` : try to autoselect 2nd video track (`v1.7.1.4+`)
+- `"video-track": "2"` : try to autoselect 2nd video track (`v1.7.1.4+`). Also supports specifying resolution of the track to switch to (like `1920x1080` if such track is found, `v1.7.3.2+`)
 - `"source-format": "..."` - specify stream format (`v1.7.1.6+`), like `ts`,`hls`,`dash`,`ss`,`rtsp`,`rtp`,`udp`
 - `"type": "..."` - specify type of the channel, supported values are `radio` (`v1.7.2.1+`)
 

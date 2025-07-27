@@ -1,6 +1,25 @@
 # OTT Navigator Changelog
 
 # 1.7.3
+## 1.7.3.2 (2025-Jul-27)
+- manage: allow tagging channels to create own set tag-categories (working like copying the channel there)
+- series/movies: added continue watching folder
+- series: improved episode selection
+- xc: fix series episode poster for some providers
+- channels: try to detect countries from category names
+- list: make huge side-by-side even larger
+- config: added setting to change device type if app incorrectly detects tablet/stb for example (may only affect few places at the moment, more to come upon request)
+- epg: support star-rating tag when parsing xml for rating
+- codec: updated VLC to latest v3.6.2
+- codec: software vlc now runs in sync mode (may increase ANR but decrease cases when sound from previous channel left playing), if will have enough reports will probably make it toggable by user
+- archive: manual seek widget supports changing seek duration on long OK button press
+- afr: configure screen modes that should not be considered by AFR
+- playlist: support video-track not only accepting track number, but also a resolution (WxH format) to auto-switch to it upon opening
+- archive: show preview image on seek if flussonic detected (only works if image creation extraction is configured on provider side)
+- playlist: improve xspf support
+- player: try calculating approximate stream bitrate (may be incorrect) when not specified in specs
+- vod: support for provider order sorting for user-provided media library sources
+
 ## 1.7.3.1 (2025-Apr-5)
 - search: fix widget partially hidden while virtual text input keyboard is shown on tv
 - radio: basic support of showing current station metadata while playing

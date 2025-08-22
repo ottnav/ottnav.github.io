@@ -425,7 +425,7 @@ Channel declaration. Supported attributes:
   - `movie`, `series` : use any of these 2 markers to mark that the channel listed is not a channel, but actually a movie or a series, and should be treated as such, and should be placed to media library (though using separate media source is way much preferrable then messing channels with vods/series)
   - `radio` : mark that the channels is actually a radio station (`v1.7.2.1+`)
 - `adult="1"` : marker that channel is adult (however it’s highly recommended to place all channels in single adult category for simpler user manage)
-- `tvg-shift="-2"` : marker specifying that epg data should be shifted by several hours
+- `tvg-shift="-2"` : marker specifying that epg data should be shifted by several hours. If configured value not in diapason of `-12..12` then it is treated as seconds
 - `audio-track="2"` : try to autoselect 2nd audio track
 - `video-track="2"` : try to autoselect 2nd video track (`v1.7.1.4+`). Also supports specifying resolution of the track to switch to (like `1920x1080` if such track is found, `v1.7.3.2+`)
 - `codec="auto"` : can specify which codec to use when playing this channel by default (if it is available) (`v1.6.9.3+`). Can specify several codecs, separated by comma in order of priority. Supported values are `auto`, `hard`, `exo1`, `system`, `soft_vlc`, and `external` to open in external player
@@ -511,7 +511,7 @@ http://example.com/channel/02
 - `"number": 123` - channel number
 - `"epg_id": "ch27"` - channel id in `xmltv` teleguide that corresponds to the current channel
 - `"epg_name": "Correct Channel Name"` - if you fail to specify exact `epg_id` you can also try to specify alias for the channel name to the one that you believe will have data in `xmltv` teleguide
-- `"epg_shift": 2` - shift program from `xmltv` teleguide by this amount of hours
+- `"epg_shift": 2` - shift program from `xmltv` teleguide by this amount of hours. If configured value not in diapason of `-12..12` then it is treated as seconds
 - `"icon": "url/to/icon` - channel icon
 - `"archive_days": 3` - number of days while archived shows are available
 - `"archive_source": "source/url/format"` - check `catchup-source` in `m3u` format description

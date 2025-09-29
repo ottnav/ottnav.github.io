@@ -1,6 +1,23 @@
 # OTT Navigator Changelog
 
 # 1.7.3
+## 1.7.3.3 (2025-Sep-29)
+config: auto-retry channel option to switch to next channel on error
+system: implement global search support via google assistant (may not work on many devices, google is very selective)
+ux: show context of the item that has been found via search screen (like category)
+stalker: fixed media library favorite series not working after app restart
+stalker: support radio section
+stalker: improve series search
+config: allow disabling epg module
+margins: support overscan setting in percents
+prov: stalker: support passing user-specified http attributes
+ux: show poster on quick channel switching if avail
+config: setting to ensure that VPN is connected on app start (note, that you need a popular VPN app to be installed for this)
+codec: updated VLC to latest v3.6.4
+player: opensubtitles support (user need to configure his opensubtitles account in player settings ofc)
+vod player: added option to switch to another series episode
+locale: Urdu translation by fraudiay79
+
 ## 1.7.3.2 (2025-Jul-27)
 - manage: allow tagging channels to create own set tag-categories (working like copying the channel there)
 - series/movies: added continue watching folder

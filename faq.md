@@ -680,7 +680,7 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 - [OttNav Companion at Aptoide](https://ottnav-companion.en.aptoide.com/app) - `Android` manage your account devices and subaccounts (no purchases)
 
 ## Contacts
-- Support chat on Telegram:
+- Community-run chat on Telegram:
   - [Global](https://t.me/ottnav_global)
   - [Türk](https://t.me/ottnav_tr)
 - Support e-mail at `support@ott-nav.com`

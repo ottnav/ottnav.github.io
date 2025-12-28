@@ -431,6 +431,8 @@ Channel declaration. Supported attributes:
 - `video-track="2"` : try to autoselect 2nd video track (`v1.7.1.4+`). Also supports specifying resolution of the track to switch to (like `1920x1080` if such track is found, `v1.7.3.2+`)
 - `codec="auto"` : can specify which codec to use when playing this channel by default (if it is available) (`v1.6.9.3+`). Can specify several codecs, separated by comma in order of priority. Supported values are `auto`, `hard`, `exo1`, `system`, `soft_vlc`, and `external` to open in external player
 - `tvg-season="1"`. `tvg-episode="123"` - allow specify season-specific information about serie item (`v1.7.2.2+`)
+- `bl-audio-track="1,2"` - allow to blacklist audio tracks (`v1.7.4.1+`)
+- `bl-video-track="1.2"` or `bl-video-track="2,1920x1080"` - allow to blacklist video tracks (`v1.7.4.1+`)
 
 ### `#EXTGRP: Category Name`
 Alias for `group-title` tag
@@ -531,6 +533,9 @@ http://example.com/channel/02
 - `"video-track": "2"` : try to autoselect 2nd video track (`v1.7.1.4+`). Also supports specifying resolution of the track to switch to (like `1920x1080` if such track is found, `v1.7.3.2+`)
 - `"source-format": "..."` - specify stream format (`v1.7.1.6+`), like `ts`,`hls`,`dash`,`ss`,`rtsp`,`rtp`,`udp`
 - `"type": "..."` - specify type of the channel, supported values are `radio` (`v1.7.2.1+`)
+- `"bl_audio_track":[1,2]` - allow to blacklist audio tracks (`v1.7.4.1+`)
+- `"bl_video_track":[1,2]` or `"bl_video_track":[2,"1920x1080"]` - allow to blacklist video tracks (`v1.7.4.1+`)
+
 
 ### Simple OTC playlist sample
 Check [sample_file_otc.json](https://ottnav.github.io/sample_file_otc.json)

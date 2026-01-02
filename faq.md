@@ -433,6 +433,9 @@ Channel declaration. Supported attributes:
 - `tvg-season="1"`. `tvg-episode="123"` - allow specify season-specific information about serie item (`v1.7.2.2+`)
 - `bl-audio-track="1,2"` - allow to blacklist audio tracks (`v1.7.4.1+`)
 - `bl-video-track="1.2"` or `bl-video-track="2,1920x1080"` - allow to blacklist video tracks (`v1.7.4.1+`)
+- `tvg-serie="123"` when providing media library via m3u allows to group multiple entries as one series (`v1.7.4.1+`)
+- `serie-title="Some Show"` when providing media library via m3u allows to specify name for series (`v1.7.4.1+`)
+- `tvg-imdb="123567", tvg-tmdb="1234567"` - allows to specify `IMDB` or `TMDB` id of the media entry (useful for movies/series) (`v1.7.4.1+`)
 
 ### `#EXTGRP: Category Name`
 Alias for `group-title` tag
@@ -554,6 +557,7 @@ Preferable format for media library is `OTV` encoded in `json`.
 - ttl - available till (unix timestamp) if will be removed at this time
 - trailer - youtube trailer (link or the video ID part) `v1.6.6.9.5+`
 - backdrop - larger image (usually a screenshot from a video) `v1.6.6.9.5+`
+- `tmdb`, `imdb` - allow to specify `TMDB` or `IMDB` id of the media item `v1.7.4.1+`
 
 Sample:
 ```

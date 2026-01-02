@@ -1,5 +1,27 @@
 # OTT Navigator Changelog
 
+# 1.7.4
+## 1.7.4.1 (2026-Jan-2)
+- manage: support mass channel tagging
+- config: player action to toggle subtitles while in playback
+- archive: fix switch to next video with gaps in epg
+- codec: allow audio shift (lip sync) for hardware codecs
+- config: added TMDB support (requires user to setup his api key) to populate data on movies/series/shows in addition to the one provided via epg/provider api
+- vod m3u: added support for tvg-serie (id to group multiple items) and serie-title attributes
+- drm: improved generic support of CENC, and general support for dash/hls/smoothstreaming
+- player: basic support for live streams with DVR/timeshift capabilities (common for some dash/hls providers with no archives support)
+- config: added setting for restrict code for adult content, allowing it to be different from generic settings restrict code
+- playlist/otc: added support for bl-audio-track,bl-video-track attributes to ban some tracks (comma-separated)
+- player: improved support for streams with ad breaks
+- config: toggle to defer app startup until network connection becomes live
+- config: toggle to allow disabling country flags in categories
+- provider: allow configuring User-Agent separately for API calls and content (stream) requests for most provider types (most common cases covered)
+- stalker: support customizing more attributes like stb_type, hw_version, while configuring provider
+- playlist: support precise time shift for template arguments like {start_iso:+1h} (suffix supported s,m,h,d) for the following ${START:...}, {utc:...}, {start_iso:...}, ${END:...}, {utcend:...}, {end_iso:...}, ${TIMESTAMP:...}, {current_utc:...}, {now_iso:...}, ${OFFSET:...}, ${start-year:...}, ${start-mon:...}, ${start-day:...}, ${start-hour:...}, ${start-min:...}, ${start-sec:...}, ${end-year:...}, ${end-mon:...}, ${end-day:...}, ${end-hour:...}, ${end-min:...}, ${end-sec:...}
+- playlist: expand txt format support
+- epg: support small epg-embedded icons for channels or shows
+- stalker: add support for batch channel epg loading if supported by server
+
 # 1.7.3
 ## 1.7.3.3 (2025-Sep-29)
 - config: auto-retry channel option to switch to next channel on error

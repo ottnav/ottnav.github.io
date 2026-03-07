@@ -399,7 +399,7 @@ Supported attributes:
   - `${offset}` - delta from current time to show start (seconds)
   - `${start-year},${start-mon},${start-day},${start-hour},${start-min},${start-sec}` - show start date/time variables (`v1.6.6.5+`)
   - `${end-year},${end-mon},${end-day},${end-hour},${end-min},${end-sec}` - show end date/time variables (`v1.6.6.5+`)
-  - You can also modify the starting and/or ending time passed by ott navigator by including the following template in the url (`v1.7.1.5+`):
+  - You can also modify the starting and/or ending time passed by ott navigator by including the following template in the url (`v1.7.1.5+`, refer as template vars):
     - {% raw %}{{shift:start:XX}}{% endraw %}, {% raw %}{{shift:end:XX}}{% endraw %} where `XX` can be specified in days (with suffix `d`, like `+1d`, `-2d`, `5d`), hours (with suffix `h`), minutes (with suffix `m`), or seconds (with suffix `s`). It will affect all time template variables in this url.
   - Also all time arguments that start/current/end points supports time shift (`v1.7.4.1+`), example: `{start_iso:+1h}` will work like `{start_iso}` but will be `1 hour` later. Suffixes supported `s` for seconds, `m` for minutes, `h` for hours and `d` for days.
 - `max-conn="1"` : if your provider allows user opening more connections at the same time (like watching picture-in-picture) set number of connections here
@@ -436,6 +436,7 @@ Channel declaration. Supported attributes:
 - `tvg-serie="123"` when providing media library via m3u allows to group multiple entries as one series (`v1.7.4.1+`)
 - `serie-title="Some Show"` when providing media library via m3u allows to specify name for series (`v1.7.4.1+`)
 - `tvg-imdb="123567", tvg-tmdb="1234567"` - allows to specify `IMDB` or `TMDB` id of the media entry (useful for movies/series) (`v1.7.4.1+`)
+- `seek_preview` - allows to specify url that will be used to fetch thumbnail to display when seeking the channel (`v1.7.5.1+`, should use template vars like `{utc}` to get timestamp being requested)
 
 ### `#EXTGRP: Category Name`
 Alias for `group-title` tag
@@ -538,7 +539,7 @@ http://example.com/channel/02
 - `"type": "..."` - specify type of the channel, supported values are `radio` (`v1.7.2.1+`)
 - `"bl_audio_track":[1,2]` - allow to blacklist audio tracks (`v1.7.4.1+`)
 - `"bl_video_track":[1,2]` or `"bl_video_track":[2,"1920x1080"]` - allow to blacklist video tracks (`v1.7.4.1+`)
-
+- `seek_preview` - allows to specify url that will be used to fetch thumbnail to display when seeking the channel (`v1.7.5.1+`, should use template vars like `{utc}` to get timestamp being requested)
 
 ### Simple OTC playlist sample
 Check [sample_file_otc.json](https://ottnav.github.io/sample_file_otc.json)

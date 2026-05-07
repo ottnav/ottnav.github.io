@@ -674,8 +674,8 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 - Payments managed via ottnav account (check `OttNav Companion`)
 
 ### Huawei AppGallery
-- [OTT Navigator at Huawei AppGallery](https://bit.ly/2WHhIvQ)
-- Payments managed via the store
+- [OTT Navigator at Huawei AppGallery](https://appgallery.huawei.com/#/app/C100792455)
+- Payments managed via the store (not compatible with ottnav account)
 
 ### Other stores where you can get OTT Navigator
 - VIVO Store
@@ -690,9 +690,10 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 - [OttNav Companion at Aptoide](https://ottnav-companion.en.aptoide.com/app) - `Android` manage your account devices and subaccounts (no purchases)
 
 ## Contacts
-- Community-run chat on Telegram:
-  - [Global](https://t.me/ottnav_global)
-  - [Türk](https://t.me/ottnav_tr)
 - Support e-mail at `info@ott-nav.com`
 - White label / branding contact `wl@ott-nav.com`
+- Community-run chat on Telegram (moderated and maintained by community):
+  - [Global](https://t.me/ottnav_global)
+  - [Türk](https://t.me/ottnav_tr)
+  - [Russian](https://t.me/ottnavigator)
 - [Privacy Policy](http://ott-nav.com/privacy_policy.html)

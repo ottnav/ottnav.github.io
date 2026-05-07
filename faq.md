@@ -693,7 +693,6 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 - Community-run chat on Telegram:
   - [Global](https://t.me/ottnav_global)
   - [Türk](https://t.me/ottnav_tr)
-- Support e-mail at `support@ott-nav.com`
-- Contact the developer directly at `admin@ott-nav.com`
-- White label / branding contact `ottnav.partners@gmail.com`
+- Support e-mail at `info@ott-nav.com`
+- White label / branding contact `wl@ott-nav.com`
 - [Privacy Policy](http://ott-nav.com/privacy_policy.html)

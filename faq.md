@@ -665,7 +665,7 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 - Direct links for [stable](https://app.ott-nav.com/dist/std/stable.apk), [beta](https://app.ott-nav.com/dist/std/beta.apk) and [alpha](https://app.ott-nav.com/dist/std/alpha.apk) versions
 
 ### Aptoide
-- [OTT Navigator at Aptoide](http://bit.ly/2CqiYcr)
+- [OTT Navigator at Aptoide](https://ott-navigator-beta-for-android-tv-android.fr.aptoide.com/app)
 - Payments managed via ottnav account (via the in-apps or `OttNav Companion`)
 
 ### Google Play

@@ -177,9 +177,12 @@ You can use any image service you like, here is a quick sample to get idea how t
 - Copy the one that is named `Share Link` (will be something like `https://imgur.com/SomeID`)
 - Paste the url in the app
 
+## How can i backup and/or restore data to a different device?
 ## How long does backup in a cloud available?
-The exact time may vary (depending on the load auto-cleanup may be done more or less frequently), but in any case it will be available 7 days at least. General service target range lies between 1 and 5 weeks.
-You can also store backup on your own server - check FAQ about it
+There are several types of backups provided by the app:
+- Anonymous backups accessible by a code generated: the exact time may vary (depending on the load auto-cleanup may be done more or less frequently), but in any case it will be available 7 days at least. You can make them password-protected. Anyone knowing the code for the backup can restore it.
+- OttNav account-linked backups that are linked to the devices (`v1.7.5.1+`) - they will be available while the device is added to your account and premium is active on your account. Only you (the one that has access to ottnav account) can use this backup.
+- Your own-hosted backups: You can also store backup on your own server (you control everything yourself) - check FAQ about it.
 
 ## Auto-start on device reboot
 You can enable the app to auto-start on non-phone device boot via `Settings > Extended > Start on boot`.
@@ -660,7 +663,7 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 - Not linked to any store
 - Premium can be purchased and managed using `OttNav Companion` app
 - [Direct download of OTT Navigator](https://app.ott-nav.com/dist/std/latest.apk) (you will need to allow installing apps from unknown sources on your device)
-- Code for `Downloader` app is `774792`.
+- Code for `Downloader` app is `982469`.
 - Allows switching between `stable`, `beta` and `alpha` update channels
 - Direct links for [stable](https://app.ott-nav.com/dist/std/stable.apk), [beta](https://app.ott-nav.com/dist/std/beta.apk) and [alpha](https://app.ott-nav.com/dist/std/alpha.apk) versions
 

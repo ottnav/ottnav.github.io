@@ -1,5 +1,25 @@
 # OTT Navigator Changelog
 
+# 1.7.5
+## 1.7.5.2 (2026-Sep-28)
+- recording: record live channels, schedule programmes or save finished ones from the provider's archive; storage on internal/SD/USB, SMB share or WebDAV
+- vod: support lazy loading for large categories
+- ux: improved multiple tool screens and tvguide
+- backup: per-device backups in ottnav account
+- epg: improve user custom epg sources managing
+- config: DNS-over-HTTPS toggle
+- config: in-app proxy setting
+- config: custom logo pack (url to a zip with channel logos)
+- config: dvr module toggle to disable all dvr-related seeking
+- player: hardware audio delay (lip sync) up to ±5s
+- player: seek preview thumbnails for archive and dvr streams (playlist seek_preview attribute for m3u/otc)
+- drm: better ClearKey/cbcs/cenc support, mixing drm and non-drm periods
+- subtitles: opensubtitles search criteria can be changed
+- stalker: extended device selection
+- tablet: improved split screen support
+- ux: side-by-side view fixes on touch devices
+- compat: android 5.x support restored (but still may be limited)
+
 # 1.7.4
 ## 1.7.4.1 (2026-Jan-2)
 - manage: support mass channel tagging

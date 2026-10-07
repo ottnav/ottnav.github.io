@@ -9,11 +9,6 @@ The app is just a player and neither has any content, nor can provide you any. I
 
 ## How can I contribute to the app development?
 - Help other users by responding to their questions in our Telegram [group](https://t.me/ottnav_global).
-- Translate to your language or improve current translations
-  - Translations are being available online at [github](http://github.com/ottnav/ott-nav-locale/) (source language supported by developer is English, you can take it as a base).
-  - Then you choose either:
-    - (Github way for tech-ready guys): fork the repository, make your changes and submit a pull request
-    - (Easy way for normal people): just download the corresponding xml file (or create a new one taking strings.xml as a base contents), make changes that are required and send it to us via email
 - Provide high-quality detailed description on the issues you are experiencing, and suggestions you feel will perfectly fit the app.
 - Suggest common questions and solutions for the FAQ
 - Spread the word and help the app to grow and get new users
@@ -27,15 +22,14 @@ The app is just a player and neither has any content, nor can provide you any. I
 - Sideload non-store (standalone) build of the app (check the link at the bottom of the FAQ)
 
 ## How to install on my Windows PC/Mac
-There is no special version dedicated to be used on Windows PC or Mac, however, there is a solution to use the app with negligible side effects.
-- Windows 11 has a decent Android apps support, so it's recommended to use builtin solution for running apps.
-  - Step 1: Install `Windows Subsystem for Android` following one of these 2 instructions:
-    - with Amazon Store: https://www.windowscentral.com/how-get-started-android-apps-windows-11
-    - without it: https://www.androidpolice.com/set-up-wsa-windows-11-android-apps/
-  - Step 2: Install `standalone OTT Navigator` app (check bottom of the FAQ)
-- Install NoxPlayer app on your PC - it allows running Android apps and is highly optimized and recommended. Just use it like it was a native app.Some users are running the app on different emulators, like BlueStacks emulator and report that it also works quite well, and supports later Android versions. 
+There is no version of the app for Windows or Mac, and none is planned at the moment. The app can still be used there inside an Android emulator:
+- Windows: [BlueStacks](https://www.bluestacks.com/), [LDPlayer](https://www.ldplayer.net/) or [MuMu Player](https://www.mumuplayer.com/)
+- Mac: [BlueStacks Air](https://www.bluestacks.com/mac) (Apple silicon)
+- Linux: [Waydroid](https://waydro.id/)
 
-Please note, that hardware acceleration might not be available when using emulator on some devices, so you might need selecting software codecs to watch your content.
+Install the emulator, then install the `standalone OTT Navigator` app in it (check bottom of the FAQ) and use it like on a tablet.
+
+Please note, that hardware acceleration might not be available when using emulator on some devices, so you might need selecting software codecs to watch your content. DRM-protected streams usually do not play in emulators.
 
 ## Will the app work on my TV? Why not WebOS/Tizen?
 The app only works on Android, so if your TV is running Android TV / Google TV then it will run perfectly.
@@ -44,12 +38,12 @@ So if you choose an LG/Samsung TV (the only 2 major vendors that do not use Andr
 
 ## Cannot update to a newer version, or how to update to beta versions
 The app development cycle goes in the following cycle:
-- development version (closed avaiability, available via direct build by developer)
+- development version (closed availability, available via direct build by developer)
 - alpha version (if released, in most cases skipped, only available for `standalone` version of the app)
 - beta version (only available for `standalone` version of the app)
 - stable version (available on all installation sources)
 
-So in order to use non-stable version of the app, you need to be using `stanalone` version of the app (check the `Availability` section in the bottom of the `FAQ`), go to `Settings > About > Update channel` and select `alpha` or `beta`, and then check for updates.
+So in order to use non-stable version of the app, you need to be using `standalone` version of the app (check the `Availability` section in the bottom of the `FAQ`), go to `Settings > About > Update channel` and select `alpha` or `beta`, and then check for updates.
 
 ----
 
@@ -62,7 +56,7 @@ So in order to use non-stable version of the app, you need to be using `stanalon
 - In other cases configuring as Playlist is generally preferable
 
 ## What playlist formats are supported
-- Preffered format is [M3U/M3U8](https://en.wikipedia.org/wiki/M3U)
+- Preferred format is [M3U/M3U8](https://en.wikipedia.org/wiki/M3U)
 - However, the app also supports lots of more exotic formats (the support might be limited though), including `WebOS webtv`, `Tizen nStream`, `.xspf`, `.tv`, `SAT .txt`, etc
 
 ## Playlist setup
@@ -95,7 +89,7 @@ You can check whatever EPG is provided and alive from your IPTV provider by navi
 
 If your provider has an EPG source but for some reason does not specify it in playlist, then it’s recommended to configure it in `Settings - Provider - (your provider) - Parameters - EPG`.
 This way the channels mapping will be searched by both channel names and tvg-id fields.
-Since `v1.6.9.4` app replaces following placeholdes to provider configuration, if founds them: `${token}`, `${login}`, `${password}`.
+Since `v1.6.9.4` app replaces the following placeholders with the values of the provider configuration, if it finds them: `${token}`, `${login}`, `${password}`.
 
 If you configure EPG source in `Settings - EPG - User-provided` then matching by name is only used.
 
@@ -124,11 +118,18 @@ Some TVs are coming with overscan enabled in their configuration (especially for
 - In OTT Nav app go to `settings - visual style - margins`, and set up a margin that matches your TV output.
 
 ## Want to stream video from phone to my TV, how to do it?
-App supports 2 ways of sending a stream to a TV (when both are located in the same WiFi network). Both are not very reliable and cannot be used if your provider requires some DRM tags or specific attributes being passed in addition to the stream url. The options are:
-- If your TV supports working as WiFi TV (and is acting as UPnP device), while playing video open the menu -> parameters -> send to TV -> select your device. If successful (and the stream supported by your TV) it will start playing on TV and you should stop playing it on your phone not to take extra network connection. Note, that TVs supports only limited set of stream types and might not support the one your provider is offering.
-- If you are using an old Chromecast device (2020 and older) and have Chromecast devices available in the network there will be a button on HUD to send the stream. This does not apply to newer Chromecast that are actually a Google TV device with Android, so you can just install the app and use it via remote, instead of just casting the stream.
+On a phone or a tablet the player has a `Play on TV` button (`v1.7.5.2+`). It lists the TVs found in the same WiFi network, both `DLNA / UPnP` ones (most Samsung, LG, Sony and other smart TVs) and `Chromecast` devices; a TV that was not found can be added by its address.
+- The stream goes to the TV through your phone, so what the provider requires (`User-Agent`, `Referrer`, other headers, a token in the url) is kept, and the TV does not need access to the provider itself. The phone has to stay on and in the same network while the TV plays.
+- The app can be sent to the background: a notification with a `Stop` button stays, and the volume keys of the phone change the volume of the TV.
+- Switching the channel, or the next episode of a series, follows to the TV. A movie goes on from the position it had on the phone.
+- The stream on the TV counts as a connection to your provider, just as when it plays on the phone.
 
-Please note that due to limitations of your TV/Chromecast devices some streams cannot be sent - this includes streams that are encoded in `mpeg-ts`, or when your provider requires passing extra `http` tags to the stream (like `user-agent`, `referrer`, extra headers, etc). In this way it's recommended to use external player like `VLC` that can transcode `mpeg-ts` streams to `hls` that are usually playable on TV/Chromecast.
+Limitations:
+- The TV still has to support the format and codecs of the stream: an old TV may refuse `HEVC`, `4K` or some audio formats, and nothing is transcoded.
+- DRM-protected streams cannot be sent.
+- If your box is a Google TV / Android TV device (including Chromecast with Google TV), it is better to install the app there and use it with the remote.
+
+In the versions before `v1.7.5.2` there were two separate options (`send to TV` in the player parameters for UPnP TVs and a Chromecast button), which passed only the stream url to the TV, so streams that need extra `http` headers, and most `mpeg-ts` streams, did not play.
 
 ## Having multiple providers, how to manage channels?
 The app has many options on how to manage channels from multiple providers.  
@@ -179,9 +180,11 @@ You can use any image service you like, here is a quick sample to get idea how t
 
 ## How can i backup and/or restore data to a different device?
 ## How long does backup in a cloud available?
+To make a backup go to `Settings - Extended - Backup and restore - Backup current configuration` and write down the code you get; on the other device open the same section, choose `Load a previously made configuration backup` and enter the code.
+
 There are several types of backups provided by the app:
 - Anonymous backups accessible by a code generated: the exact time may vary (depending on the load auto-cleanup may be done more or less frequently), but in any case it will be available 7 days at least. You can make them password-protected. Anyone knowing the code for the backup can restore it.
-- OttNav account-linked backups that are linked to the devices (`v1.7.5.1+`) - they will be available while the device is added to your account and premium is active on your account. Only you (the one that has access to ottnav account) can use this backup.
+- OttNav account-linked backups that are linked to the devices (`v1.7.5.2+`) - they will be available while the device is added to your account and premium is active on your account. Only you (the one that has access to ottnav account) can use this backup.
 - Your own-hosted backups: You can also store backup on your own server (you control everything yourself) - check FAQ about it.
 
 ## Auto-start on device reboot
@@ -196,6 +199,20 @@ For the app we prefer features that works perfectly, that means that adding feat
 
 So you should use different options - use cloud storage or services like `m3u4u` for playlists, and cloud backup options, etc.
 
+This is about playlists, backups and other configuration files. Recordings of channels are a different case: they can be kept in the app's own folder on the internal storage, an SD card or a USB drive, in a folder you pick, or in a network folder (check the `Recording` section).
+
+## Provider is not reachable from my network (proxy, DNS, VPN)
+The network options of the app are in `Settings - Extended - System`:
+- `Proxy server` (`v1.7.5.2+`) - the app will make its requests via this proxy, the rest of the device is not affected
+- `Use DNS over HTTPS` (`v1.7.5.2+`) - helps when the DNS of your internet provider does not resolve (or substitutes) the address of your IPTV provider
+- `App should ensure that system-configured VPN is connected on app start` - if you use a VPN app and do not want the app to connect to your provider without it
+- `Wait for the network connection to become live` - for boxes that start the app before the network is ready
+
+## Want to use my own set of channel logos
+Since `v1.7.5.2` you can give the app a link to a `zip` archive with logos: `Settings - Lists - Preferred source of channel icons - Logo pack URL`. The images in the archive should be named after the channels (like `Sports News.png`). The archive is downloaded and unpacked by the app, and checked for a newer version from time to time.
+
+## Want my own categories, not changing the ones from provider (tags)
+You can mark channels with tags (`v1.7.3.2+`, several channels at once since `v1.7.4.1`): open the channel menu (or `Manage channels`) and use `Select tags`. Each tag works like a category of its own that contains a copy of every channel marked with it, the channel also stays where the provider has put it.
 
 ----
 
@@ -257,6 +274,7 @@ When it’s not possible, you can also try one of the following:
 ## Playing DRM content and it’s not playing
 In order to play DRM-protected contents you need to pass the correct DRM keys and extra data in the playlist. Check the M3U playlist structure on clues how to setup it.  
 Please note, that DRM playback is only supported using hardware codecs - so using software VLC, system or external player has no way to pass these license data.
+If the app says that the DRM scheme is not supported, then it is the device (its firmware) that has no support for this DRM type (common for `Widevine` / `PlayReady` on cheap boxes and in emulators), changing codecs will not help.
 
 ## Experiencing ENOENT (FileNotFoundException) while trying to play a channel
 It is a provider issue meaning that master playlist for the stream contains a link for one of the tracks in invalid format - instead of providing full url to the file with the domain, path, etc, it just only gives the path that is considered a local (like `/videos/12345/segment12345.mpg`) - of course, there is no such file on your current device.
@@ -266,6 +284,58 @@ Sometimes this might happen when you were experiencing network issues loading a 
 Some channels are using audio tracks that might not be supported by your TV box (like 5.1, 7.1). In this case the app passes the audio stream directly to your TV, since TVs usually supports such tracks. But as a side effect the volume can be only controlled using a TV remote. Possible solutions are:
 - enable software audio decoder globally in the app codecs, or on this exact channel (this way the audio stream will be processed on your box, so the full volume control will be available)
 - or enable manual audio volume fine-tune within the app
+
+## Audio is not in sync with video
+While playing open the player menu - parameters - `Audio shift` and move the sound earlier or later. It works for software codecs and (since `v1.7.4.1`) for hardware ones, up to 5 seconds either way (`v1.7.5.2+`). Note, that if the sound is late only when it goes via a soundbar or a receiver, it is better to be fixed there (`audio delay` / `lip sync` setting of the device).
+
+## Rewinding a live channel that has no archive (DVR / timeshift)
+Some `HLS` / `DASH` streams keep the last minutes or hours of the broadcast in the stream itself. The app detects this (`v1.7.4.1+`) and allows to pause and rewind such channel within what the stream has, even when provider has no archive for it. If this causes issues with your provider (playback starts not from the live point, wrong duration, etc), you can switch it off: long tap any `icon on home screen - Modules - DVR` (`v1.7.5.2+`).
+
+## Preview image while rewinding
+The app can show a thumbnail of the moment you are seeking to (`Settings - Player - Archive - Show image preview while doing rewind or fast forward`). It only works when your provider supports it: either the provider's server is `flussonic` with thumbnails enabled, or the playlist gives the address of the thumbnails in the `seek_preview` attribute (`v1.7.5.2+`, check the playlist format description).
+
+----
+
+# Recording
+
+Recording is available since `v1.7.5.2` and is a part of premium.
+
+## How to record a channel or a show
+First choose where to keep the recordings: `Settings - Recordings - Where to keep recordings`. Until a storage is chosen, the recording actions are not shown. After that:
+- `Record` in the player or in the channel menu - records the channel from now on until you stop it
+- `Record this programme` in the menu of a show in the teleguide - schedules a recording of a show that has not started yet (you can also set the day, time and length manually, and `Start earlier` / `End later` in settings add some minutes on both sides)
+- `Save from the archive` in the menu of a show that has already ended - downloads it from the archive of your provider (if the channel has an archive)
+
+The recordings are listed in `Recordings` on the home screen, and can be found via search. A channel or a show that is being recorded (or is scheduled) is marked with `REC`.
+
+## Where are recordings stored
+- `Internal storage` or `USB drive or SD card` - the app's own folder there. No permissions are required, but the system removes this folder when the app is uninstalled
+- `Choose a folder` - any folder picked using the system file picker (survives reinstalling the app; not available on most Android TV devices, since they have no file picker)
+- `Network folder (SMB)` - a shared folder of your PC or NAS, with a login or as a guest (shares that require a login work since `v1.7.5.2`)
+- `WebDAV folder`
+
+When recording to a network folder, the recording is first written to the device in parts, and each part is uploaded when it is complete, so some free space on the device is still required.
+Recordings are split into files below 4 GB, so USB drives formatted as `FAT32` are fine; the app plays them as a single video.
+`Keep free on the storage` and `Delete old recordings when space runs low` allow the app to manage the space itself.
+If you connect a folder that already has recordings (made on another device, or before the app was reinstalled), use `Find recordings in the folder`.
+
+## Recording takes a connection of my provider
+A recording is a stream like any other, so it takes one of the connections your provider allows:
+- With a provider that allows a single connection you cannot watch a different channel of this provider while it records. You can watch the channel that is being recorded - the app plays it from the recording, not opening a second stream.
+- The app warns you when a recording (now or by schedule) would exceed the limit, and asks what to do when you open one more channel while recordings are running. Going over the limit may make the provider refuse the stream or even block the account.
+- Channels of other providers are not affected.
+
+Make sure the number of connections is set correctly (`Settings - Provider - (your provider) - Parameters - Number of connections`).
+
+## Scheduled recording did not start, or some parts are missing
+- The device has to be on. A recording stops if the device is turned off or goes to deep sleep; on many TV boxes the power button of the remote only turns the screen off (that is fine), but some firmwares cut the network in standby - the app warns if it detects that. Turn off the TV only, or change the energy mode of the device.
+- On some devices the system does not start the app at the scheduled time if it was closed. Allow `Start recordings on time` if the app asks for it, exclude the app from battery optimization, or just leave the app running.
+- When the stream breaks while recording, the app reconnects and continues; the missing part is marked, and if the channel has an archive it is fetched from there later. A recording with missing parts is shown as `Partly recorded`.
+
+## Channel cannot be recorded
+- Channels protected with DRM (`Widevine`, `PlayReady`) cannot be recorded. The exception is `ClearKey` with the keys given in the playlist.
+- Plain `MPEG-TS`, `HLS` and `DASH` streams are supported; for the other formats the app says that the format cannot be recorded yet.
+- `The provider refused the stream` usually means that the connections limit of the provider has been reached.
 
 ----
 
@@ -279,7 +349,7 @@ You can use as many devices as you have purchased via `OttNav Companion` or othe
 - purchase device slots, to have some free slots on your account
 - (on your TV device) launch the player app, go to settings - premium, log in with the same account you have created in `OttNav Companion`
 - ensure that the current device is added to the list of active devices (4-word phrase represents an unique installation id), use `Add Device` button if it was not automatically added
-- congrads, you can repeat last 3 steps on your other devices!
+- congrats, you can repeat last 3 steps on your other devices!
 
 ## Unable to process purchase (Error DF-PDP-3)
 Recently Play Market stopped processing purchases when the app was not installed from it. Install application from play market and payment should work.
@@ -340,15 +410,15 @@ fclose($fp);
 # Re-branding / white-label app
 
 ## Branded app with customizations
-If interested in whitelabel package (custom logo, background, etc), then contact us via email `ottnav.partners@gmail.com` or reach us on Telegram (contact `@FlavusV`)
+If interested in whitelabel package (custom logo, background, etc), then contact us via email `wl@ott-nav.com` or reach us on Telegram (contact `@FlavusV`)
 
 ----
 
 # Restricting functionality for users of the app
 
 ## How to protect some content from other users (parental control)
-There are multiple ways to achive this
-- Child mode (`settings - extended - child mode`) allows to specify which exact channels are available and hides all the other contect (PIN-protected)
+There are multiple ways to achieve this
+- Child mode (`settings - extended - child mode`) allows to specify which exact channels are available and hides all the other content (PIN-protected)
 - Restricted mode (`settings - extended - restrict`) allows you to setup a PIN code and protect settings, provider info, or categories/channels, etc to be available
 - Using multiple user profiles
 
@@ -373,7 +443,7 @@ You can configure the app and then hide provider details.
 Playlist header, marks playlist start  
 Supported attributes:
 - `url-epg="http://path/to/epg/api/"` : prefix for getting channel epg for exact channel (not recommended)
-- `url-tvg="http://path/to/epg.xml.gz"` : path to EPG teleguide for the whole playlist (`XmlTv` format that is either `xml` or `xml.gz`)
+- `url-tvg="http://path/to/epg.xml.gz"` : path to EPG teleguide for the whole playlist (`XmlTv` format that is either `xml` or `xml.gz`). `x-tvg-url` is accepted as an alias
 - `url-logo="http://path/to/icons/root/"` : root for all channel icons (used if channel has icon specified without scheme://domain part)
 - `catchup=".."` : alias for `catchup-type`
 - `catchup-type=".."` : specifies that there are archives for channels. Supported types:
@@ -421,8 +491,10 @@ Channel declaration. Supported attributes:
 - `ch-id=".."` : channel id. used only with combination when url-epg or url-logo are set in playlist header (appended to the end of the base url)
 - `tvg-id="abc.yz"` : channel id in epg teleguide that was linked in the playlist header (or the one user has configured in the current provider properties)
 - `tvg-name="Original"` : original channel name (channel name as declared in epg teleguide), if differs from channel name specified in playlist
-- `tvg-logo="http://path/to/logo.jpg"` : link to channel logo (or file name that should be appended to root url set in url-logo in playlist header)
+- `tvg-logo="http://path/to/logo.jpg"` : link to channel logo (or file name that should be appended to root url set in url-logo in playlist header). `logo` is accepted as an alias
 - `tvg-rec="1"` : marker that channel contains archives (0 - off, 1 - on). not needed if catchup* attribute is present (values more than 1 are parsed like aliases for catchup-days=”n”)
+- `catchup-enable="1"` : same as `tvg-rec="1"`; `catchup-enable="0"` marks that this channel has no archive, even when the playlist header declares one
+- `timeshift="3"` : short form of `catchup-type="timeshift" catchup-days="3"` (`timeshift="0"` - no archive for this channel)
 - `catchup*` : all catchup settings that are explained in header can be overridden here on channel level
 - `type="type"` specify type of the channel entry, possible values are:
   - `playlist` (also can be specified as `content-type="playlist"`) : allows to merge another playlist inside the current one. Url specified for this 'channel' is treated as include
@@ -441,6 +513,10 @@ Channel declaration. Supported attributes:
 - `tvg-imdb="123567", tvg-tmdb="1234567"` - allows to specify `IMDB` or `TMDB` id of the media entry (useful for movies/series) (`v1.7.4.1+`)
 - `seek_preview` - allows to specify url that will be used to fetch thumbnail to display when seeking the channel (`v1.7.5.1+`, should use template vars like `{utc}` to get timestamp being requested)
 
+### Stream url
+The line after `#EXTINF` is the url of the stream. Extra `http` headers for it can be appended to the url after `|` character, separated by `&` (but this is NOT RECOMMENDED due to limitations on value parsing, there are much better ways to pass headers):
+- `http://example.com/channel/01|User-Agent=Chrome&Referer=http://example.com/`
+
 ### `#EXTGRP: Category Name`
 Alias for `group-title` tag
 
@@ -452,6 +528,7 @@ Simple way for passing extra http attrs (`v1.6.6.9+`):
 Allows setting some custom parameters for the current channel (`VLC` compatibility tags):
 - `http-user-agent` (User-Agent)
 - `http-referrer` (HTTP referrer)
+- `http-origin` (HTTP `Origin` header, `v1.7.5.2+`)
 
 ### `#KODIPROP:parameter=value`
 Allows setting some custom parameters for the current channel (`KODI` compatibility tags). Supported `parameter` are:
@@ -462,8 +539,18 @@ Allows setting some custom parameters for the current channel (`KODI` compatibil
 - `inputstream.adaptive.license_key` (License key or URL depending on the DRM type; URLs should start from `http://` or `https://`, otherwise it’s a non-url key) and is considered being static
   - license url for playready/widevine content
   - static key (or keys) for clearkey content. Example (1 key): `abc:def`, Example (multi keys): `{"abc":"def","klm":"opq"}`
+  - license url for clearkey content (`v1.7.5.2+`): the server should respond with the keys in `JWK set` format. Works for both `cenc` and `cbcs` streams
+  - full KODI form `url|headers|body|response` (`v1.7.5.2+`), when the license server needs the request to be wrapped:
+    - headers: `Header1=value1&Header2=value2`
+    - body: a template where the DRM challenge is inserted as `R{SSM}` (raw), `b{SSM}` (`base64`), `B{SSM}` (`base64`, url-encoded) or `D{SSM}` (decimal), for example `{"token":"abc","challenge":"b{SSM}"}`
+    - response: how to take the license out of the answer - `B` (`base64`), `Jkey` / `JBkey` / `BJkey` (a `key` field of `JSON`, plain or `base64`), `HB`
+    - when the url part is empty (the value starts with `|`), the license server declared in the stream manifest is used with these headers and wrappings
+    - not supported: the challenge in the url itself, `{SID}`, `{KID}`, `{PSSH}` variables, requests using `GET`
+- `inputstream.adaptive.drm_legacy` (`v1.7.5.2+`, KODI 21.5+ syntax) - DRM type and license in a single value: `com.widevine.alpha|https://license/url|headers`, or `org.w3.clearkey|kid1:key1,kid2:key2` for clearkey
 - `inputstream.adaptive.license_data` `base64` of `default_kid` (`v1.7.0.1+`)
 - `inputstream.adaptive.stream_headers` (extra headers, if required. For example `param1=value1&param2=value2&param3=value3`) (`v1.6.4.1+`)
+- `inputstream.adaptive.manifest_headers` (`v1.7.5.2+`) - headers for the request of the manifest (`mpd` / `m3u8` / `ism`) only. When it is present (even with an empty value), `stream_headers` are sent only with the requests of segments and keys, like KODI 21 does; when it is absent, `stream_headers` are sent with all the requests as before
+- `inputstream.adaptive.manifest_type` - format of the stream when it cannot be detected by the url: `mpd` / `dash`, `hls`, `ism` (Smooth Streaming)
 Syntax is generally compatible with KODI inputStream.Adaptive plugin declared at [xbmc](https://github.com/xbmc/inputstream.adaptive)
 
 The app also accepts extra stream headers configured after `|` character in license_key (`v1.6.4.1+`)
@@ -598,7 +685,7 @@ Sample:
   - `"drmdata"`: `"..."` - `base64` of `default_kid` (`v1.7.0.1+`)
   - `"headers": "header1=value1&header2=value2` to pass additional headers (will be passed both to drm request and video request) or JSON format `{"User-Agent": "Chrome", "SomeOtherAttr": "SomeValue"}` (`v1.6.6.9+`)
   - `"runtime_attr_url": "custom/url/for/getting/tags/at/runtime"` (`v1.6.9.4+)`- in `m3u` or `OTC` (without base64) format data to patch attributes before starting playback. More details available in `EXTATTRFROMURL` in `m3u` format description.
-  - `"source-format": "..."` - check `OTC` format for possible values (`v1.7.1.6+`)
+  - `"source_format": "..."` - check `OTC` format for possible values (`v1.7.1.6+`)
 - if for some reason the episode is split into several videos (like part 1, 2, 3), then you can also specify `"part": 1` for the episode, and in this way the player will understand multiple episodes with same `episode` number (`v1.7.2.1+`).
 
 Sample:
@@ -674,7 +761,7 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
 ### Google Play
 - [for Phones/Tablets](https://play.google.com/store/apps/details?id=appnovatica.stbp)
 - [for TV](https://play.google.com/store/apps/details?id=appnovatica.tv)
-- Payments managed via ottnav account (check `OttNav Companion`)
+- Payments managed via ottnav account (check `OttNav Companion`); it is the same account for all the apps with account login
 
 ### Huawei AppGallery
 - [OTT Navigator at Huawei AppGallery](https://appgallery.huawei.com/#/app/C100792455)
@@ -695,4 +782,4 @@ Changes are published on [Telegram](https://t.me/ottnav) or [on web](https://ott
   - [Global](https://t.me/ottnav_global)
   - [Türk](https://t.me/ottnav_tr)
   - [Russian](https://t.me/ottnavigator)
-- [Privacy Policy](http://ott-nav.com/privacy_policy.html)
+- [Privacy Policy](https://ott-nav.com/privacy_policy.html)

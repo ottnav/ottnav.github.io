@@ -21,6 +21,9 @@
 - compat: android 5.x support restored (but still may be limited)
 - phone: improved support for vertical layout
 - archive: merged with media library and improved suggestions
+- xc: on-demand per-channel epg loading (can be disabled in epg settings)
+- stalker: on-demand epg loading and re-auth when another device captures the connection
+- config: epg: option to load epg data to cache folder first (may help for providers closing connection too fast)
 
 # 1.7.4
 ## 1.7.4.1 (2026-Jan-2)

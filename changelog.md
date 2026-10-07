@@ -19,6 +19,8 @@
 - tablet: improved split screen support
 - ux: side-by-side view fixes on touch devices
 - compat: android 5.x support restored (but still may be limited)
+- phone: improved support for vertical layout
+- archive: merged with media library and improved suggestions
 
 # 1.7.4
 ## 1.7.4.1 (2026-Jan-2)
